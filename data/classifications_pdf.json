@@ -1,0 +1,718 @@
+[
+  {
+    "paper_id": "2aKHuXdr7Q",
+    "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+    "hypotheses": [
+      {
+        "hypothesis_text": "The estimation error in aggregating perturbed node features is determined by two key factors: the feature dimension d and the neighborhood size |N(v)|, with max ξi = O(p d log(d/δ)/(ε^p |N(v)|)).",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Theorem 3 derives a bound on the per-dimension aggregation error ξi that scales with d and inversely with |N(v)|, explicitly showing the two factors that drive estimation error and how privacy budget ε and Bernstein parameter δ enter the bound.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "d (feature dimension)",
+          "|N(v)| (neighborhood size)",
+          "ξi (per-dimension error)",
+          "p",
+          "δ (delta)",
+          "ε (privacy budget)"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Error increases with higher d and decreases with larger |N(v)| (i.e., smaller d and bigger neighborhoods reduce error).",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": "Grounded in Theorem 3 (Equation 6) that presents the O-bound and the two factors affecting estimation error.",
+        "confidence_score": 0.8,
+        "notes": "Referenced in Section 3.1.2 and Theorem 3; visual intuition appears in the discussion around Fig. 2/3 in the paper."
+      },
+      {
+        "hypothesis_text": "The aggregated embedding hbN(v) is an unbiased estimate of hN(v) when the calibration bias σ equals zero and the aggregation function is linear: E[hbN(v)] = hN(v).",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Theorem 2 proves E[hbN(v)] = hN(v) under σ = 0 and linear AGGREGATE, establishing unbiasedness of the aggregation step in the node-feature LDP pipeline.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "hbN(v) (estimated embedding)",
+          "hN(v) (true embedding)",
+          "σ (bias shift)",
+          "AGGREGATE (linear)"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": "Theorem 2 (Appendix B.1) statement and proof.",
+        "confidence_score": 0.85,
+        "notes": "Anchored to the theoretical result in Sec. 3.1.1–3.1.2."
+      },
+      {
+        "hypothesis_text": "The Higher-Order Aggregator (HOA) reduces noise amplification and oversmoothing compared to standard multi-hop aggregation (SKA); the energy ratio ΦK between HOA(·) and SKA(·) tends to 0 as K → ∞.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Theorem 4 proves that the energy ratio ΦK converges to 0 as K grows, indicating HOA attenuates noise amplification and mitigates oversmoothing relative to SKA; empirical discussion via Fig. 6 supports this across datasets.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "Υk_HOA (Dirichlet energy under HOA)",
+          "Υk_SKA (Dirichlet energy under SKA)",
+          "ΦK (energy ratio)",
+          "K (hop steps)",
+          "η (noise)"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "As K increases, ΦK → 0, i.e., HOA yields better resistance to oversmoothing/noise than SKA.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Theorem 4; Figure 6 illustrates HOA vs SKA across K.",
+        "confidence_score": 0.8,
+        "notes": "Also discussed in Sec. 3.2 and Alg. 1; supported by Fig. 6 and Appendix proofs."
+      },
+      {
+        "hypothesis_text": "Node Feature Regularization (NFR) using L1-regularization efficiently achieves feature selection, reducing the effective feature dimension, thereby improving utility; hev_i = sign((hbv)_i) · max(|(hbv)_i| − µ1, 0).",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Theorem 5 derives the proximal-gradient-based L1-regularization update and shows how NFR yields a sparse embedding by selective feature retention, effectively reducing dimensionality and mitigating noise.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "hbv",
+          "(hbv)_i",
+          "(hbv)_i magnitude",
+          "µ1 (regularization parameter)",
+          "K (HOA step)",
+          "B (boundary)",
+          "d (dim)"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Feature selection reduces dimensionality and improves utility, especially under noise (low ϵ).",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Theorem 5; Equation (11).",
+        "confidence_score": 0.8,
+        "notes": "Detailed in Sec. 3.2.2 (NFR) and Appendix B.4; shows µ1 controlling sparsity via thresholding."
+      },
+      {
+        "hypothesis_text": "Under the N-H architecture, the NFR layer enables feature selection on the perturbed features x′ via L1-regularization: (x_ev)_i = sign((x′_v)_i) · max(|(x′_v)_i| − µ2, 0).",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Theorem 6 extends the L1-regularization approach to the N-H architecture, showing how NFR can efficiently select features on x′ in this arrangement.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "x′",
+          "x",
+          "(x_ev)_i",
+          "µ2",
+          "K",
+          "B",
+          "d"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Feature selection reduces noise impact and improves utility in the N-H setup.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Theorem 6; Equation (13).",
+        "confidence_score": 0.8,
+        "notes": "Discussed in Sec. 3.2.3 and Appendix B.5; contrasts N-H vs H-N with NFR."
+      },
+      {
+        "hypothesis_text": "Piecewise Mechanism (PM) and Multi-bit Mechanism (MBM) satisfy ε-local differential privacy (ε-LDP) for each node, and the entire training process remains LDP-compliant due to post-processing invariance; subsequent predictions are likewise bounded by post-processing.",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "The privacy analysis (Appendix D) and Definition 1 establish that PM/MBM satisfy ε-LDP per node and that DP’s post-processing property preserves privacy for the whole pipeline.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "PM",
+          "MBM",
+          "ε-LDP",
+          "post-processing",
+          "training process"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Appendix D; Definition 1; DP post-processing theorem.",
+        "confidence_score": 0.75,
+        "notes": "Found in Sec. 3.2.4; foundational privacy property of the LDP pipeline."
+      },
+      {
+        "hypothesis_text": "Adding the Node Feature Regularizer (NFR) layer to MBM or PM perturbations improves node classification accuracy across all tested datasets and ε, with larger gains at smaller ε.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Table 2 reports MBM⋆ and PM⋆ (NFR-enhanced variants) achieving higher accuracies than MBM and PM across Cora, CiteSeer, LastFM, and Facebook, with bigger gains when ε is small.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "MBM",
+          "MBM⋆",
+          "PM",
+          "PM⋆",
+          "datasets",
+          "ε"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Accuracy increases when NFR is applied (MBM⋆/PM⋆) and gains are larger at small ε.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Table 2; accompanying discussion in Sec. 4.4 and Fig. 5.",
+        "confidence_score": 0.78,
+        "notes": "Empirical ablation showing utility gains from NFR across mechanisms MBM/PM."
+      },
+      {
+        "hypothesis_text": "HOA consistently outperforms SKA across different K values (2,4,8,16,32,64) in Cora, Citeseer, LastFM, and Facebook, demonstrating HOA’s superiority in denoising and utility when privacy noise is present.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Figure 6 and accompanying discussion show HOA achieving higher accuracy than SKA across datasets for multiple K values, with SKA sometimes declining at larger K due to oversmoothing.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "HOA",
+          "SKA",
+          "K",
+          "datasets",
+          "ε"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "HOA yields higher accuracy than SKA for the tested K values.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Figure 6 (a–d) and related text in Sec. 4.5.",
+        "confidence_score": 0.8,
+        "notes": "Also supported by Fig. 4 and Table 2 discussion; HOA vs SKA results across MBM/PM settings."
+      },
+      {
+        "hypothesis_text": "HOA demonstrates superior performance over Residual Connection (RC) in private graph learning at ε = 0.01 on Cora, as shown in Fig. 9.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Figure 9 compares HOA against RC in a Private setting and shows HOA achieving notably higher accuracy when ε is small, indicating better noise handling.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "HOA",
+          "RC",
+          "ε",
+          "Cora"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "HOA has higher accuracy than RC under low ε.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Figure 9.",
+        "confidence_score": 0.75,
+        "notes": "Illustrates robustness to LDP noise compared to a standard architectural alternative."
+      },
+      {
+        "hypothesis_text": "NFR (and HOA) outperforms Dropout and Group Lasso in preserving learning utility under local differential privacy, as shown in Table 4.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Table 4 shows NFR achieving higher accuracy than Dropout and Group Lasso across all four datasets with ε = 0.01 (GCN backbone).",
+        "structural_type": "simple",
+        "variables_identified": [
+          "NFR",
+          "Dropout",
+          "Group Lasso",
+          "CORA",
+          "CiteSeer",
+          "LastFM",
+          "Facebook"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "NFR improves accuracy relative to Dropout and Group Lasso.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Table 4; Sec. 4.6.",
+        "confidence_score": 0.8,
+        "notes": "Direct empirical comparison of sparsity-based regularization vs common alternatives."
+      },
+      {
+        "hypothesis_text": "Under small privacy budgets (e.g., ε near 0.01), the N-H architecture (NFR before HOA) outperforms the H-N architecture, indicating that applying NFR earlier helps more when noise is strong.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Sec. 4.6 discusses that N-H slightly outperforms H-N at small ε, attributing this to earlier feature optimization helping mitigate noise.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "N-H",
+          "H-N",
+          "ε",
+          "NFR placement"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "N-H outperforms H-N at small ε; gap narrows as ε grows.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Figure 4(b).",
+        "confidence_score": 0.75,
+        "notes": "Discussed in Sec. 4.6 (N-H vs H-N architectures)."
+      },
+      {
+        "hypothesis_text": "UPGNET has computational complexity O(K · |E| · d + |V| · d), scaling linearly with graph size and feature dimensionality, making it practical for large-scale graphs.",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Section 3.2.4 provides the Big-O complexity bound, describing the two main components (HOA and NFR) and overall scaling.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "K",
+          "|E|",
+          "d",
+          "|V|"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Section 3.2.4.",
+        "confidence_score": 0.7,
+        "notes": "Compared to Solitude and LPGNN in the scalability discussion."
+      },
+      {
+        "hypothesis_text": "NFR + HOA offers greater utility gains at smaller privacy budgets (ε small) than at larger budgets, as evidenced by Table 2 and Fig. 5 showing larger accuracy improvements when ε is small.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Empirical results in Table 2 and Fig. 5 show larger accuracy improvements from NFR at ε = 0.01 compared to ε = 3.0 across datasets.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "NFR",
+          "HOA",
+          "ε",
+          "datasets",
+          "MBM/PM mechanisms"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Utility gains from NFR are larger at small ε; gains diminish as ε grows.",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Table 2 and Fig. 5.",
+        "confidence_score": 0.75,
+        "notes": "Highlights interaction between regularization and privacy strength."
+      }
+    ],
+    "source_mode": "pdf",
+    "processing_notes": "The hypotheses above are drawn from explicit theoretical results (Theorems 2, 3, 4, 5, 6, 7, 8 in the Appendices) and from the experimental studies reported in Section 4 (Figs. 3-9 and Tables 1-4). Where applicable, exact equation references are cited (Theorem numbers, equations (e.g., (6), (11), (13)) and figure/table notes. Images in the paper (e.g., Figures 3–9) visually support the hypotheses about HOA vs SKA, NFR vs baseline, architecture comparisons, and cross-dataset performance. If you want, I can attach a compact mapping of each hypothesis to the exact figure/table it is supported by. "
+  },
+  {
+    "paper_id": "22kNOkkokU",
+    "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+    "hypotheses": [
+      {
+        "hypothesis_text": "\"We propose a framework, denoted Zebra, relying on ICL for solving parametric PDEs with new parameter values, without any additional update of the model parameters.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "This states a causal mechanism by which in-context learning enables adaptation to new PDE parameters without gradient updates, and is tested throughout the experiments (one-shot adaptation, OoD tests, etc.).",
+        "structural_type": "complex",
+        "variables_identified": [
+          "in-context learning (context trajectories)",
+          "new PDE parameters",
+          "model parameters"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Higher quality adaptation when using in-context information without parameter updates, compared to baselines",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Central claim motivating Zebra; tested via one-shot/adaptation experiments vs gradient-based baselines.",
+        "confidence_score": 0.65,
+        "notes": "Originates in the abstract/introduction describing Zebra’s core premise."
+      },
+      {
+        "hypothesis_text": "\"The context examples will be trajectories from the same dynamics starting from different initial conditions. The query will consist for example of a new initial state condition. The proposed model is inspired from NLP approaches: it is a causal generative model that processes discrete token sequences encoding observations.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Defines the conditioning setup and the causal generative model design that ties context trajectories to future predictions.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "context trajectories",
+          "same underlying dynamics",
+          "initial conditions",
+          "query initial condition"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Using context trajectories from same dynamics enables accurate next-state predictions for a new initial condition",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Underpins the in-context adaptation framework (Section 3.2–3.4).",
+        "confidence_score": 0.6,
+        "notes": "Quoted from Section 3.2–3.4 describing the in-context learning setup and prompting scheme."
+      },
+      {
+        "hypothesis_text": "\"Zebra can be used to generate new trajectories and allows quantifying the uncertainty of the predictions.\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Proposes that Zebra’s generative nature yields a predictive distribution rather than a single trajectory.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "generated trajectories",
+          "prediction uncertainty",
+          "context trajectories"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": "Trajectory distributions can be sampled to form uncertainty estimates",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Link between generative modeling and uncertainty quantification demonstrated in Section 4.4.",
+        "confidence_score": 0.65,
+        "notes": "Explicitly stated in Section 4.4 (Generative ability) and Figure 3–4 discussion."
+      },
+      {
+        "hypothesis_text": "\"Uncertainty can be calibrated via the temperature parameter τ, and it decreases with additional context (Table 9).\"",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Posits a controllable calibration of prediction uncertainty through model temperature and available context.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "temperature τ",
+          "context size n",
+          "uncertainty"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Higher τ increases uncertainty intervals; more context reduces uncertainty",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Empirical calibration across datasets; Table 9 and Figure 17 demonstrate the relation.",
+        "confidence_score": 0.7,
+        "notes": "From Section 4.4 and D.2 (uncertainty quantification) and Figure 17."
+      },
+      {
+        "hypothesis_text": "\"Zebra demonstrates strong overall performance in the one-shot adaptation setting, often surpassing gradient-based adaptation methods.\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Posits a comparative performance advantage of Zebra over baselines under one-shot adaptation.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "Zebra",
+          "CODA",
+          "CAPE",
+          "ViT-in-context",
+          "ViT",
+          "one-shot adaptation"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Zebra achieves lower relative L2 errors than baselines on several datasets",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Supported by Table 5 across Advection, Heat, Burgers, Wave-b, Combined, Wave 2D, Vorticity 2D.",
+        "confidence_score": 0.75,
+        "notes": "Cited in Section 4.2 (In-distribution generalization) discussion of Table 5."
+      },
+      {
+        "hypothesis_text": "\"In out-of-distribution tests, Zebra achieves best results in three out of four experiments (Heat, Wave 2D, Vorticity 2D), indicating robust generalization to unseen parameter shifts.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes that Zebra’s in-context learning generalizes beyond training distributions better than baselines.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "OOD shifts (Heat, Wave 2D, Vorticity 2D)",
+          "Zebra",
+          "baselines"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Zebra yields lower relative L2 errors than baselines on OoD tasks",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Table 2 reports OoD results; Section 4.3 discusses generalization.",
+        "confidence_score": 0.7,
+        "notes": "Direct quote from Section 4.3 on OoD results."
+      },
+      {
+        "hypothesis_text": "\"When trained to predict the conditional expectation of the next token (deterministic), the model accumulates significant error during autoregressive rollout. In contrast, Zebra, trained to model trajectory distributions, can sample from this distribution at inference time, resulting in predictions that are more robust to error accumulation.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes a causal advantage of stochastic trajectory modeling over deterministic next-token prediction.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "deterministic next-token training",
+          "trajectory distribution modeling",
+          "error accumulation"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Stochastic modeling reduces error accumulation relative to deterministic modeling",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Ablation discussion in Section 4.2 and Appendix D.1–D.3.",
+        "confidence_score": 0.65,
+        "notes": "Quoted in Section 4.2 (ablation study) describing the advantage of modeling trajectory distributions."
+      },
+      {
+        "hypothesis_text": "\"Adaptation through in-context learning appears to be a more effective alternative than gradient-based adaptation for out-of-distribution generalization.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Claims a causal superiority of in-context learning over gradient-based methods for OoD generalization.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "in-context learning",
+          "gradient-based adaptation",
+          "OoD generalization"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "In-context learning yields better OoD generalization metrics than gradient-based methods",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Discussion in Section 4.3; Table 2 summarizes OoD results.",
+        "confidence_score": 0.7,
+        "notes": "Explicitly stated in Section 4.3 when comparing to CODA/CAPE/ViT baselines for OoD."
+      },
+      {
+        "hypothesis_text": "\"We propose a fast inference method that accelerates inference by orders of magnitude relative to both the original model and gradient-based adaptation methods. Instead of token-wise autoregressive generation, we predict entire frames at once using a UNet conditioned on a dynamics embedding [DYN].\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes a causal speedup mechanism for inference by replacing token-wise generation with frame-wise prediction.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "token-wise autoregressive generation",
+          "frame-wise UNet surrogate",
+          "dynamics embedding [DYN]"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "UNet-based frame prediction speeds up inference while preserving accuracy",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Described in Section 4.5 and Figure 7; Table 4 reports speedups.",
+        "confidence_score": 0.75,
+        "notes": "Directly discussed in Section 4.5 and Figure 7."
+      },
+      {
+        "hypothesis_text": "\"The dynamics embedding ξS extracted from the transformer output and mapped to the UNet conditioning space enables fast, accurate next-state prediction.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes a causal link between the transformer-derived dynamics embedding and UNet-based forecasting performance.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "ξS dynamics embedding",
+          "UNet conditioning",
+          "ût+Δt"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Using ξS improves speed/accuracy of next-state predictions when conditioning UNet",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Described around the Zebra + UNet architecture (Figure 6–7, Section 4.5).",
+        "confidence_score": 0.65,
+        "notes": "Links transformer output to UNet conditioning for accelerated inference."
+      },
+      {
+        "hypothesis_text": "\"The codebook size K is a crucial hyperparameter. It directly affects the quality of the reconstructions... The one-shot prediction error follows a U-curve with K (32 → 64 → 128 → 256 → 512).\"",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Posits a trade-off between reconstruction fidelity and learnability of dynamics with different codebook sizes.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "codebook size K",
+          "reconstruction error",
+          "one-shot prediction error"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Increasing K improves reconstruction but may degrade one-shot prediction after an optimum",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Table 15 and Figure 21 in Section 4.6 report the U-curve behavior.",
+        "confidence_score": 0.65,
+        "notes": "Described in Section 4.6; discusses trade-offs of K."
+      },
+      {
+        "hypothesis_text": "\"Reconstruction quality directly influences one-shot prediction accuracy; OoD regimes introduce higher reconstruction error, but one-shot accuracy can remain stable if low-frequency content is preserved by the encoder.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Posits a causal link between encoding/decoding fidelity and downstream predictive performance, especially for low-frequency components.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "VQVAE reconstruction error",
+          "one-shot prediction error",
+          "OoD regime",
+          "low-frequency components"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Higher reconstruction fidelity yields better one-shot accuracy; OoD reconstruction degrades but prediction can remain robust for low-frequency content",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Table 17 and related discussion in D.7.",
+        "confidence_score": 0.6,
+        "notes": "Discusses OoD reconstruction vs prediction trade-offs."
+      },
+      {
+        "hypothesis_text": "\"Context size saturates after approximately 3 in-context examples; adding more context yields diminishing returns on one-shot accuracy.\"",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Tests how many context trajectories are needed for effective adaptation.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "number_of_context_examples",
+          "one-shot prediction error"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": "Performance improves up to ~3 contexts, then plateaus",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Table 18 in Appendix D.8 reports the saturation point.",
+        "confidence_score": 0.65,
+        "notes": "Explicit in D.8 (Influence of the number of context examples)."
+      },
+      {
+        "hypothesis_text": "\"Zebra can generate completely novel trajectories conditioned on a context trajectory, with the generated distributions aligning with real solver distributions (as measured by Wasserstein distance).\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Proposes that synthetic generations reflect the true data distribution.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "generated trajectories",
+          "real solver trajectories",
+          "Wasserstein distance"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Generated trajectories have Wasserstein distance close to real data and across distributions",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Section 4.3 D.3; Figure 18–19; Table 12–13.",
+        "confidence_score": 0.7,
+        "notes": "Describes unconditional and conditional generation analyses."
+      },
+      {
+        "hypothesis_text": "\"CRPS and RMSCE results indicate that Zebra provides calibrated probabilistic forecasts and outperforms the deterministic baselines in uncertainty metrics across PDE benchmarks.\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Claims that probabilistic outputs are better calibrated than baselines, as measured by CRPS and RMSCE.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "CRPS",
+          "RMSCE",
+          "baselines (ViT+noise, ViT Dropout)",
+          "Zebra"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Zebra yields lower CRPS/RMSCE than baselines across benchmarks",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Table 10 (CRPS/RMSCE) and Table 11 (time-series CRPS/RMSCE) across datasets.",
+        "confidence_score": 0.7,
+        "notes": "Discussed in Section 4.4 and Table 10–11; compares calibration metrics."
+      },
+      {
+        "hypothesis_text": "\"Zebra can generate new initial conditions and trajectories conditioned on a context, enabling unconditional and conditional generation scenarios (Figure 8).\"",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Posits a capability of the model to perform various generation modes.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "context trajectories",
+          "new initial condition",
+          "generated trajectory"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Generation modes (conditional/unconditional) are feasible and produce plausible trajectories",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Figure 8 and Section 4.4 discussion of generation modes.",
+        "confidence_score": 0.6,
+        "notes": "Supported by Figure 8 and associated discussion."
+      },
+      {
+        "hypothesis_text": "\"The two-stage pretraining (VQVAE then autoregressive transformer) outperforms deterministic continuous latent pretraining for in-context dynamics modeling; continuous latent with MSE leads to instability and poor autoregressive trajectory generation (Appendix D.1).\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Argues that quantized latent representations with next-token modeling are crucial for stable, accurate in-context learning.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "VQVAE pretraining",
+          "deterministic transformer (MSE)",
+          "trajectory generation"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "VQVAE + autoregressive transformer yields better one-shot trajectories than continuous latent + MSE",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "D.1 discusses alternative pretrainings; Figure 13–15 illustrate instability in deterministic variant.",
+        "confidence_score": 0.65,
+        "notes": "Contrast between Zebra's pretraining vs continuous latent baseline."
+      },
+      {
+        "hypothesis_text": "\"Zebra achieves substantial speedups in inference by replacing token-wise autoregressive generation with a frame-wise UNet surrogate conditioned on a dynamics embedding (DYN).\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Posits a causal acceleration mechanism via a surrogate model conditioned on dynamic context.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "token-wise generation",
+          "UNet surrogate",
+          "DYN conditioning"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Frame-wise UNet surrogates accelerate inference while maintaining accuracy",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Table 4 shows speedups; Figure 7–9 describe architecture.",
+        "confidence_score": 0.65,
+        "notes": "Discussed in Section 4.5 and Figure 7."
+      },
+      {
+        "hypothesis_text": "\"The one-shot adaptation performance saturates around three in-context examples; adding more context yields diminishing returns.\"",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Empirically identifies a saturation point for in-context learning with respect to context size.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "n context trajectories",
+          "one-shot error"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": "Performance improves up to n≈3 and then plateaus",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Table 18 in D.8 reports context-size effects.",
+        "confidence_score": 0.6,
+        "notes": "Directly observed in Appendix D.8."
+      },
+      {
+        "hypothesis_text": "\"Zebra can generate completely novel trajectories for new environments, including the initial conditions, and the generated distributions align with the real solver distributions (Wasserstein distance).\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Assumes that generative samples reflect the true dynamics and distribution of trajectories.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "generated trajectories",
+          "real trajectories",
+          "Wasserstein distance"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Generated trajectories approximate ground-truth distributions in Wasserstein sense",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "transferability",
+        "specific_type_details": "Section 4.3; D.3; Figure 19; Table 12–13 discuss fidelity and diversity.",
+        "confidence_score": 0.7,
+        "notes": "Emphasizes unconditional/conditional generation alignment with real data."
+      },
+      {
+        "hypothesis_text": "\"Zebra’s one-shot uncertainty quantification yields calibrated and informative predictive intervals (CRPS, RMSCE) across PDE benchmarks, with better calibration achieved at certain temperatures.\"",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Links temperature, mean predictions, and interval calibration through CRPS/RMSCE metrics.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "CRPS",
+          "RMSCE",
+          "temperature τ",
+          "uncertainty calibration"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Appropriate τ yields well-calibrated uncertainty measures across benchmarks",
+        "functional_type": "statistical",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Table 10–11; Figure 17 illustrate CRPS/RMSCE trade-offs.",
+        "confidence_score": 0.7,
+        "notes": "Discussed in Section 4.4 and 4.6 (uncertainty quantification)."
+      },
+      {
+        "hypothesis_text": "\"Zebra can be used in a hybrid pipeline (Zebra as an encoder + LoRA-tuned UNet) to create a conditioning signal for a neural surrogate, achieving competitive performance with much faster inference than gradient-based methods.\"",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes that integrating Zebra’s learned representations with a surrogate model yields practical speed/accuracy benefits.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "Zebra encoder",
+          "LoRA fine-tuning",
+          "UNet surrogate"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Hybrid Zeb ra + UNet remains competitive across tasks with faster inference",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Section 5/Appendix C discuss the Zebra + UNet hybrid.\n",
+        "confidence_score": 0.6,
+        "notes": "Describes potential practical integration (Section 5)."
+      }
+    ],
+    "source_mode": "pdf",
+    "processing_notes": "The Zebra paper presents a set of explicit and implicit hypotheses about (i) the feasibility and effectiveness of in-context learning for parametric PDEs without gradient updates, (ii) the generative modeling of trajectory distributions and associated uncertainty quantification, (iii) comparative performance against gradient-based baselines, (iv) out-of-distribution generalization, (v) architectural choices (VQVAE quantization, DYN token, frame-wise UNet surrogate) and hyperparameters (codebook size K), and (vi) inference speed and scalability. The hypotheses above are drawn from the Introduction, Methods (Section 3), Experiments (Sections 4–5), and appendices (D.1–D.8). Images, tables, and figures referenced (e.g., Tables 5–13, Figures 3–7, 8–12, 16–21, 22–40) support the classifications and provide empirical grounding for these hypotheses."
+  }
+]
