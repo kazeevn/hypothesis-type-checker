@@ -4,353 +4,102 @@
     "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
     "hypotheses": [
       {
-        "hypothesis_text": "Utility of LDP-based GNNs decreases as feature dimension increases under a fixed privacy budget.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The abstract identifies feature dimension as a key factor affecting utility, implying a systematic relationship between feature dimension and utility under privacy-preserving learning.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "feature_dimension",
-          "privacy_budget",
-          "utility"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "utility decreases as feature_dimension increases",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "other",
-        "specific_type_details": "Relationship between feature dimension and utility under LDP in node feature privacy-preserving GNNs",
-        "confidence_score": 0.6,
-        "notes": "Inferred from the abstract's claim that feature dimension is one of two factors affecting utility."
-      },
-      {
-        "hypothesis_text": "Utility of LDP-based graph learning decreases as neighborhood size increases under a fixed privacy budget.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The abstract highlights neighborhood size as a key factor affecting utility, suggesting a relationship between neighborhood size and utility under LDP.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "neighborhood_size",
-          "privacy_budget",
-          "utility"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "utility decreases as neighborhood_size increases",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "other",
-        "specific_type_details": "Impact of neighborhood size on utility in LDP-based GNNs",
-        "confidence_score": 0.6,
-        "notes": "Based on the abstract's emphasis on neighborhood size as a key factor."
-      },
-      {
-        "hypothesis_text": "Incorporating the High-Order Aggregator (HOA) layer improves node representation aggregation under LDP, leading to higher node classification accuracy than baseline LDP methods.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "HOA layer is proposed to enhance utility; experiments claim improved performance over baselines.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "HOA_layer",
-          "accuracy",
-          "baseline_methods"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "HOA layer increases accuracy",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "comparative_performance",
-        "specific_type_details": "Effect of HOA layer vs baseline LDP methods on node classification accuracy",
-        "confidence_score": 0.65,
-        "notes": "HOA is one of the core layers claimed to enhance utility."
-      },
-      {
-        "hypothesis_text": "Incorporating the Node Feature Regularization (NFR) layer improves node classification accuracy under LDP compared with baselines.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "NFR layer is proposed to improve utility; claimed improvement in experiments.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "NFR_layer",
-          "accuracy",
-          "baseline_methods"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "NFR layer increases accuracy",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "comparative_performance",
-        "specific_type_details": "Effect of NFR layer vs baseline LDP methods on node classification accuracy",
-        "confidence_score": 0.65,
-        "notes": "NFR is another core layer proposed to boost utility."
-      },
-      {
-        "hypothesis_text": "The three-stage pipeline that generalizes LDP protocols for node features yields a better privacy-utility trade-off than standard LDP protocols.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The pipeline aims to generalize LDP protocol design to reduce distortion and improve privacy-utility balance.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "three_stage_pipeline",
-          "privacy_utility_tradeoff",
-          "standard_LDP"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "better privacy-utility trade-off with three-stage pipeline",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "comparative_performance",
-        "specific_type_details": "Three-stage generalized LDP protocol vs standard LDP in node feature privacy-preserving GNNs",
-        "confidence_score": 0.6,
-        "notes": "Based on design claim that three-stage pipeline generalizes LDP protocols."
-      },
-      {
-        "hypothesis_text": "For a given privacy budget, UPGNET achieves higher node classification accuracy than existing LDP-based graph learning methods.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The abstract claims extensive experiments show UPGNET outperforms existing methods in learning utility.",
+        "hypothesis_text": "Extensive experiments on real-world datasets indicate that UPGNET significantly outperforms existing methods in terms of both privacy protection and learning utility.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "The statement attributes a causal effect to using UPGNET: it causes improvements in privacy protection and learning utility relative to baselines, supported by experimental results.",
         "structural_type": "complex",
         "variables_identified": [
           "UPGNET",
           "existing_methods",
-          "privacy_budget",
-          "accuracy"
+          "privacy_protection",
+          "learning_utility"
         ],
         "predictive_type": "directional",
-        "predicted_direction": "UPGNET higher accuracy",
+        "predicted_direction": "UPGNET improves privacy protection and learning utility compared with existing methods",
         "functional_type": "scientific",
         "temporal_type": "confirmatory",
         "specific_type": "comparative_performance",
-        "specific_type_details": "UPGNET vs baselines at fixed epsilon",
-        "confidence_score": 0.7,
-        "notes": "Directly reflects reported comparative performance."
+        "specific_type_details": "Compared to existing methods, UPGNET significantly improves both privacy protection and learning utility as reported in experiments.",
+        "confidence_score": 0.8,
+        "notes": "Explicit comparative performance claim with emphasis on 'significantly'; implies statistical testing in the experimental evaluation."
       },
       {
-        "hypothesis_text": "For comparable utility levels, UPGNET provides stronger privacy protection than existing LDP-based graph learning methods.",
+        "hypothesis_text": "Feature dimension and neighborhood size are the two key factors that affect the utility of privacy-preserving graph learning.",
         "epistemic_type": "associative",
-        "epistemic_justification": "The abstract claims better privacy protection in addition to learning utility.",
-        "structural_type": "complex",
+        "epistemic_justification": "The abstract identifies feature dimension and neighborhood size as the two main factors influencing utility, implying a relationship between these factors and utility.",
+        "structural_type": "simple",
         "variables_identified": [
-          "UPGNET_privacy_protection",
-          "existing_methods_privacy",
-          "utility_similarity"
+          "feature_dimension",
+          "neighborhood_size",
+          "learning_utility"
         ],
-        "predictive_type": "directional",
-        "predicted_direction": "UPGNET offers stronger privacy protection",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "comparative_performance",
-        "specific_type_details": "Privacy protection comparison at similar utility levels",
-        "confidence_score": 0.65,
-        "notes": "Addresses the privacy aspect of the claimed advantage."
-      },
-      {
-        "hypothesis_text": "There exists a privacy-utility trade-off in local differential privacy for graph neural networks, where increasing privacy (smaller epsilon) reduces utility.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "DP theory predicts a trade-off; the abstract discusses privacy concerns and LDP distortions.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "privacy_budget",
-          "epsilon",
-          "utility"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "utility decreases as privacy increases (epsilon decreases)",
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
         "functional_type": "scientific",
         "temporal_type": "confirmatory",
         "specific_type": "other",
-        "specific_type_details": "Privacy-utility trade-off under LDP for graph neural networks",
-        "confidence_score": 0.75,
-        "notes": "General principle of DP applied to the study domain."
+        "specific_type_details": "Describes two factors affecting utility; no explicit directional prediction provided in the abstract.",
+        "confidence_score": 0.65,
+        "notes": "Identifies influencing factors; further empirical analysis would reveal the direction and magnitude of effects."
       },
       {
-        "hypothesis_text": "HOA and NFR layer improvements generalize across real-world datasets.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The abstract reports experiments on real-world datasets, implying cross-dataset consistency of improvements.",
-        "structural_type": "complex",
+        "hypothesis_text": "The High-Order Aggregator (HOA) layer and the Node Feature Regularization (NFR) layer enhance utility in privacy-preserving graph learning.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "The abstract states that UPGNET enhances utility by introducing HOA and NFR layers, implying a causal impact of these components on utility.",
+        "structural_type": "simple",
         "variables_identified": [
           "HOA_layer",
           "NFR_layer",
-          "dataset",
-          "accuracy"
+          "learning_utility"
         ],
         "predictive_type": "directional",
-        "predicted_direction": "improved accuracy with HOA/NFR across datasets",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Cross-dataset generalization of HOA/NFR effects",
-        "confidence_score": 0.5,
-        "notes": "Inference of transferability/generalization from multi-dataset reporting."
-      },
-      {
-        "hypothesis_text": "Generalized LDP protocols for node features reduce data distortion under local DP, improving learning utility.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The emphasis on generalizing LDP protocols suggests reduced distortions and improved utility.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "generalized_LDP_protocols",
-          "distortion",
-          "utility"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "distortion decreases and utility increases",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "other",
-        "specific_type_details": "Impact of generalized node-feature LDP protocols on distortion and utility",
-        "confidence_score": 0.55,
-        "notes": "Derived from the design rationale of generalizing LDP protocols."
-      }
-    ],
-    "source_mode": "abstract",
-    "processing_notes": "The hypotheses above are extracted from the abstract and title of the paper, which emphasize: (a) the identification of feature dimension and neighborhood size as key factors affecting utility under local differential privacy (LDP); (b) the introduction of two core layers (HOA and NFR) and their claimed impact on performance; (c) a three-stage pipeline that generalizes LDP protocols for node features; (d) claimed superior comparative performance of UPGNET in terms of learning utility and privacy protection; and (e) the general discussion of privacy-utility trade-offs in LDP for graph neural networks. Because only the abstract is available, these hypotheses are inferred and formulated as testable predictions that would typically be tested with experiments and ablations in the full paper. If the full text makes explicit null hypotheses or additional hypotheses, those should be added and annotated similarly with precise epistemic and predictive labels."
-  },
-  {
-    "paper_id": "22kNOkkokU",
-    "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-    "hypotheses": [
-      {
-        "hypothesis_text": "By leveraging in-context information during both pre-training and inference, Zebra dynamically adapts to new tasks by conditioning on input sequences that incorporate context example trajectories.",
-        "epistemic_type": "causal",
-        "epistemic_justification": "This describes a causal mechanism: using in-context information causes the model to adapt to new tasks without gradient adaptation.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "in-context information",
-          "adaptation to new tasks"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "In-context conditioning leads to dynamic adaptation to new tasks without gradient updates.",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Tests whether in-context information enables transfer/adaptation to new PDE tasks",
-        "confidence_score": 0.65,
-        "notes": "Derived from abstract; empirical confirmation required."
-      },
-      {
-        "hypothesis_text": "Zebra can be used to generate new trajectories and allows quantifying the uncertainty of the predictions.",
-        "epistemic_type": "descriptive",
-        "epistemic_justification": "Directly stated in the abstract as capabilities of Zebra.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "Zebra",
-          "generated trajectories"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "Zebra generates new trajectories.",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "other",
-        "specific_type_details": "Trajectory generation capability",
-        "confidence_score": 0.75,
-        "notes": "Split here to separately address trajectory generation from uncertainty quantification."
-      },
-      {
-        "hypothesis_text": "Zebra can quantify the uncertainty of its predictions.",
-        "epistemic_type": "descriptive",
-        "epistemic_justification": "The abstract states that Zebra allows quantifying the uncertainty of predictions.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "prediction uncertainty"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "Zebra provides uncertainty estimates alongside predictions.",
-        "functional_type": "statistical",
-        "temporal_type": "confirmatory",
-        "specific_type": "other",
-        "specific_type_details": "Uncertainty quantification capability",
-        "confidence_score": 0.8,
-        "notes": ""
-      },
-      {
-        "hypothesis_text": "Zebra demonstrates superior performance compared to existing approaches across a variety of challenging PDE scenarios.",
-        "epistemic_type": "associative",
-        "epistemic_justification": "The abstract asserts comparative performance and implies a relationship between method and performance.",
-        "structural_type": "complex",
-        "variables_identified": [
-          "Zebra",
-          "existing approaches",
-          "performance across PDE scenarios"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "Zebra achieves superior performance (higher accuracy and robustness) than existing approaches.",
+        "predicted_direction": "HOA_layer and NFR_layer increase learning utility compared with not using them",
         "functional_type": "scientific",
         "temporal_type": "confirmatory",
         "specific_type": "comparative_performance",
-        "specific_type_details": "Superior performance across challenging PDE scenarios",
-        "confidence_score": 0.8,
-        "notes": "Based on abstract's comparison claim."
+        "specific_type_details": "Two components (HOA and NFR) contribute to improved utility under LDP.",
+        "confidence_score": 0.72,
+        "notes": "Ablation or component-wise experiments would typically be used to validate the claimed contribution of each layer."
       },
       {
-        "hypothesis_text": "In-context conditioning via context example trajectories enables Zebra to dynamically adapt to variations in coefficients, forcing terms, and initial conditions.",
+        "hypothesis_text": "UPGNET protects user data privacy under local differential privacy (LDP).",
         "epistemic_type": "causal",
-        "epistemic_justification": "The abstract implies that including context trajectories causes dynamic adaptation to parameter variations.",
+        "epistemic_justification": "Described as a privacy-preserving graph learning framework, implying that using UPGNET leads to privacy protection under LDP.",
         "structural_type": "simple",
         "variables_identified": [
-          "in-context conditioning",
-          "dynamic adaptation to parameter variations"
+          "UPGNET",
+          "privacy_protection"
         ],
         "predictive_type": "directional",
-        "predicted_direction": "In-context conditioning enables dynamic adaptation to parameter variations.",
+        "predicted_direction": "UPGNET yields higher privacy protection than baselines",
         "functional_type": "scientific",
         "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Transfer of adaptation capability to new PDE tasks via in-context sequences",
-        "confidence_score": 0.68,
-        "notes": "If adopted, it supports the claimed adaptation mechanism."
+        "specific_type": "comparative_performance",
+        "specific_type_details": "Compared to baseline LDP methods, UPGNET provides improved privacy protection.",
+        "confidence_score": 0.7,
+        "notes": "Privacy claim contingent on evaluation against baselines; specifics depend on privacy metrics used."
       },
       {
-        "hypothesis_text": "An in-context learning-based generative model can solve parametric PDEs without gradient-based adaptation at inference.",
-        "epistemic_type": "causal",
-        "epistemic_justification": "Design claims gradient-free inference suffices for solving parametric PDEs via in-context learning.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "in-context learning",
-          "gradient-based adaptation at inference",
-          "solving parametric PDEs"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "Gradient-free adaptation suffices to solve parametric PDEs.",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Gradient-free transfer/adaptation across parametric PDEs via in-context learning",
-        "confidence_score": 0.6,
-        "notes": "Core methodological claim; empirical validation needed."
-      },
-      {
-        "hypothesis_text": "In-context information during pre-training and inference improves Zebra's ability to adapt to new PDE tasks.",
-        "epistemic_type": "causal",
-        "epistemic_justification": "The abstract suggests that leveraging in-context information during both pre-training and inference enhances adaptation.",
-        "structural_type": "simple",
-        "variables_identified": [
-          "in-context information during pre-training",
-          "inference adaptability to new tasks"
-        ],
-        "predictive_type": "directional",
-        "predicted_direction": "In-context information during pre-training increases adaptability during inference.",
-        "functional_type": "scientific",
-        "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Effect of in-context pretraining on adaptability to new PDE tasks",
-        "confidence_score": 0.65,
-        "notes": "Reflects training regime impact."
-      },
-      {
-        "hypothesis_text": "Zebra's adaptability and robustness generalize to unseen parametric PDEs.",
+        "hypothesis_text": "The three-stage pipeline generalizes the LDP protocols for node features to privacy-sensitive scenarios.",
         "epistemic_type": "descriptive",
-        "epistemic_justification": "The abstract implies generalization to unseen scenarios in terms of adaptability and robustness.",
-        "structural_type": "complex",
+        "epistemic_justification": "A property of the proposed pipeline is that it generalizes LDP protocols for node features to privacy-sensitive contexts, as claimed in the abstract.",
+        "structural_type": "simple",
         "variables_identified": [
-          "unseen PDE scenarios",
-          "Zebra adaptability",
-          "robustness"
+          "three_stage_pipeline",
+          "LDP_protocols_for_node_features",
+          "privacy_sensitive_scenarios"
         ],
-        "predictive_type": "directional",
-        "predicted_direction": "Zebra maintains high adaptability and robustness on unseen PDEs.",
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
         "functional_type": "scientific",
         "temporal_type": "confirmatory",
-        "specific_type": "transferability",
-        "specific_type_details": "Generalization to unseen parametric PDE tasks",
-        "confidence_score": 0.63,
-        "notes": "Implicit generalization claim described in abstract."
+        "specific_type": "other",
+        "specific_type_details": "Proposes that the pipeline generalizes LDP protocols to more privacy-sensitive contexts.",
+        "confidence_score": 0.65,
+        "notes": "Design/generalization claim; would be evaluated by applying the pipeline to privacy-sensitive settings."
       }
     ],
     "source_mode": "abstract",
-    "processing_notes": "Hypotheses were inferred from the abstract. Some items reflect explicit capabilities (generation, uncertainty quantification, superior performance) while others capture underlying mechanisms (in-context learning enabling adaptation, training-time context) and generalization. Each hypothesis is labeled with a suitable combination of epistemic, structural, predictive, functional, temporal, and specific-type classifications, with brief justification and identified variables."
+    "processing_notes": "Hypotheses were extracted from the abstract and translated into testable statements. Some items are explicit performance claims (H1, H4), others reflect design justifications or identified factors (H3, H2, H5)."
   }
 ]

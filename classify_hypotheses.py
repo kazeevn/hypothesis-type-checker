@@ -18,6 +18,7 @@ from typing import List, Dict, Any, Optional
 from dotenv import load_dotenv
 from openai import OpenAI, OpenAIError
 from pydantic import BaseModel
+import weave
 
 from hypothesis_model import HypothesisClassification
 
@@ -85,6 +86,7 @@ def load_abstracts(abstracts_path: Path) -> List[Dict[str, Any]]:
     return data
 
 
+@weave.op()
 def classify_paper(
     client: OpenAI,
     paper: Dict[str, Any],
@@ -233,7 +235,8 @@ def main():
     
     # Load environment variables
     load_dotenv()
-    
+    weave.init("hypothesis-type-checker")
+
     # Initialize OpenAI client
     api_key = os.getenv('OPENAI_API_KEY')
     if not api_key:

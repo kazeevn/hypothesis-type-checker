@@ -9,4 +9,5 @@ dependencies = [
     "openreview-py>=1.52.7",
     "pandas>=2.3.3",
     "python-dotenv>=1.1.1",
+    "weave>=0.52.9",
 ]
