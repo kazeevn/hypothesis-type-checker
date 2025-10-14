@@ -1,0 +1,9 @@
+[project]
+name = "hypothesis-type-checker"
+version = "0.1.0"
+description = " Checks the type of hypotheses in papers from OpenReview"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openreview-py>=1.52.7",
+]
