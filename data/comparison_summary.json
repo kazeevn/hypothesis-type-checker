@@ -1,111 +1,98 @@
 {
   "abstract_analysis": {
     "mode": "abstract",
-    "total_papers": 2,
-    "total_hypotheses": 18,
-    "avg_hypotheses_per_paper": 9.0,
-    "papers_with_hypotheses": 2,
+    "total_papers": 1,
+    "total_hypotheses": 6,
+    "avg_hypotheses_per_paper": 6.0,
+    "papers_with_hypotheses": 1,
     "papers_without_hypotheses": 0,
     "type_distributions": {
       "epistemic_type": {
-        "associative": 11,
-        "causal": 4,
-        "descriptive": 3
+        "causal": 3,
+        "associative": 2,
+        "descriptive": 1
       },
       "structural_type": {
-        "complex": 10,
-        "simple": 8
+        "simple": 4,
+        "complex": 2
       },
       "predictive_type": {
-        "directional": 18
+        "directional": 4,
+        "non_directional": 2
       },
       "functional_type": {
-        "scientific": 17,
-        "statistical": 1
+        "statistical": 4,
+        "scientific": 2
       },
       "temporal_type": {
-        "confirmatory": 18
+        "exploratory": 1,
+        "confirmatory": 5
       },
       "specific_type": {
-        "other": 6,
-        "comparative_performance": 6,
-        "transferability": 6
+        "other": 2,
+        "comparative_performance": 1,
+        "implementation": 2,
+        "transferability": 1
       }
     }
   },
   "pdf_analysis": {
     "mode": "pdf",
-    "total_papers": 2,
-    "total_hypotheses": 35,
-    "avg_hypotheses_per_paper": 17.5,
-    "papers_with_hypotheses": 2,
+    "total_papers": 1,
+    "total_hypotheses": 12,
+    "avg_hypotheses_per_paper": 12.0,
+    "papers_with_hypotheses": 1,
     "papers_without_hypotheses": 0,
     "type_distributions": {
       "epistemic_type": {
-        "associative": 16,
-        "descriptive": 8,
-        "causal": 11
+        "associative": 3,
+        "causal": 8,
+        "descriptive": 1
       },
       "structural_type": {
-        "complex": 25,
-        "simple": 10
+        "complex": 10,
+        "simple": 2
       },
       "predictive_type": {
-        "directional": 29,
-        "non_directional": 6
+        "directional": 11,
+        "non_directional": 1
       },
       "functional_type": {
-        "statistical": 16,
-        "scientific": 19
+        "scientific": 12
       },
       "temporal_type": {
-        "confirmatory": 35
+        "confirmatory": 12
       },
       "specific_type": {
-        "other": 2,
-        "comparative_performance": 13,
-        "implementation": 13,
-        "transferability": 7
+        "other": 1,
+        "comparative_performance": 7,
+        "implementation": 3,
+        "transferability": 1
       }
     }
   },
   "per_paper_comparison": [
     {
-      "paper_id": "22kNOkkokU",
-      "title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 22,
-      "difference": 14
-    },
-    {
       "paper_id": "2aKHuXdr7Q",
       "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "abstract_hypotheses_count": 10,
-      "pdf_hypotheses_count": 13,
-      "difference": 3
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 12,
+      "difference": 6
     }
   ],
   "matching_fractions": [
     {
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "abstract_hypotheses": 5,
-      "pdf_hypotheses": 12,
-      "matching_hypotheses": 2,
-      "matching_fraction": 0.16666666666666666
-    },
-    {
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "abstract_hypotheses": 4,
+      "abstract_hypotheses": 5,
       "pdf_hypotheses": 7,
       "matching_hypotheses": 0,
       "matching_fraction": 0.0
     }
   ],
   "summary": {
-    "total_additional_hypotheses_in_pdf": 17,
-    "avg_additional_hypotheses_per_paper": 8.5
+    "total_additional_hypotheses_in_pdf": 6,
+    "avg_additional_hypotheses_per_paper": 6.0
   },
   "all_hypotheses_dataframe": [
     {
@@ -113,216 +100,72 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 0,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "other"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 1,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "other"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 2,
-      "epistemic_type": "associative",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 3,
-      "epistemic_type": "associative",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 4,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 5,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 6,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 7,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "other"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 8,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 9,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "other"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 0,
       "epistemic_type": "causal",
       "structural_type": "simple",
       "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 1,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
+      "functional_type": "statistical",
+      "temporal_type": "exploratory",
       "specific_type": "other"
     },
     {
       "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 2,
-      "epistemic_type": "descriptive",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 1,
+      "epistemic_type": "associative",
       "structural_type": "simple",
       "predictive_type": "directional",
       "functional_type": "statistical",
       "temporal_type": "confirmatory",
-      "specific_type": "other"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 3,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
       "specific_type": "comparative_performance"
     },
     {
       "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 2,
+      "epistemic_type": "causal",
+      "structural_type": "simple",
+      "predictive_type": "directional",
+      "functional_type": "statistical",
+      "temporal_type": "confirmatory",
+      "specific_type": "implementation"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 3,
+      "epistemic_type": "causal",
+      "structural_type": "simple",
+      "predictive_type": "directional",
+      "functional_type": "statistical",
+      "temporal_type": "confirmatory",
+      "specific_type": "implementation"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 4,
-      "epistemic_type": "causal",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 5,
-      "epistemic_type": "causal",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 6,
-      "epistemic_type": "causal",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 7,
       "epistemic_type": "descriptive",
       "structural_type": "complex",
-      "predictive_type": "directional",
+      "predictive_type": "non_directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
       "specific_type": "transferability"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 5,
+      "epistemic_type": "associative",
+      "structural_type": "complex",
+      "predictive_type": "non_directional",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
@@ -332,7 +175,7 @@
       "epistemic_type": "associative",
       "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
       "specific_type": "other"
     },
@@ -341,24 +184,24 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 1,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
-      "functional_type": "statistical",
+      "epistemic_type": "causal",
+      "structural_type": "complex",
+      "predictive_type": "directional",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "other"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 2,
-      "epistemic_type": "associative",
+      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "implementation"
     },
     {
       "mode": "pdf",
@@ -368,43 +211,43 @@
       "epistemic_type": "associative",
       "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 4,
-      "epistemic_type": "associative",
+      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 5,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
-      "functional_type": "statistical",
+      "epistemic_type": "causal",
+      "structural_type": "complex",
+      "predictive_type": "directional",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 6,
-      "epistemic_type": "associative",
+      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
       "specific_type": "comparative_performance"
     },
@@ -413,46 +256,46 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 7,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
+      "epistemic_type": "descriptive",
+      "structural_type": "simple",
+      "predictive_type": "non_directional",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "transferability"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 8,
-      "epistemic_type": "associative",
-      "structural_type": "simple",
+      "epistemic_type": "causal",
+      "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "implementation"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 9,
-      "epistemic_type": "associative",
-      "structural_type": "simple",
+      "epistemic_type": "causal",
+      "structural_type": "complex",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 10,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
+      "epistemic_type": "causal",
+      "structural_type": "simple",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
       "specific_type": "comparative_performance"
     },
@@ -461,283 +304,7 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 11,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
-      "functional_type": "statistical",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 12,
       "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 0,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 1,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 2,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "non_directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 3,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 4,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 5,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 6,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 7,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 8,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 9,
-      "epistemic_type": "causal",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 10,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 11,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 12,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 13,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 14,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 15,
-      "epistemic_type": "descriptive",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 16,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 17,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 18,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 19,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 20,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
-      "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "22kNOkkokU",
-      "paper_title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-      "hypothesis_index": 21,
-      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
       "functional_type": "scientific",
