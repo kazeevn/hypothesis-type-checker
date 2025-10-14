@@ -20,7 +20,7 @@ from openai import OpenAI, OpenAIError
 from pydantic import BaseModel
 import weave
 
-from hypothesis_model import HypothesisClassification
+from hypothesis_model import HypothesisClassificationWithExamples
 
 
 CLASSIFICATION_ROLE = (
@@ -58,7 +58,7 @@ Be thorough—research papers often contain multiple hypotheses."""
 
 class HypothesesList(BaseModel):
     """Structured response schema for hypothesis extraction"""
-    hypotheses: List[HypothesisClassification]
+    hypotheses: List[HypothesisClassificationWithExamples]
     processing_notes: str = ""
 
 

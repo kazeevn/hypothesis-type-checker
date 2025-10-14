@@ -284,6 +284,8 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
 ]
 
-HypothesisClassification.Config.json_schema_extra = {
-    "examples": [example.dict() for example in EXAMPLE_CLASSIFICATIONS]
-}
+class HypothesisClassificationWithExamples(HypothesisClassification):
+    class Config:
+        json_schema_extra = {
+            "examples": [example.dict() for example in EXAMPLE_CLASSIFICATIONS]
+        }
