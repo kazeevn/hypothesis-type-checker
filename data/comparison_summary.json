@@ -2,72 +2,69 @@
   "abstract_analysis": {
     "mode": "abstract",
     "total_papers": 1,
-    "total_hypotheses": 6,
-    "avg_hypotheses_per_paper": 6.0,
+    "total_hypotheses": 9,
+    "avg_hypotheses_per_paper": 9.0,
     "papers_with_hypotheses": 1,
     "papers_without_hypotheses": 0,
     "type_distributions": {
       "epistemic_type": {
-        "causal": 3,
-        "associative": 2,
+        "associative": 3,
+        "causal": 5,
         "descriptive": 1
       },
       "structural_type": {
-        "simple": 4,
-        "complex": 2
+        "simple": 6,
+        "complex": 3
       },
       "predictive_type": {
-        "directional": 4,
-        "non_directional": 2
+        "non_directional": 4,
+        "directional": 5
       },
       "functional_type": {
-        "statistical": 4,
-        "scientific": 2
+        "scientific": 9
       },
       "temporal_type": {
-        "exploratory": 1,
-        "confirmatory": 5
+        "confirmatory": 8,
+        "exploratory": 1
       },
       "specific_type": {
-        "other": 2,
-        "comparative_performance": 1,
-        "implementation": 2,
-        "transferability": 1
+        "other": 3,
+        "comparative_performance": 4,
+        "transferability": 1,
+        "implementation": 1
       }
     }
   },
   "pdf_analysis": {
     "mode": "pdf",
     "total_papers": 1,
-    "total_hypotheses": 12,
-    "avg_hypotheses_per_paper": 12.0,
+    "total_hypotheses": 11,
+    "avg_hypotheses_per_paper": 11.0,
     "papers_with_hypotheses": 1,
     "papers_without_hypotheses": 0,
     "type_distributions": {
       "epistemic_type": {
-        "associative": 3,
-        "causal": 8,
-        "descriptive": 1
+        "causal": 7,
+        "associative": 1,
+        "descriptive": 3
       },
       "structural_type": {
-        "complex": 10,
-        "simple": 2
+        "complex": 6,
+        "simple": 5
       },
       "predictive_type": {
-        "directional": 11,
-        "non_directional": 1
+        "directional": 9,
+        "non_directional": 2
       },
       "functional_type": {
-        "scientific": 12
+        "scientific": 11
       },
       "temporal_type": {
-        "confirmatory": 12
+        "confirmatory": 11
       },
       "specific_type": {
-        "other": 1,
-        "comparative_performance": 7,
-        "implementation": 3,
-        "transferability": 1
+        "comparative_performance": 5,
+        "other": 6
       }
     }
   },
@@ -75,24 +72,24 @@
     {
       "paper_id": "2aKHuXdr7Q",
       "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 12,
-      "difference": 6
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 11,
+      "difference": 2
     }
   ],
   "matching_fractions": [
     {
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "abstract_hypotheses": 5,
-      "pdf_hypotheses": 7,
-      "matching_hypotheses": 0,
-      "matching_fraction": 0.0
+      "abstract_hypotheses": 6,
+      "pdf_hypotheses": 8,
+      "matching_hypotheses": 3,
+      "matching_fraction": 0.375
     }
   ],
   "summary": {
-    "total_additional_hypotheses_in_pdf": 6,
-    "avg_additional_hypotheses_per_paper": 6.0
+    "total_additional_hypotheses_in_pdf": 2,
+    "avg_additional_hypotheses_per_paper": 2.0
   },
   "all_hypotheses_dataframe": [
     {
@@ -100,11 +97,11 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 0,
-      "epistemic_type": "causal",
+      "epistemic_type": "associative",
       "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
-      "temporal_type": "exploratory",
+      "predictive_type": "non_directional",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
       "specific_type": "other"
     },
     {
@@ -114,10 +111,10 @@
       "hypothesis_index": 1,
       "epistemic_type": "associative",
       "structural_type": "simple",
-      "predictive_type": "directional",
-      "functional_type": "statistical",
+      "predictive_type": "non_directional",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "other"
     },
     {
       "mode": "abstract",
@@ -127,9 +124,9 @@
       "epistemic_type": "causal",
       "structural_type": "simple",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "abstract",
@@ -139,7 +136,55 @@
       "epistemic_type": "causal",
       "structural_type": "simple",
       "predictive_type": "directional",
-      "functional_type": "statistical",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
+      "specific_type": "comparative_performance"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 4,
+      "epistemic_type": "causal",
+      "structural_type": "complex",
+      "predictive_type": "directional",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
+      "specific_type": "comparative_performance"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 5,
+      "epistemic_type": "causal",
+      "structural_type": "complex",
+      "predictive_type": "directional",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
+      "specific_type": "comparative_performance"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 6,
+      "epistemic_type": "associative",
+      "structural_type": "simple",
+      "predictive_type": "non_directional",
+      "functional_type": "scientific",
+      "temporal_type": "exploratory",
+      "specific_type": "transferability"
+    },
+    {
+      "mode": "abstract",
+      "paper_id": "2aKHuXdr7Q",
+      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "hypothesis_index": 7,
+      "epistemic_type": "causal",
+      "structural_type": "complex",
+      "predictive_type": "directional",
+      "functional_type": "scientific",
       "temporal_type": "confirmatory",
       "specific_type": "implementation"
     },
@@ -147,21 +192,9 @@
       "mode": "abstract",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 4,
+      "hypothesis_index": 8,
       "epistemic_type": "descriptive",
-      "structural_type": "complex",
-      "predictive_type": "non_directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "transferability"
-    },
-    {
-      "mode": "abstract",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 5,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
+      "structural_type": "simple",
       "predictive_type": "non_directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
@@ -172,12 +205,12 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 0,
-      "epistemic_type": "associative",
+      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "other"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
@@ -197,18 +230,18 @@
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 2,
       "epistemic_type": "causal",
-      "structural_type": "complex",
+      "structural_type": "simple",
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 3,
-      "epistemic_type": "associative",
+      "epistemic_type": "causal",
       "structural_type": "complex",
       "predictive_type": "directional",
       "functional_type": "scientific",
@@ -225,7 +258,7 @@
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
@@ -233,11 +266,11 @@
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 5,
       "epistemic_type": "causal",
-      "structural_type": "complex",
+      "structural_type": "simple",
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
@@ -245,7 +278,7 @@
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 6,
       "epistemic_type": "causal",
-      "structural_type": "complex",
+      "structural_type": "simple",
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
@@ -256,60 +289,48 @@
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 7,
-      "epistemic_type": "descriptive",
-      "structural_type": "simple",
-      "predictive_type": "non_directional",
+      "epistemic_type": "associative",
+      "structural_type": "complex",
+      "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "transferability"
+      "specific_type": "comparative_performance"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 8,
-      "epistemic_type": "causal",
-      "structural_type": "complex",
-      "predictive_type": "directional",
+      "epistemic_type": "descriptive",
+      "structural_type": "simple",
+      "predictive_type": "non_directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 9,
-      "epistemic_type": "causal",
+      "epistemic_type": "descriptive",
       "structural_type": "complex",
-      "predictive_type": "directional",
+      "predictive_type": "non_directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
+      "specific_type": "other"
     },
     {
       "mode": "pdf",
       "paper_id": "2aKHuXdr7Q",
       "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
       "hypothesis_index": 10,
-      "epistemic_type": "causal",
+      "epistemic_type": "descriptive",
       "structural_type": "simple",
       "predictive_type": "directional",
       "functional_type": "scientific",
       "temporal_type": "confirmatory",
-      "specific_type": "comparative_performance"
-    },
-    {
-      "mode": "pdf",
-      "paper_id": "2aKHuXdr7Q",
-      "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "hypothesis_index": 11,
-      "epistemic_type": "associative",
-      "structural_type": "complex",
-      "predictive_type": "directional",
-      "functional_type": "scientific",
-      "temporal_type": "confirmatory",
-      "specific_type": "implementation"
+      "specific_type": "other"
     }
   ]
 }

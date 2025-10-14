@@ -20,7 +20,7 @@ from openai import OpenAI, OpenAIError
 from pydantic import BaseModel
 import weave
 
-from hypothesis_model import HypothesisClassificationWithExamples
+from hypothesis_model import HypothesisClassification, EXAMPLE_CLASSIFICATIONS
 
 
 CLASSIFICATION_ROLE = (
@@ -55,10 +55,18 @@ PROMPT_PDF_ADDITIONAL = """Read the ENTIRE paper provided as a PDF. Look through
 
 Be thorough—research papers often contain multiple hypotheses."""
 
+EXAMPLE_CLASSIFICATIONS_PROMPT = (
+    "Example hypothesis classifications using the structured schema:\n"
+    + "\n\n".join(
+        json.dumps(example.model_dump(), indent=2)
+        for example in EXAMPLE_CLASSIFICATIONS
+    )
+)
+
 
 class HypothesesList(BaseModel):
     """Structured response schema for hypothesis extraction"""
-    hypotheses: List[HypothesisClassificationWithExamples]
+    hypotheses: List[HypothesisClassification]
     processing_notes: str = ""
 
 
@@ -75,6 +83,8 @@ def build_prompt(title: str, mode: str, abstract: Optional[str] = None) -> str:
 
     if mode == "pdf":
         sections.insert(1, PROMPT_PDF_ADDITIONAL)
+
+    sections.append(EXAMPLE_CLASSIFICATIONS_PROMPT)
 
     return "\n\n".join(sections)
 
@@ -160,7 +170,7 @@ def classify_paper(
     ]
 
     try:
-        completion = client.beta.chat.completions.parse(
+        completion = client.chat.completions.parse(
             model=model,
             messages=messages,
             response_format=HypothesesList,
@@ -243,7 +253,6 @@ def main():
         raise ValueError("OPENAI_API_KEY not found in environment variables")
     
     client = OpenAI(api_key=api_key)
-    
     print(f"Using model: {args.model}")
     
     # Resolve paths from command-line options

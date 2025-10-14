@@ -160,7 +160,6 @@ class HypothesisClassification(BaseModel):
         use_enum_values = True
 
 
-# Pydantic schema examples built from HypothesisClassification instances.
 EXAMPLE_CLASSIFICATIONS = [
     HypothesisClassification(
         hypothesis_text="Students who eat breakfast will perform better on a math exam",
@@ -283,9 +282,3 @@ EXAMPLE_CLASSIFICATIONS = [
         notes="Implementation hypothesis - verifies engineering design based on scientific principles",
     ),
 ]
-
-class HypothesisClassificationWithExamples(HypothesisClassification):
-    class Config:
-        json_schema_extra = {
-            "examples": [example.dict() for example in EXAMPLE_CLASSIFICATIONS]
-        }
