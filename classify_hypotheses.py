@@ -28,7 +28,7 @@ CLASSIFICATION_ROLE = (
     "Analyze papers carefully to identify and classify all hypotheses."
 )
 
-PROMPT_SHARED_INSTRUCTIONS = """Your task is to identify ALL hypotheses (explicit or implicit) in this paper and classify each one according to the comprehensive taxonomy provided.
+PROMPT_SHARED_INSTRUCTIONS = """Your task is to identify ALL hypotheses (explicit or implicit) in this paper and classify each one according to the comprehensive taxonomy provided. At the same time, you must also avoid duplication, some hypotheses may be mentioned multiple times in different sections of the paper - but they should only be listed once in your output.
 
 A hypothesis can be:
 - An explicit statement about expected relationships or outcomes
