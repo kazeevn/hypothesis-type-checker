@@ -1,0 +1,109 @@
+
+============================================================
+Combined Hypotheses DataFrame
+============================================================
+          mode    paper_id  ... temporal_type            specific_type
+0     abstract  2aKHuXdr7Q  ...  confirmatory  comparative_performance
+1     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
+2     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
+3     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
+4     abstract  2aKHuXdr7Q  ...  confirmatory                    other
+...        ...         ...  ...           ...                      ...
+1794       pdf  bUGdGaNFhi  ...  confirmatory  comparative_performance
+1795       pdf  bUGdGaNFhi  ...  confirmatory          transferability
+1796       pdf  bUGdGaNFhi  ...  confirmatory  comparative_performance
+1797       pdf  bUGdGaNFhi  ...  confirmatory           implementation
+1798       pdf  bUGdGaNFhi  ...  confirmatory           implementation
+
+[1799 rows x 10 columns]
+
+============================================================
+Analysis for ABSTRACT mode
+============================================================
+Total papers: 100
+Total hypotheses found: 633
+Average hypotheses per paper: 6.33
+Papers with hypotheses: 100
+Papers without hypotheses: 0
+
+============================================================
+Analysis for PDF mode
+============================================================
+Total papers: 100
+Total hypotheses found: 1166
+Average hypotheses per paper: 11.66
+Papers with hypotheses: 100
+Papers without hypotheses: 0
+
+============================================================
+Comparative Type Distributions (counts by mode)
+============================================================
+
+Epistemic Type:
+mode            abstract  pdf
+epistemic_type               
+associative          145  352
+causal               333  441
+descriptive          155  373
+
+Structural Type:
+mode             abstract  pdf
+structural_type               
+complex               207  354
+simple                426  812
+
+Predictive Type:
+mode             abstract  pdf
+predictive_type               
+directional           442  776
+non_directional       191  390
+
+Functional Type:
+mode             abstract   pdf
+functional_type                
+scientific            574  1086
+statistical            49    71
+working                10     9
+
+Temporal Type:
+mode           abstract   pdf
+temporal_type                
+confirmatory        554  1061
+exploratory          79   105
+
+Specific Type:
+mode                     abstract  pdf
+specific_type                         
+comparative_performance       137  263
+implementation                135  181
+other                         290  585
+transferability                71  137
+
+============================================================
+Per-Paper Matching Fractions
+============================================================
+      paper_id  ... matching_fraction
+0   038rEwbChh  ...          0.333333
+1   0REM9ydeLZ  ...          0.142857
+2   0VSDl40xMv  ...          0.250000
+3   0ysC6VS0y3  ...          0.333333
+4   1WfWvpiEPE  ...          0.333333
+..         ...  ...               ...
+95  xkV3uCQtJm  ...          0.333333
+96  yTAR011mOF  ...          0.000000
+97  yTWqL3XHCC  ...          0.250000
+98  ybno0ZP44z  ...          0.250000
+99  zUk00sasl6  ...          0.200000
+
+[100 rows x 6 columns]
+
+============================================================
+COMPARISON: Abstract vs PDF
+============================================================
+
+Summary:
+Total additional hypotheses found in PDF mode: 533
+Average additional hypotheses per paper (PDF vs Abstract): 5.33
+Average matching fraction across papers: 0.33
+
+✓ Saved comparison to data/comparison_summary.json

@@ -110,11 +110,6 @@ def print_analysis(analysis: Dict[str, Any]):
     print(f"Average hypotheses per paper: {analysis['avg_hypotheses_per_paper']:.2f}")
     print(f"Papers with hypotheses: {analysis['papers_with_hypotheses']}")
     print(f"Papers without hypotheses: {analysis['papers_without_hypotheses']}")
-    
-    for field in TYPE_FIELDS:
-        print(f"\n{field.replace('_', ' ').title()} Distribution:")
-        for type_name, count in analysis['type_distributions'][field].items():
-            print(f"  {type_name}: {count}")
 
 
 def print_comparative_type_statistics(df: pd.DataFrame):
@@ -168,7 +163,7 @@ def compute_matching_fractions(
         abstract_set = _build_hypothesis_set(abstract_paper)
         pdf_set = _build_hypothesis_set(pdf_paper)
         intersection = abstract_set & pdf_set
-        denominator = len(pdf_set)
+        denominator = len(abstract_set)
         matching_fraction = (len(intersection) / denominator) if denominator else 0.0
 
         rows.append({
@@ -227,22 +222,15 @@ def main():
     
     comparisons = compare_paper_results(abstract_results, pdf_results)
     
-    print("\nPer-paper comparison:")
-    print(f"{'Paper ID':<15} {'Abstract':<10} {'PDF':<10} {'Difference':<12}")
-    print("-" * 60)
-    
-    for comp in comparisons:
-        diff_str = f"+{comp['difference']}" if comp['difference'] > 0 else str(comp['difference'])
-        print(f"{comp['paper_id']:<15} {comp['abstract_hypotheses_count']:<10} "
-              f"{comp['pdf_hypotheses_count']:<10} {diff_str:<12}")
-    
     # Summary statistics
     total_diff = sum(comp['difference'] for comp in comparisons)
     avg_diff = total_diff / len(comparisons) if comparisons else 0
+    avg_matching_fraction = matching_df['matching_fraction'].mean() if not matching_df.empty else 0.0
     
     print("\nSummary:")
     print(f"Total additional hypotheses found in PDF mode: {total_diff}")
     print(f"Average additional hypotheses per paper (PDF vs Abstract): {avg_diff:.2f}")
+    print(f"Average matching fraction across papers: {avg_matching_fraction:.2f}")
     
     # Save comparison
     comparison_output = data_dir / 'comparison_summary.json'

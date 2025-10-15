@@ -20,10 +20,9 @@ OPENAI_API_KEY=your_api_key_here
 
 ## WANDB Logging
 
-Runs launched through `classify_hypotheses.py` initialize [Weights & Biases](https://wandb.ai/) logging via `weave.init`. Authenticate once with `wandb login` or set the following keys in `.env` alongside the OpenAI credentials:
+Runs launched through `classify_hypotheses.py` initialize [Weights & Biases](https://wandb.ai/) logging via `weave.init`. Authenticate once with `wandb login` and set the following keys in `.env` alongside the OpenAI credentials:
 
 ```bash
-WANDB_API_KEY=your_wandb_api_key
 WANDB_PROJECT=hypothesis-type-checker
 WANDB_ENTITY=your_team_or_username
 ```
