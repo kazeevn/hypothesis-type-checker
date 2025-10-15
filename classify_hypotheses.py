@@ -25,7 +25,7 @@ from hypothesis_model import HypothesisClassification, EXAMPLE_CLASSIFICATIONS
 
 CLASSIFICATION_ROLE = (
     "You are an expert in research methodology and hypothesis classification. "
-    "Analyze papers carefully to identify and classify all hypotheses."
+    "Analyze the paper carefully to identify and classify all hypotheses."
 )
 
 PROMPT_SHARED_INSTRUCTIONS = """Your task is to identify ALL hypotheses (explicit or implicit) in this paper and classify each one according to the comprehensive taxonomy provided. At the same time, you must also avoid duplication, some hypotheses may be mentioned multiple times in different sections of the paper - but they should only be listed once in your output.
@@ -52,8 +52,7 @@ PROMPT_PDF_ADDITIONAL = """Read the ENTIRE paper provided as a PDF. Look through
 - Methods section (assumptions and predictions)
 - Results section (tested hypotheses)
 - Discussion/Conclusion (validated or rejected hypotheses)
-
-Be thorough—research papers often contain multiple hypotheses."""
+"""
 
 EXAMPLE_CLASSIFICATIONS_PROMPT = (
     "Example hypothesis classifications using the structured schema:\n"
