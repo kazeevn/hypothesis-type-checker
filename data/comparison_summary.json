@@ -77,62 +77,6 @@
   },
   "per_paper_comparison": [
     {
-      "paper_id": "oRT6H6We48",
-      "title": "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects",
-      "abstract_hypotheses_count": 10,
-      "pdf_hypotheses_count": 13,
-      "difference": 3
-    },
-    {
-      "paper_id": "2gpjvMEAMm",
-      "title": "Skip the Equations: Learning Behavior of Personalized Dynamical Systems Directly From Data",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 8,
-      "difference": 4
-    },
-    {
-      "paper_id": "buwLCdOHxO",
-      "title": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
-      "abstract_hypotheses_count": 3,
-      "pdf_hypotheses_count": 12,
-      "difference": 9
-    },
-    {
-      "paper_id": "yTWqL3XHCC",
-      "title": "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 14,
-      "difference": 10
-    },
-    {
-      "paper_id": "0VSDl40xMv",
-      "title": "DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning",
-      "abstract_hypotheses_count": 9,
-      "pdf_hypotheses_count": 11,
-      "difference": 2
-    },
-    {
-      "paper_id": "4d2dwJN4v1",
-      "title": "Random Registers for Cross-Domain Few-Shot Learning",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 10,
-      "difference": 4
-    },
-    {
-      "paper_id": "Gt138OTYzY",
-      "title": "Diagonal Symmetrization of Neural Network Solvers for the Many-Electron Schr\u00f6dinger Equation",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 9,
-      "difference": 3
-    },
-    {
-      "paper_id": "CS4RyQuTig",
-      "title": "CaDA: Cross-Problem Routing Solver with Constraint-Aware Dual-Attention",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 8,
-      "difference": 1
-    },
-    {
       "paper_id": "F08lzoBgad",
       "title": "In-Context Denoising with One-Layer Transformers: Connections between Attention and Associative Memory Retrieval",
       "abstract_hypotheses_count": 7,
@@ -140,78 +84,22 @@
       "difference": 5
     },
     {
-      "paper_id": "yTAR011mOF",
-      "title": "How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias",
-      "abstract_hypotheses_count": 9,
-      "pdf_hypotheses_count": 10,
-      "difference": 1
-    },
-    {
-      "paper_id": "RmZZ4AeNsl",
-      "title": "Almost Optimal Fully Dynamic $k$-Center Clustering with Recourse",
-      "abstract_hypotheses_count": 3,
-      "pdf_hypotheses_count": 11,
-      "difference": 8
-    },
-    {
-      "paper_id": "teJdFzLnKh",
-      "title": "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+      "paper_id": "tTVYR82Iz6",
+      "title": "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
       "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 16,
-      "difference": 9
-    },
-    {
-      "paper_id": "CY9MlORQs5",
-      "title": "Rethinking Aleatoric and Epistemic Uncertainty",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 10,
-      "difference": 6
-    },
-    {
-      "paper_id": "U08mUogGDM",
-      "title": "Learning to Route LLMs with Confidence Tokens",
-      "abstract_hypotheses_count": 5,
       "pdf_hypotheses_count": 9,
-      "difference": 4
-    },
-    {
-      "paper_id": "DgGF2LEBPS",
-      "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 17,
-      "difference": 11
-    },
-    {
-      "paper_id": "IVUjRWnU6c",
-      "title": "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 14,
-      "difference": 9
-    },
-    {
-      "paper_id": "goVzfYtj58",
-      "title": "Exploring Representations and Interventions in Time Series Foundation Models",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 13,
-      "difference": 6
-    },
-    {
-      "paper_id": "0ysC6VS0y3",
-      "title": "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 5,
-      "difference": -1
-    },
-    {
-      "paper_id": "bPJVWvyII5",
-      "title": "In-Context Deep Learning via Transformer Models",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 14,
-      "difference": 7
+      "difference": 2
     },
     {
       "paper_id": "rxKC8v2uHc",
       "title": "GRAM: A Generative Foundation Reward Model for Reward Generalization",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 11,
+      "difference": 4
+    },
+    {
+      "paper_id": "jnhkY0yCIW",
+      "title": "SEMU: Singular Value Decomposition for Efficient Machine Unlearning",
       "abstract_hypotheses_count": 7,
       "pdf_hypotheses_count": 11,
       "difference": 4
@@ -222,118 +110,6 @@
       "abstract_hypotheses_count": 6,
       "pdf_hypotheses_count": 10,
       "difference": 4
-    },
-    {
-      "paper_id": "uqpML2nbIz",
-      "title": "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
-      "abstract_hypotheses_count": 9,
-      "pdf_hypotheses_count": 12,
-      "difference": 3
-    },
-    {
-      "paper_id": "AhebPqDOMI",
-      "title": "Teaching Transformers Causal Reasoning through Axiomatic Training",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 13,
-      "difference": 6
-    },
-    {
-      "paper_id": "owEhpoKBKC",
-      "title": "Reward-free World Models for Online Imitation Learning",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 10,
-      "difference": 3
-    },
-    {
-      "paper_id": "UWTz4ai3FZ",
-      "title": "LLM Enhancers for GNNs: An Analysis from the Perspective of Causal Mechanism Identification",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 16,
-      "difference": 8
-    },
-    {
-      "paper_id": "KhCKypSaqx",
-      "title": "Learning Time-Aware Causal Representation for Model Generalization in Evolving Domains",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 11,
-      "difference": 4
-    },
-    {
-      "paper_id": "u8kFBce69J",
-      "title": "Neural Genetic Search in Discrete Spaces",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 11,
-      "difference": 3
-    },
-    {
-      "paper_id": "vHr9cdeFfu",
-      "title": "S2-Track: A Simple yet Strong Approach for End-to-End 3D Multi-Object Tracking",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 10,
-      "difference": 4
-    },
-    {
-      "paper_id": "xkV3uCQtJm",
-      "title": "Nonparametric Modern Hopfield Models",
-      "abstract_hypotheses_count": 9,
-      "pdf_hypotheses_count": 11,
-      "difference": 2
-    },
-    {
-      "paper_id": "DDIGCk25BO",
-      "title": "Robust Automatic Modulation Classification with Fuzzy Regularization",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 10,
-      "difference": 5
-    },
-    {
-      "paper_id": "64mHSb9DlQ",
-      "title": "Parameter-Efficient Fine-Tuning of State Space Models",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 25,
-      "difference": 17
-    },
-    {
-      "paper_id": "6srcNB5kCC",
-      "title": "Flex3D: Feed-Forward 3D Generation with Flexible Reconstruction Model and Input View Curation",
-      "abstract_hypotheses_count": 9,
-      "pdf_hypotheses_count": 9,
-      "difference": 0
-    },
-    {
-      "paper_id": "Y8lfuSoqQz",
-      "title": "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 14,
-      "difference": 7
-    },
-    {
-      "paper_id": "9JQXuyzdGL",
-      "title": "Flow-based Domain Randomization for Learning and Sequencing Robotic Skills",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 9,
-      "difference": 5
-    },
-    {
-      "paper_id": "H0ySAzwu8k",
-      "title": "GLGENN: A Novel Parameter-Light Equivariant Neural Networks Architecture Based on Clifford Geometric Algebras",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 9,
-      "difference": 2
-    },
-    {
-      "paper_id": "tTVYR82Iz6",
-      "title": "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 9,
-      "difference": 2
-    },
-    {
-      "paper_id": "kqj2Cn3Sxr",
-      "title": "Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 9,
-      "difference": 3
     },
     {
       "paper_id": "hC7zCFk5Dp",
@@ -350,111 +126,6 @@
       "difference": 10
     },
     {
-      "paper_id": "BkdAnSKNoX",
-      "title": "TLLC: Transfer Learning-based Label Completion for Crowdsourcing",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 11,
-      "difference": 4
-    },
-    {
-      "paper_id": "mzle2Jnt72",
-      "title": "Toward a Unified Theory of Gradient Descent under Generalized Smoothness",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 14,
-      "difference": 8
-    },
-    {
-      "paper_id": "hYxZJycvrz",
-      "title": "Integration-free Kernels for Equivariant Gaussian Process Modelling",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 9,
-      "difference": 4
-    },
-    {
-      "paper_id": "BnPaSXSmz1",
-      "title": "An Online Statistical Framework for Out-of-Distribution Detection",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 8,
-      "difference": 2
-    },
-    {
-      "paper_id": "QWpuqidr53",
-      "title": "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 10,
-      "difference": 5
-    },
-    {
-      "paper_id": "Lm9DXFrcHD",
-      "title": "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 13,
-      "difference": 7
-    },
-    {
-      "paper_id": "zUk00sasl6",
-      "title": "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 8,
-      "difference": 2
-    },
-    {
-      "paper_id": "n3IkEjDq4V",
-      "title": "EasyInv: Toward Fast and Better DDIM Inversion",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 7,
-      "difference": 0
-    },
-    {
-      "paper_id": "pUCYJ9JJuZ",
-      "title": "Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 10,
-      "difference": 3
-    },
-    {
-      "paper_id": "992yMPvMqV",
-      "title": "BinauralFlow: A Causal and Streamable Approach for High-Quality Binaural Speech Synthesis with Flow Matching Models",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 12,
-      "difference": 5
-    },
-    {
-      "paper_id": "6ojzpDczIY",
-      "title": "Global Optimization with a Power-Transformed Objective and Gaussian Smoothing",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 10,
-      "difference": 5
-    },
-    {
-      "paper_id": "Y7GpMDrWG4",
-      "title": "Maintaining Proportional Committees with Dynamic Candidate Sets",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 16,
-      "difference": 12
-    },
-    {
-      "paper_id": "0REM9ydeLZ",
-      "title": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 9,
-      "difference": 2
-    },
-    {
-      "paper_id": "VNLmfMJi3w",
-      "title": "Stay-Positive: A Case for Ignoring Real Image Features in Fake Image Detection",
-      "abstract_hypotheses_count": 3,
-      "pdf_hypotheses_count": 17,
-      "difference": 14
-    },
-    {
-      "paper_id": "jnhkY0yCIW",
-      "title": "SEMU: Singular Value Decomposition for Efficient Machine Unlearning",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 11,
-      "difference": 4
-    },
-    {
       "paper_id": "bUGdGaNFhi",
       "title": "TimePoint: Accelerated Time Series Alignment via Self-Supervised Keypoint and Descriptor Learning",
       "abstract_hypotheses_count": 7,
@@ -462,46 +133,11 @@
       "difference": 7
     },
     {
-      "paper_id": "w0xYx9CJhY",
-      "title": "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+      "paper_id": "u8kFBce69J",
+      "title": "Neural Genetic Search in Discrete Spaces",
       "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 15,
-      "difference": 7
-    },
-    {
-      "paper_id": "EHqQaBYYlE",
-      "title": "Active Evaluation Acquisition for Efficient LLM Benchmarking",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 14,
-      "difference": 9
-    },
-    {
-      "paper_id": "73EwiOrN8W",
-      "title": "Graph-Assisted Stitching for Offline Hierarchical Reinforcement Learning",
-      "abstract_hypotheses_count": 11,
-      "pdf_hypotheses_count": 10,
-      "difference": -1
-    },
-    {
-      "paper_id": "LO7ciRpjI5",
-      "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
-      "abstract_hypotheses_count": 10,
-      "pdf_hypotheses_count": 10,
-      "difference": 0
-    },
-    {
-      "paper_id": "8V6MEtSnlR",
-      "title": "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 9,
-      "difference": 5
-    },
-    {
-      "paper_id": "vOxaD3hhPt",
-      "title": "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 12,
-      "difference": 6
+      "pdf_hypotheses_count": 11,
+      "difference": 3
     },
     {
       "paper_id": "22kNOkkokU",
@@ -511,81 +147,67 @@
       "difference": 0
     },
     {
+      "paper_id": "bPJVWvyII5",
+      "title": "In-Context Deep Learning via Transformer Models",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 14,
+      "difference": 7
+    },
+    {
+      "paper_id": "n3IkEjDq4V",
+      "title": "EasyInv: Toward Fast and Better DDIM Inversion",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 7,
+      "difference": 0
+    },
+    {
+      "paper_id": "KhCKypSaqx",
+      "title": "Learning Time-Aware Causal Representation for Model Generalization in Evolving Domains",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 11,
+      "difference": 4
+    },
+    {
+      "paper_id": "Y7GpMDrWG4",
+      "title": "Maintaining Proportional Committees with Dynamic Candidate Sets",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 16,
+      "difference": 12
+    },
+    {
+      "paper_id": "0VSDl40xMv",
+      "title": "DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 11,
+      "difference": 2
+    },
+    {
+      "paper_id": "hYxZJycvrz",
+      "title": "Integration-free Kernels for Equivariant Gaussian Process Modelling",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 9,
+      "difference": 4
+    },
+    {
+      "paper_id": "992yMPvMqV",
+      "title": "BinauralFlow: A Causal and Streamable Approach for High-Quality Binaural Speech Synthesis with Flow Matching Models",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 12,
+      "difference": 5
+    },
+    {
+      "paper_id": "C9tD7ZLew4",
+      "title": "Best Subset Selection: Optimal Pursuit for Feature Selection and Elimination",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 18,
+      "difference": 13
+    },
+    {
       "paper_id": "038rEwbChh",
       "title": "Semi-Supervised Blind Quality Assessment with Confidence-quantifiable Pseudo-label Learning for Authentic Images",
       "abstract_hypotheses_count": 9,
       "pdf_hypotheses_count": 10,
       "difference": 1
-    },
-    {
-      "paper_id": "sElAqKsJrQ",
-      "title": "Provably Efficient RL for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 11,
-      "difference": 3
-    },
-    {
-      "paper_id": "ITMu1pZTFo",
-      "title": "Attention-Only Transformers via Unrolled Subspace Denoising",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 9,
-      "difference": 4
-    },
-    {
-      "paper_id": "ybno0ZP44z",
-      "title": "Improved Regret Analysis in Gaussian Process Bandits: Optimality for Noiseless Reward, RKHS norm, and Non-Stationary Variance",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 10,
-      "difference": 6
-    },
-    {
-      "paper_id": "Kz1zCJRr1r",
-      "title": "Measuring Representational Shifts in Continual Learning: A Linear Transformation Perspective",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 20,
-      "difference": 14
-    },
-    {
-      "paper_id": "2QaqxseJYT",
-      "title": "The Polynomial Stein Discrepancy for Assessing Moment Convergence",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 19,
-      "difference": 12
-    },
-    {
-      "paper_id": "VzFXb6Au58",
-      "title": "Contradiction Retrieval via Contrastive Learning with Sparsity",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 17,
-      "difference": 10
-    },
-    {
-      "paper_id": "Um7XmQEWu5",
-      "title": "Towards Robust Influence Functions with Flat Validation Minima",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 13,
-      "difference": 6
-    },
-    {
-      "paper_id": "Jwe5FJ8QGx",
-      "title": "Preference Optimization for Combinatorial Optimization Problems",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 9,
-      "difference": 4
-    },
-    {
-      "paper_id": "skoBTs4ke4",
-      "title": "Delay-DSGN: A Dynamic Spiking Graph Neural Network with Delay Mechanisms for Evolving Graph",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 9,
-      "difference": 3
-    },
-    {
-      "paper_id": "Fvq9ogLnLN",
-      "title": "Scaling Collapse Reveals Universal Dynamics in Compute-Optimally Trained Neural Networks",
-      "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 13,
-      "difference": 6
     },
     {
       "paper_id": "ULZHqJU4ZC",
@@ -595,11 +217,109 @@
       "difference": 4
     },
     {
+      "paper_id": "9JQXuyzdGL",
+      "title": "Flow-based Domain Randomization for Learning and Sequencing Robotic Skills",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 9,
+      "difference": 5
+    },
+    {
+      "paper_id": "CS4RyQuTig",
+      "title": "CaDA: Cross-Problem Routing Solver with Constraint-Aware Dual-Attention",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 8,
+      "difference": 1
+    },
+    {
+      "paper_id": "BnPaSXSmz1",
+      "title": "An Online Statistical Framework for Out-of-Distribution Detection",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 8,
+      "difference": 2
+    },
+    {
+      "paper_id": "kcE0TdWKji",
+      "title": "A Unified Framework for Generalization Error Analysis of Learning with Arbitrary Discrete Weak Features",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 7,
+      "difference": 2
+    },
+    {
+      "paper_id": "Jwe5FJ8QGx",
+      "title": "Preference Optimization for Combinatorial Optimization Problems",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 9,
+      "difference": 4
+    },
+    {
+      "paper_id": "ZawsPjlIGu",
+      "title": "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 19,
+      "difference": 13
+    },
+    {
+      "paper_id": "BkdAnSKNoX",
+      "title": "TLLC: Transfer Learning-based Label Completion for Crowdsourcing",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 11,
+      "difference": 4
+    },
+    {
+      "paper_id": "2FDsh5D2Th",
+      "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 11,
+      "difference": 6
+    },
+    {
+      "paper_id": "1WfWvpiEPE",
+      "title": "Optimal Auction Design in the Joint Advertising",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 6,
+      "difference": 0
+    },
+    {
       "paper_id": "LD0qNRusFo",
       "title": "Accelerating Quantum Reinforcement Learning with a Quantum Natural Policy Gradient Based Approach",
       "abstract_hypotheses_count": 4,
       "pdf_hypotheses_count": 10,
       "difference": 6
+    },
+    {
+      "paper_id": "VNLmfMJi3w",
+      "title": "Stay-Positive: A Case for Ignoring Real Image Features in Fake Image Detection",
+      "abstract_hypotheses_count": 3,
+      "pdf_hypotheses_count": 17,
+      "difference": 14
+    },
+    {
+      "paper_id": "2aKHuXdr7Q",
+      "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 14,
+      "difference": 7
+    },
+    {
+      "paper_id": "UWTz4ai3FZ",
+      "title": "LLM Enhancers for GNNs: An Analysis from the Perspective of Causal Mechanism Identification",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 16,
+      "difference": 8
+    },
+    {
+      "paper_id": "DgGF2LEBPS",
+      "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 17,
+      "difference": 11
+    },
+    {
+      "paper_id": "73EwiOrN8W",
+      "title": "Graph-Assisted Stitching for Offline Hierarchical Reinforcement Learning",
+      "abstract_hypotheses_count": 11,
+      "pdf_hypotheses_count": 10,
+      "difference": -1
     },
     {
       "paper_id": "S22CMkkQzY",
@@ -609,53 +329,46 @@
       "difference": 1
     },
     {
-      "paper_id": "mruyFvKDKq",
-      "title": "Invariant Deep Uplift Modeling for Incentive Assignment in Online Marketing via Probability of Necessity and Sufficiency",
-      "abstract_hypotheses_count": 9,
+      "paper_id": "LO7ciRpjI5",
+      "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
+      "abstract_hypotheses_count": 10,
       "pdf_hypotheses_count": 10,
-      "difference": 1
+      "difference": 0
     },
     {
-      "paper_id": "CXN1Myzsp4",
-      "title": "LapSum - One Method to Differentiate Them All: Ranking, Sorting and Top-k Selection",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 13,
-      "difference": 8
-    },
-    {
-      "paper_id": "IfWKVF6LfY",
-      "title": "DPO Meets PPO: Reinforced Token Optimization for RLHF",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 10,
-      "difference": 5
-    },
-    {
-      "paper_id": "kxFu9rQ0Mu",
-      "title": "Aligning Spoken Dialogue Models from User Interactions",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 17,
-      "difference": 9
-    },
-    {
-      "paper_id": "c16m2kUTLZ",
-      "title": "No Soundness in the Real World: On the Challenges of the Verification of Deployed Neural Networks",
+      "paper_id": "0REM9ydeLZ",
+      "title": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
       "abstract_hypotheses_count": 7,
-      "pdf_hypotheses_count": 10,
+      "pdf_hypotheses_count": 9,
+      "difference": 2
+    },
+    {
+      "paper_id": "Gt138OTYzY",
+      "title": "Diagonal Symmetrization of Neural Network Solvers for the Many-Electron Schr\u00f6dinger Equation",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 9,
       "difference": 3
     },
     {
-      "paper_id": "W0GrWqqTJo",
-      "title": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 10,
-      "difference": 4
+      "paper_id": "jMNQaNbjQl",
+      "title": "Leveraging Offline Data in Linear Latent Contextual Bandits",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 14,
+      "difference": 6
     },
     {
-      "paper_id": "JRg8P2bX8P",
-      "title": "Step-DAD: Semi-Amortized Policy-Based Bayesian Experimental Design",
-      "abstract_hypotheses_count": 3,
-      "pdf_hypotheses_count": 10,
-      "difference": 7
+      "paper_id": "goVzfYtj58",
+      "title": "Exploring Representations and Interventions in Time Series Foundation Models",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 13,
+      "difference": 6
+    },
+    {
+      "paper_id": "mzle2Jnt72",
+      "title": "Toward a Unified Theory of Gradient Descent under Generalized Smoothness",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 14,
+      "difference": 8
     },
     {
       "paper_id": "JFafMSAjUm",
@@ -665,18 +378,88 @@
       "difference": 9
     },
     {
-      "paper_id": "aoLFIUlyPE",
-      "title": "BCE vs. CE in Deep Feature Learning",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 12,
+      "paper_id": "9Klg7ce8D7",
+      "title": "Compressing tree ensembles through Level-wise Optimization and Pruning",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 11,
       "difference": 7
     },
     {
-      "paper_id": "2aKHuXdr7Q",
-      "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-      "abstract_hypotheses_count": 7,
+      "paper_id": "IfWKVF6LfY",
+      "title": "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 10,
+      "difference": 5
+    },
+    {
+      "paper_id": "xkV3uCQtJm",
+      "title": "Nonparametric Modern Hopfield Models",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 11,
+      "difference": 2
+    },
+    {
+      "paper_id": "RmZZ4AeNsl",
+      "title": "Almost Optimal Fully Dynamic $k$-Center Clustering with Recourse",
+      "abstract_hypotheses_count": 3,
+      "pdf_hypotheses_count": 11,
+      "difference": 8
+    },
+    {
+      "paper_id": "yTWqL3XHCC",
+      "title": "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+      "abstract_hypotheses_count": 4,
       "pdf_hypotheses_count": 14,
+      "difference": 10
+    },
+    {
+      "paper_id": "Lm9DXFrcHD",
+      "title": "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 13,
       "difference": 7
+    },
+    {
+      "paper_id": "0ysC6VS0y3",
+      "title": "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 5,
+      "difference": -1
+    },
+    {
+      "paper_id": "JRg8P2bX8P",
+      "title": "Step-DAD: Semi-Amortized Policy-Based Bayesian Experimental Design",
+      "abstract_hypotheses_count": 3,
+      "pdf_hypotheses_count": 10,
+      "difference": 7
+    },
+    {
+      "paper_id": "buwLCdOHxO",
+      "title": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+      "abstract_hypotheses_count": 3,
+      "pdf_hypotheses_count": 12,
+      "difference": 9
+    },
+    {
+      "paper_id": "VzFXb6Au58",
+      "title": "Contradiction Retrieval via Contrastive Learning with Sparsity",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 17,
+      "difference": 10
+    },
+    {
+      "paper_id": "oRT6H6We48",
+      "title": "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects",
+      "abstract_hypotheses_count": 10,
+      "pdf_hypotheses_count": 13,
+      "difference": 3
+    },
+    {
+      "paper_id": "DDIGCk25BO",
+      "title": "Robust Automatic Modulation Classification with Fuzzy Regularization",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 10,
+      "difference": 5
     },
     {
       "paper_id": "3lsEeqmvpz",
@@ -693,24 +476,73 @@
       "difference": 2
     },
     {
-      "paper_id": "1WfWvpiEPE",
-      "title": "Optimal Auction Design in the Joint Advertising",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 6,
-      "difference": 0
+      "paper_id": "U08mUogGDM",
+      "title": "Learning to Route LLMs with Confidence Tokens",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 9,
+      "difference": 4
     },
     {
-      "paper_id": "kcE0TdWKji",
-      "title": "A Unified Framework for Generalization Error Analysis of Learning with Arbitrary Discrete Weak Features",
+      "paper_id": "teJdFzLnKh",
+      "title": "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 16,
+      "difference": 9
+    },
+    {
+      "paper_id": "EHqQaBYYlE",
+      "title": "Active Evaluation Acquisition for Efficient LLM Benchmarking",
       "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 7,
+      "pdf_hypotheses_count": 14,
+      "difference": 9
+    },
+    {
+      "paper_id": "yTAR011mOF",
+      "title": "How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 10,
+      "difference": 1
+    },
+    {
+      "paper_id": "CY9MlORQs5",
+      "title": "Rethinking Aleatoric and Epistemic Uncertainty",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 10,
+      "difference": 6
+    },
+    {
+      "paper_id": "4d2dwJN4v1",
+      "title": "Random Registers for Cross-Domain Few-Shot Learning",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 10,
+      "difference": 4
+    },
+    {
+      "paper_id": "kqj2Cn3Sxr",
+      "title": "Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 9,
+      "difference": 3
+    },
+    {
+      "paper_id": "H0ySAzwu8k",
+      "title": "GLGENN: A Novel Parameter-Light Equivariant Neural Networks Architecture Based on Clifford Geometric Algebras",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 9,
       "difference": 2
     },
     {
-      "paper_id": "2FDsh5D2Th",
-      "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
-      "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 11,
+      "paper_id": "AhebPqDOMI",
+      "title": "Teaching Transformers Causal Reasoning through Axiomatic Training",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 13,
+      "difference": 6
+    },
+    {
+      "paper_id": "l7ZmdeFyM1",
+      "title": "Training High Performance Spiking Neural Network  by Temporal Model Calibration",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 12,
       "difference": 6
     },
     {
@@ -721,32 +553,39 @@
       "difference": 5
     },
     {
-      "paper_id": "jMNQaNbjQl",
-      "title": "Leveraging Offline Data in Linear Latent Contextual Bandits",
-      "abstract_hypotheses_count": 8,
-      "pdf_hypotheses_count": 14,
-      "difference": 6
+      "paper_id": "c16m2kUTLZ",
+      "title": "No Soundness in the Real World: On the Challenges of the Verification of Deployed Neural Networks",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 10,
+      "difference": 3
     },
     {
-      "paper_id": "ZawsPjlIGu",
-      "title": "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 19,
-      "difference": 13
+      "paper_id": "8V6MEtSnlR",
+      "title": "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 9,
+      "difference": 5
     },
     {
-      "paper_id": "BUhYurycps",
-      "title": "Topological Signatures of Adversaries in Multimodal Alignments",
+      "paper_id": "6srcNB5kCC",
+      "title": "Flex3D: Feed-Forward 3D Generation with Flexible Reconstruction Model and Input View Curation",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 9,
+      "difference": 0
+    },
+    {
+      "paper_id": "2gpjvMEAMm",
+      "title": "Skip the Equations: Learning Behavior of Personalized Dynamical Systems Directly From Data",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 8,
+      "difference": 4
+    },
+    {
+      "paper_id": "CXN1Myzsp4",
+      "title": "LapSum - One Method to Differentiate Them All: Ranking, Sorting and Top-k Selection",
       "abstract_hypotheses_count": 5,
       "pdf_hypotheses_count": 13,
       "difference": 8
-    },
-    {
-      "paper_id": "GazlTYxZss",
-      "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
-      "abstract_hypotheses_count": 6,
-      "pdf_hypotheses_count": 13,
-      "difference": 7
     },
     {
       "paper_id": "ThK6o74QLc",
@@ -756,25 +595,186 @@
       "difference": 4
     },
     {
-      "paper_id": "l7ZmdeFyM1",
-      "title": "Training High Performance Spiking Neural Network  by Temporal Model Calibration",
+      "paper_id": "Fvq9ogLnLN",
+      "title": "Scaling Collapse Reveals Universal Dynamics in Compute-Optimally Trained Neural Networks",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 13,
+      "difference": 6
+    },
+    {
+      "paper_id": "IVUjRWnU6c",
+      "title": "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 14,
+      "difference": 9
+    },
+    {
+      "paper_id": "2QaqxseJYT",
+      "title": "The Polynomial Stein Discrepancy for Assessing Moment Convergence",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 19,
+      "difference": 12
+    },
+    {
+      "paper_id": "mruyFvKDKq",
+      "title": "Invariant Deep Uplift Modeling for Incentive Assignment in Online Marketing via Probability of Necessity and Sufficiency",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 10,
+      "difference": 1
+    },
+    {
+      "paper_id": "Um7XmQEWu5",
+      "title": "Towards Robust Influence Functions with Flat Validation Minima",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 13,
+      "difference": 6
+    },
+    {
+      "paper_id": "W0GrWqqTJo",
+      "title": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 10,
+      "difference": 4
+    },
+    {
+      "paper_id": "kxFu9rQ0Mu",
+      "title": "Aligning Spoken Dialogue Models from User Interactions",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 17,
+      "difference": 9
+    },
+    {
+      "paper_id": "vOxaD3hhPt",
+      "title": "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
       "abstract_hypotheses_count": 6,
       "pdf_hypotheses_count": 12,
       "difference": 6
     },
     {
-      "paper_id": "9Klg7ce8D7",
-      "title": "Compressing tree ensembles through Level-wise Optimization and Pruning",
-      "abstract_hypotheses_count": 4,
-      "pdf_hypotheses_count": 11,
+      "paper_id": "aoLFIUlyPE",
+      "title": "BCE vs. CE in Deep Feature Learning",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 12,
       "difference": 7
     },
     {
-      "paper_id": "C9tD7ZLew4",
-      "title": "Best Subset Selection: Optimal Pursuit for Feature Selection and Elimination",
+      "paper_id": "Y8lfuSoqQz",
+      "title": "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 14,
+      "difference": 7
+    },
+    {
+      "paper_id": "uqpML2nbIz",
+      "title": "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
+      "abstract_hypotheses_count": 9,
+      "pdf_hypotheses_count": 12,
+      "difference": 3
+    },
+    {
+      "paper_id": "sElAqKsJrQ",
+      "title": "Provably Efficient RL for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 11,
+      "difference": 3
+    },
+    {
+      "paper_id": "zUk00sasl6",
+      "title": "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 8,
+      "difference": 2
+    },
+    {
+      "paper_id": "skoBTs4ke4",
+      "title": "Delay-DSGN: A Dynamic Spiking Graph Neural Network with Delay Mechanisms for Evolving Graph",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 9,
+      "difference": 3
+    },
+    {
+      "paper_id": "w0xYx9CJhY",
+      "title": "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 15,
+      "difference": 7
+    },
+    {
+      "paper_id": "vHr9cdeFfu",
+      "title": "S2-Track: A Simple yet Strong Approach for End-to-End 3D Multi-Object Tracking",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 10,
+      "difference": 4
+    },
+    {
+      "paper_id": "owEhpoKBKC",
+      "title": "Reward-free World Models for Online Imitation Learning",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 10,
+      "difference": 3
+    },
+    {
+      "paper_id": "QWpuqidr53",
+      "title": "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective",
       "abstract_hypotheses_count": 5,
-      "pdf_hypotheses_count": 18,
-      "difference": 13
+      "pdf_hypotheses_count": 10,
+      "difference": 5
+    },
+    {
+      "paper_id": "64mHSb9DlQ",
+      "title": "Parameter-Efficient Fine-Tuning of State Space Models",
+      "abstract_hypotheses_count": 8,
+      "pdf_hypotheses_count": 25,
+      "difference": 17
+    },
+    {
+      "paper_id": "BUhYurycps",
+      "title": "Topological Signatures of Adversaries in Multimodal Alignments",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 13,
+      "difference": 8
+    },
+    {
+      "paper_id": "ITMu1pZTFo",
+      "title": "Attention-Only Transformers via Unrolled Subspace Denoising",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 9,
+      "difference": 4
+    },
+    {
+      "paper_id": "GazlTYxZss",
+      "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 13,
+      "difference": 7
+    },
+    {
+      "paper_id": "ybno0ZP44z",
+      "title": "Improved Regret Analysis in Gaussian Process Bandits: Optimality for Noiseless Reward, RKHS norm, and Non-Stationary Variance",
+      "abstract_hypotheses_count": 4,
+      "pdf_hypotheses_count": 10,
+      "difference": 6
+    },
+    {
+      "paper_id": "6ojzpDczIY",
+      "title": "Global Optimization with a Power-Transformed Objective and Gaussian Smoothing",
+      "abstract_hypotheses_count": 5,
+      "pdf_hypotheses_count": 10,
+      "difference": 5
+    },
+    {
+      "paper_id": "pUCYJ9JJuZ",
+      "title": "Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning",
+      "abstract_hypotheses_count": 7,
+      "pdf_hypotheses_count": 10,
+      "difference": 3
+    },
+    {
+      "paper_id": "Kz1zCJRr1r",
+      "title": "Measuring Representational Shifts in Continual Learning: A Linear Transformation Perspective",
+      "abstract_hypotheses_count": 6,
+      "pdf_hypotheses_count": 20,
+      "difference": 14
     }
   ],
   "matching_fractions": [

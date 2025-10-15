@@ -8,6 +8,7 @@ from collections import Counter
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Tuple
 import pandas as pd
+import matplotlib.pyplot as plt
 
 
 def load_results(file_path: Path) -> List[Dict[str, Any]]:
@@ -137,6 +138,45 @@ def print_comparative_type_statistics(df: pd.DataFrame):
         print(pivot)
 
 
+def plot_comparative_type_distributions(df: pd.DataFrame, output_path: Path) -> None:
+    """Render grouped bar charts comparing type distributions across modes."""
+    if df.empty:
+        return
+
+    fig, axes = plt.subplots(2, 3, figsize=(18, 10))
+    axes = axes.flatten()
+
+    for ax, field in zip(axes, TYPE_FIELDS):
+        pivot = (
+            df.pivot_table(
+                index=field,
+                columns='mode',
+                values='hypothesis_index',
+                aggfunc='count',
+                fill_value=0,
+            )
+            .sort_index()
+        )
+        if pivot.empty:
+            ax.axis('off')
+            continue
+
+        pivot.plot(kind='bar', ax=ax, xlabel='')
+        ax.set_title(field.replace('_', ' ').title())
+        # ax.set_xlabel('Classification')
+        ax.set_ylabel('Hypothesis count')
+        plt.setp(ax.get_xticklabels(), rotation=30, ha='right')
+        ax.legend(title='Mode')
+        ax.grid(axis='y', linestyle='--', linewidth=0.5, alpha=0.4)
+
+    for idx in range(len(TYPE_FIELDS), len(axes)):
+        axes[idx].axis('off')
+
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=300)
+    plt.close(fig)
+
+
 def _hypothesis_signature(hypothesis: Dict[str, Any]) -> Tuple[Any, ...]:
     return tuple(hypothesis.get(field) for field in TYPE_FIELDS)
 
@@ -207,6 +247,9 @@ def main():
     # Comparative statistics
     print_comparative_type_statistics(all_hypotheses_df)
 
+    plot_path = data_dir / 'comparative_type_distributions.webp'
+    plot_comparative_type_distributions(all_hypotheses_df, plot_path)
+
     # Matching fractions
     matching_df = compute_matching_fractions(abstract_results, pdf_results)
 
@@ -248,6 +291,7 @@ def main():
         }, f, indent=2)
     
     print(f"\n✓ Saved comparison to {comparison_output}")
+    print(f"✓ Saved comparative type distribution plot to {plot_path}")
 
 
 if __name__ == "__main__":
