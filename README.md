@@ -1,162 +1,103 @@
-# Hypothesis Classification Guide
+# Hypothesis Type Checker
 
-This guide explains how to use the OpenAI API to classify hypotheses from research papers.
+Tools for fetching research papers, classifying their hypotheses with the OpenAI API, and comparing results between abstract-only and full-PDF analyses.
+
+## Taxonomy Reference
+
+Hypothesis taxonomy definitions and exemplar classifications live in `hypothesis_model.py`. The schema is based on Andrey Ustyuzhanin’s “Architecture of Inquiry” presentation: https://gamma.app/docs/The-Architecture-of-Inquiry-A-Comprehensive-Taxonomy-of-Scientifi-mqdpe9i68rtf6os
 
 ## Prerequisites
 
-1. **Environment Setup**: Ensure you have a `.env` file with your OpenAI API key:
-   ```
-   OPENAI_API_KEY=your_api_key_here
-   ```
+- Python 3.13 (managed automatically by [uv](https://docs.astral.sh/uv/))
+- `uv` installed (follow the installation guide above)
+- OpenAI API access with `OPENAI_API_KEY`
 
-2. **Data**: You need:
-   - `data/abstracts.json` - Paper metadata with titles and abstracts
-   - `data/pdfs/` - Directory containing PDF files named `paper_<number>.pdf`
-
-## Running the Classification
-
-The main script `classify_hypotheses.py` runs in two modes:
-
-### Mode 1: Abstract-based Classification
-Uses only the paper title and abstract to identify and classify hypotheses.
-
-### Mode 2: PDF-based Classification
-Uploads the full PDF to OpenAI API and analyzes the entire paper for hypotheses.
-
-### Usage
+Create a `.env` file in the project root with:
 
 ```bash
-# Make sure you're in the virtual environment
-cd /home/kna/hypothesis-type-checker
-
-# Run the classification script with default model (gpt-5-nano)
-.venv/bin/python classify_hypotheses.py
-
-# Or specify a different model
-.venv/bin/python classify_hypotheses.py --model gpt-4o-2024-08-06
-
-# Override data locations (example)
-.venv/bin/python classify_hypotheses.py \
-   --abstracts-path custom_data/abstracts.json \
-   --pdf-dir custom_data/pdfs \
-   --abstract-output results/abstract_classifications.json
-
-# See all options
-.venv/bin/python classify_hypotheses.py --help
+OPENAI_API_KEY=your_api_key_here
 ```
 
-The script will (using default paths):
-1. Process all papers in abstract mode first
-2. Save results to `data/classifications_abstract.json` (customizable via `--abstract-output`)
-3. Process all papers in PDF mode
-4. Save results to `classifications_pdf.json` in the parent directory of `--pdf-dir`
+## WANDB Logging
 
-### Output Format
-
-Each result file contains an array of paper objects with:
-- `paper_id`: Unique identifier
-- `paper_title`: Paper title
-- `hypotheses`: Array of classified hypotheses
-- `source_mode`: Either "abstract" or "pdf"
-- `processing_notes`: Any errors or notes
-
-Each hypothesis includes:
-- `hypothesis_text`: The actual hypothesis text
-- Classification across multiple axes:
-  - `epistemic_type`: descriptive/associative/causal
-  - `structural_type`: simple/complex
-  - `predictive_type`: directional/non_directional
-  - `functional_type`: scientific/statistical/working
-  - `temporal_type`: exploratory/confirmatory
-  - `specific_type`: comparative_performance/transferability/implementation/other
-- `variables_identified`: List of variables
-- `confidence_score`: 0-1 confidence rating
-- Justifications for classifications
-
-## Comparing Results
-
-After running the classification, you can analyze and compare the results:
+Runs launched through `classify_hypotheses.py` initialize [Weights & Biases](https://wandb.ai/) logging via `weave.init`. Authenticate once with `wandb login` or set the following keys in `.env` alongside the OpenAI credentials:
 
 ```bash
-.venv/bin/python compare_results.py
+WANDB_API_KEY=your_wandb_api_key
+WANDB_PROJECT=hypothesis-type-checker
+WANDB_ENTITY=your_team_or_username
 ```
 
-This will:
-1. Analyze each mode's results separately
-2. Compare hypotheses found in abstract vs PDF mode
-3. Generate statistics and distributions
-4. Save comparison to `data/comparison_summary.json`
+Set `WANDB_MODE=offline` before executing a script if you prefer to disable remote logging for a run.
 
-## API Details
+## Installation (uv-managed)
 
-### OpenAI PDF Processing
+This project uses `uv` for dependency management and reproducible environments. From the repository root:
 
-Following the OpenAI documentation at https://platform.openai.com/docs/guides/pdf-files, the script:
-
-1. **Uploads PDF**: Uses the Files API to upload PDFs
-   ```python
-   file_response = client.files.create(
-       file=pdf_file,
-       purpose='assistants'
-   )
-   ```
-
-2. **References in Chat**: Includes the file in the message content
-   ```python
-   messages=[{
-       "role": "user",
-       "content": [
-           {"type": "text", "text": prompt},
-           {"type": "file", "file": {"file_id": file_id}}
-       ]
-   }]
-   ```
-
-3. **Structured Outputs**: Uses `response_format` with Pydantic models
-   ```python
-   completion = client.beta.chat.completions.parse(
-       model=model,  # Configurable via --model argument, default: gpt-5-nano
-       messages=messages,
-       response_format=HypothesesList,
-   )
-   ```
-
-4. **Cleanup**: Deletes uploaded files after processing
-
-## Rate Limiting
-
-The script includes delays between API calls:
-- 1 second between abstract-mode requests
-- 2 seconds between PDF-mode requests
-
-Adjust these if you hit rate limits or want faster processing.
-
-## Cost Considerations
-
-- **Abstract mode**: Uses text-only API calls (cheaper)
-- **PDF mode**: Uploads and processes entire PDFs (more expensive, especially for large PDFs)
-
-Monitor your OpenAI API usage dashboard when running on many papers.
-
-## Troubleshooting
-
-### Missing API Key
+```bash
+uv sync
 ```
-ValueError: OPENAI_API_KEY not found in environment variables
+
+`uv sync` creates `.venv/` and installs all dependencies declared in `pyproject.toml`. Use `uv run` for every script invocation so the correct environment and Python version are used automatically.
+
+## Preparing Data
+
+Classification expects two inputs under `data/`:
+- `data/abstracts.json`: paper metadata with titles and abstracts
+- `data/pdfs/`: PDFs named `paper_<number>.pdf`
+
+You can populate both by sampling accepted papers from OpenReview with `fetch_papers.py`:
+
+```bash
+uv run fetch_papers.py ICML.cc/2025/Conference --num-papers 100 --output-dir data
 ```
-**Solution**: Create/update `.env` file with your API key
 
-### PDF Not Found
-Check that PDF files are named correctly: `paper_<number>.pdf` matching the `number` field in `abstracts.json`
+The script saves metadata to `data/abstracts.json` and downloads PDFs into `data/pdfs/`. Adjust the venue, paper count, or output directory as needed.
 
-### API Errors
-- Rate limiting: Increase delays in the script
-- Token limits: PDFs might be too large; consider splitting or summarizing
-- Invalid model: Ensure you're using `gpt-4o-2024-08-06` or compatible model
+## Running Hypothesis Classification
 
-## Model Information
+`classify_hypotheses.py` processes papers twice—once using abstracts and once using the full PDFs.
 
-The hypothesis classification uses the taxonomy from Andrey Ustyuzhanin's presentation:
-https://gamma.app/docs/The-Architecture-of-Inquiry-A-Comprehensive-Taxonomy-of-Scientifi-mqdpe9i68rtf6os
+```bash
+uv run classify_hypotheses.py \
+  --model gpt-5-nano \
+  --abstracts-path data/abstracts.json \
+  --pdf-dir data/pdfs \
+  --abstract-output data/classifications_abstract.json \
+  --max-n-papers 100
+```
 
-All classification categories and examples are defined in `hypothesis_model.py`.
+Key options:
+- `--model`: OpenAI model name (default `gpt-5-nano`)
+- `--abstracts-path`: location of the metadata JSON (default `data/abstracts.json`)
+- `--pdf-dir`: directory with PDFs (default `data/pdfs`)
+- `--abstract-output`: output file for abstract-mode results (default `data/classifications_abstract.json`)
+- `--max-n-papers`: limit the number of papers processed (optional)
+
+Outputs (defaults):
+- `data/classifications_abstract.json`
+- `<pdf-dir>/../classifications_pdf.json`
+
+Each output file contains per-paper entries with the hypotheses found, their classifications across the taxonomy axes (`epistemic_type`, `structural_type`, `predictive_type`, `functional_type`, `temporal_type`, `specific_type`), variables, justification, confidence score, and any processing notes. The PDF mode uploads each PDF to OpenAI, so expect longer runtimes.
+
+## Comparing Abstract vs PDF Results
+
+After classification, analyze overlaps and differences:
+
+```bash
+uv run compare_results.py
+```
+
+This script:
+- Builds a combined dataframe of hypotheses across both modes
+- Prints per-mode statistics and type distributions
+- Computes per-paper overlaps and matching fractions
+- Saves a JSON report to `data/comparison_summary.json`
+
+## Example Schema Test
+
+`test_examples.py` demonstrates that `Config.json_schema_extra["examples"]` is not used by the OpenAI model
+
+```bash
+uv run test_examples.py
+```
