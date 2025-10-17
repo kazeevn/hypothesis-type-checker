@@ -53,6 +53,15 @@ uv run fetch_papers.py ICML.cc/2025/Conference --num-papers 100 --output-dir dat
 
 The script saves metadata to `data/abstracts.json` and downloads PDFs into `data/pdfs/`. Adjust the venue, paper count, or output directory as needed.
 
+Alternatively, pull a random sample from arXiv within a date range (defaults to the past 12 months):
+
+```bash
+uv run fetch_papers.py --source arxiv --arxiv-category cs.AI --num-papers 50 \
+  --output-dir data --start-date 2024-01-01 --end-date 2024-06-30
+```
+
+This variant queries arXiv, randomly selects the requested number of papers published in the specified window, downloads their abstracts, and saves PDFs alongside the OpenReview format.
+
 ## Running Hypothesis Classification
 
 `classify_hypotheses.py` processes papers twice—once using abstracts and once using the full PDFs.

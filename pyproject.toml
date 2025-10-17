@@ -11,4 +11,5 @@ dependencies = [
     "python-dotenv>=1.1.1",
     "weave>=0.52.9",
     "matplotlib>=3.9.0",
+    "arxiv>=2.2.0",
 ]

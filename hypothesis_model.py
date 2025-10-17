@@ -155,6 +155,21 @@ class HypothesisClassification(BaseModel):
         None,
         description="Any additional notes or observations about the hypothesis"
     )
+
+    was_the_hypothesis_tested: bool = Field(
+        ...,
+        description="Indicates if the hypothesis was empirically tested in the study"
+    )
+
+    was_the_hypothesis_supported: bool = Field(
+        ...,
+        description="Indicates if the hypothesis was supported (as opposed to refuted) by the study results. If not tested, this should be False."
+    )
+
+    hypothesis_evaluation_details: str = Field(
+        ...,
+        description="Details on how the hypothesis was evaluated and the evidence for whether it was supported or refuted"
+    )
     
     class Config:
         use_enum_values = True
