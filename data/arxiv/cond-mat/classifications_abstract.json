@@ -1,0 +1,93 @@
+[
+  {
+    "paper_id": "2510.11126v1",
+    "paper_title": "In-plane polar domains enhanced energy storage",
+    "hypotheses": [
+      {
+        "hypothesis_text": "Dielectrics with high energy storage performance via an in-plane polar domains incorporating polar nanoregions mechanism.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Proposes that the in-plane polar domains with polar nanoregions mechanism causes high energy storage performance.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "in-plane polar domains incorporating polar nanoregions mechanism",
+          "energy storage performance"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "In-plane polar domains with polar nanoregions will yield higher energy storage performance",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": null,
+        "confidence_score": 0.78,
+        "notes": "Explicit mechanism-level hypothesis about how microstructural domains influence macroscopic energy storage performance",
+        "evaluation_status": "not_evaluated",
+        "evaluation_details": null
+      },
+      {
+        "hypothesis_text": "La/Si co-doping BaTiO3 solid-solution thin films with high chemical homogeneity to realize high energy storage performance.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Implies that La/Si co-doping and achieving high chemical homogeneity cause high energy storage performance",
+        "structural_type": "complex",
+        "variables_identified": [
+          "La/Si co-doping BaTiO3 solid-solution thin films",
+          "high chemical homogeneity",
+          "high energy storage performance"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "La/Si co-doping BaTiO3 thin films with high chemical homogeneity will realize higher energy storage performance",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": "Tests whether La/Si co-doping with high homogeneity improves energy storage in BaTiO3 thin films",
+        "confidence_score": 0.85,
+        "notes": "Material-design/processing hypothesis linking dopant strategy and microstructure to energy storage performance",
+        "evaluation_status": "not_evaluated",
+        "evaluation_details": null
+      },
+      {
+        "hypothesis_text": "Phase-field simulations can guide the synthesis of BaTiO3-based dielectrics to achieve high energy storage performance.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Suggests that simulation-guided design influences material performance outcomes",
+        "structural_type": "simple",
+        "variables_identified": [
+          "phase-field simulations",
+          "synthesis guided by simulations",
+          "energy storage performance"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Phase-field simulation-guided synthesis will yield higher energy storage performance",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": null,
+        "confidence_score": 0.8,
+        "notes": "Explicitly ties computational design guidance to experimental energy storage outcomes",
+        "evaluation_status": "not_evaluated",
+        "evaluation_details": null
+      },
+      {
+        "hypothesis_text": "This mechanism holds significant promise for the design of next-generation high-performance dielectric materials for energy storage and other advanced functional materials.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Posits that the in-plane polar domains/polar nanoregions mechanism can be generalized to design other high-performance dielectrics and functional materials",
+        "structural_type": "simple",
+        "variables_identified": [
+          "in-plane polar domains incorporating polar nanoregions mechanism",
+          "next-generation high-performance dielectric materials",
+          "energy storage performance"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "scientific",
+        "temporal_type": "exploratory",
+        "specific_type": "transferability",
+        "specific_type_details": null,
+        "confidence_score": 0.65,
+        "notes": "Forward-looking generalization/transferability claim about applying the mechanism to other materials",
+        "evaluation_status": "not_evaluated",
+        "evaluation_details": null
+      }
+    ],
+    "source_mode": "abstract",
+    "processing_notes": "Hypotheses are extracted from the abstract. Some items express explicit mechanism- or design-based predictions (A, B, C), while others reflect forward-looking generalization (D). No explicit statistical hypotheses are stated in the abstract; all items are treated as testable, mechanism-related claims or design-transferability propositions."
+  }
+]

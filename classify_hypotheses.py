@@ -95,6 +95,40 @@ def load_abstracts(abstracts_path: Path) -> List[Dict[str, Any]]:
     return data
 
 
+def resolve_pdf_path(paper: Dict[str, Any], pdfs_dir: Path) -> Path:
+    """Find the best-guess path to the local PDF for a paper"""
+    paper_id = paper.get('id')
+    paper_number = paper.get('number')
+    local_pdf_path = paper.get('local_pdf_path')
+
+    candidates: List[Path] = []
+
+    if local_pdf_path:
+        local_path = Path(local_pdf_path)
+        candidates.append(local_path)
+        if not local_path.is_absolute():
+            candidates.append(Path.cwd() / local_path)
+            candidates.append(pdfs_dir / local_path.name)
+
+    if paper_id:
+        candidates.append(pdfs_dir / f"{paper_id}.pdf")
+
+    if paper_number:
+        candidates.append(pdfs_dir / f"paper_{paper_number}.pdf")
+
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    if paper_id:
+        return pdfs_dir / f"{paper_id}.pdf"
+
+    if paper_number:
+        return pdfs_dir / f"paper_{paper_number}.pdf"
+
+    return pdfs_dir / "paper_unknown.pdf"
+
+
 @weave.op()
 def classify_paper(
     client: OpenAI,
@@ -142,40 +176,28 @@ def classify_paper(
             }
 
         user_content = [
-            {
-                "type": "text",
+            {"role": "user",
+            "content": [
+                {
+                "type": "input_text",
                 "text": prompt
             },
             {
-                "type": "file",
-                "file": {
+                "type": "input_file",
                     "file_id": file_id
-                }
-            }
+            }]}
         ]
 
     else:
         raise ValueError(f"Unsupported classification mode: {mode}")
 
-    messages = [
-        {
-            "role": "system",
-            "content": CLASSIFICATION_ROLE
-        },
-        {
-            "role": "user",
-            "content": user_content
-        }
-    ]
-
     try:
-        completion = client.chat.completions.parse(
+        parsed = client.responses.parse(
             model=model,
-            messages=messages,
-            response_format=HypothesesList,
-        )
-
-        parsed = completion.choices[0].message.parsed
+            instructions=CLASSIFICATION_ROLE,
+            input=user_content,
+            text_format=HypothesesList,
+        ).output_parsed
 
         return {
             "paper_id": paper_id,
@@ -231,7 +253,6 @@ def main():
     parser.add_argument(
         '--abstract-output',
         type=Path,
-        default='data/classifications_abstract.json',
         help='Output path for abstract-mode results (default: data/classifications_abstract.json)'
     )
     parser.add_argument(
@@ -257,7 +278,10 @@ def main():
     # Resolve paths from command-line options
     abstracts_path = Path(args.abstracts_path)
     pdfs_dir = Path(args.pdf_dir)
-    abstract_output = Path(args.abstract_output)
+    if args.abstract_output:
+        abstract_output = Path(args.abstract_output)
+    else:
+        abstract_output = abstracts_path.parent / 'classifications_abstract.json'
     pdf_output = pdfs_dir.parent / 'classifications_pdf.json'
 
     if not abstracts_path.exists():
@@ -306,10 +330,9 @@ def main():
     pdf_results = []
     for i, paper in enumerate(papers, 1):
         paper_id = paper.get('id', 'unknown')
-        paper_number = paper.get('number', 'unknown')
-        
+
         # Find corresponding PDF
-        pdf_path = pdfs_dir / f"paper_{paper_number}.pdf"
+        pdf_path = resolve_pdf_path(paper, pdfs_dir)
         
         print(f"\n[{i}/{len(papers)}] Processing paper {paper_id} from PDF...")
         print(f"  Title: {paper.get('title', 'N/A')[:60]}...")

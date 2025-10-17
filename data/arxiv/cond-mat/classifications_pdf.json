@@ -1,0 +1,303 @@
+[
+  {
+    "paper_id": "2510.11126v1",
+    "paper_title": "In-plane polar domains enhanced energy storage",
+    "hypotheses": [
+      {
+        "hypothesis_text": "In-plane polar domains incorporating polar nanoregions (IP-PNR) design using La/Si co-doping in BaTiO3 thin films enables ultrahigh energy storage density and high efficiency.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Explicit design claim linking IP-PNR domain architecture to superior energy storage performance (Wr and η).",
+        "structural_type": "complex",
+        "variables_identified": [
+          "IP-PNR domain architecture",
+          "La/Si co-doping in BaTiO3 (BTLS)",
+          "energy density (Wr)",
+          "energy efficiency (η)"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "IP-PNR design yields higher Wr and higher η than undoped BTLS or baseline BaTiO3-based RFEs",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": null,
+        "confidence_score": 0.92,
+        "notes": "Central claim of the paper: IP-PNR design enables boosted energy storage performance via domain engineering.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 achieves Wr = 203.7 J/cm3 and η ≈ 80% at 6.15 MV/cm, outperforming BTLS0 and comparable or superior to other lead-free counterparts."
+      },
+      {
+        "hypothesis_text": "The IP-PNR design mechanism comprises two critical steps: (1) Controlled gradient strain engineering to disrupt long-range ferroelectric ordering, creating an out-of-plane polarization gradient that induces relaxor behavior, followed by (2) deliberate in-plane strain engineering via doping to reconfigure nonpolar domains surrounding PNRs into in-plane-oriented polar domains.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Two-step process is proposed as the causal path to forming IP-PNR and relaxor behavior that enables enhanced performance.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "gradient strain",
+          "out-of-plane polarization gradient",
+          "relaxor behavior",
+          "in-plane strain engineering",
+          "in-plane-oriented polar domains",
+          "IP-PNR"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Two-step strain control will produce IP-PNR architecture and relaxor behavior, boosting Wr and η",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.82,
+        "notes": "Grounds the claimed domain configuration in a two-stage mechanism supported by phase-field simulations and experiments.",
+        "evaluation_status": "supported",
+        "evaluation_details": "Phase-field simulations show distinct domain configurations with LS doping; experimental evidence (XRD, STEM, SHG) aligns with the two-step mechanism."
+      },
+      {
+        "hypothesis_text": "La/Si co-doping leads to predominant in-plane polar T-domains along with a minor fraction of nanoscale R-domains and out-of-plane T-domains, yielding P–E loops with maintained Pr but significantly enhanced Pm.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Doping controls domain topology, producing a shift to in-plane polarization while preserving relaxor features.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "La/Si co-doping",
+          "in-plane polar T-domains",
+          "nanoscale R-domains",
+          "out-of-plane T-domains",
+          "Pr",
+          "Pm"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "In-plane-dominated domains increase Pm while maintaining Pr",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.9,
+        "notes": "Direct link between dopant-induced domain restructuring and P–E loop characteristics.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 shows Pm = 58 μC/cm2, Pr ≈ 9 μC/cm2, versus BTLS0 with lower Pm; overall IP-PNR architecture confirmed by STEM/SHG."
+      },
+      {
+        "hypothesis_text": "There exists an optimal La/Si doping level (BTLS2) that maximizes energy storage performance (Wr and Eb) while maintaining high η; excessive LS doping (BTLS4) degrades performance due to amorphous phase formation and lattice disruption.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Dose–response relation between LS content and performance; too much LS disrupts ordering and reduces Wr/η.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "LS doping level",
+          "lattice ordering",
+          "domain structure",
+          "Wr",
+          "Eb",
+          "η"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Wr and Eb rise up to BTLS2 and then fall with BTLS4; BTLS2 is optimal",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": null,
+        "confidence_score": 0.85,
+        "notes": "Dopant concentration window critical for achieving high performance.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 shows peak Eb (6.15 MV/cm) and Wr enhancements; BTLS4 shows amorphous phase and reduced Pm."
+      },
+      {
+        "hypothesis_text": "The thickness of BTLS2 thin films around 230 nm is optimal for maximizing energy storage performance.",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Empirical observation identifying an optimal thickness parameter.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "film thickness",
+          "Wr",
+          "η",
+          "Eb"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.7,
+        "notes": "Thickness optimization reported for BTLS2; ~230 nm identified as optimal.",
+        "evaluation_status": "supported",
+        "evaluation_details": "Thickness-dependent measurements indicate peak performance near 230 nm (Fig. S22)."
+      },
+      {
+        "hypothesis_text": "The simultaneous increase of ΔP (polarization change) and Eb (breakdown strength) in BTLS2 leads to the maximum Wr of 203.7 J/cm3, representing a two-fold enhancement over BTLS0.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Wr scales with ΔP and Eb; BTLS2 achieves higher ΔP and Eb, yielding higher Wr.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "ΔP",
+          "Eb",
+          "Wr"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Higher ΔP and higher Eb produce higher Wr",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": null,
+        "confidence_score": 0.85,
+        "notes": "Mechanistic link between domain architecture, ΔP, Eb, and energy density.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 achieves Wr = 203.7 J/cm3 with ΔP and Eb both enhanced compared to BTLS0."
+      },
+      {
+        "hypothesis_text": "The IP-PNR architecture yields P–E loops with high Pm and low Pr, enabling delayed polarization saturation and high energy storage performance.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Domain architecture directly modulates polarization saturation behavior.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "IP-PNR architecture",
+          "Pm",
+          "Pr",
+          "polarization saturation"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "IP-PNR leads to higher Pm and delayed saturation (lower effective Pr during operation)",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.88,
+        "notes": "Link between domain structure and polarization dynamics under bias.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 shows high Pm with preserved Pr and delayed saturation, contributing to high Wr."
+      },
+      {
+        "hypothesis_text": "The IP-PNR design outperforms BaTiO3-based RFEs and is comparable to Pb-based and Bi-based RFEs at the same field strength, indicating superior energy storage performance with lead-free composition.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "Comparative performance claim against lead-based and lead-free benchmarks at equivalent fields.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "BTLS2 (IP-PNR BaTiO3-based film)",
+          "BaTiO3-based RFEs",
+          "Pb-based RFEs",
+          "Bi-based RFEs",
+          "Wr"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "BTLS2 yields higher Wr than BaTiO3-based RFEs and is competitive with Pb/Bi-based RFEs",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "comparative_performance",
+        "specific_type_details": null,
+        "confidence_score": 0.9,
+        "notes": "Benchmark positioning of IP-PNR BTLS2 against existing high-performance ferroelectrics.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 delivers Wr comparable or superior to Pb/Bi-based counterparts at the same field; Figure 2d and related text."
+      },
+      {
+        "hypothesis_text": "Uniform chemical homogeneity of the BTLS2 films (La/Si distribution) is essential for high performance; STEM/EDS/EELS analyses show uniform occupancy and lack of phase segregation.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Homogeneous dopant distribution is proposed to enable the desired IP-PNR domain configuration",
+        "structural_type": "simple",
+        "variables_identified": [
+          "chemical homogeneity",
+          "La/Si distribution",
+          "domain architecture",
+          "Wr",
+          "η"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "More uniform doping distribution yields higher Wr/η than segregated dopant distributions",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.75,
+        "notes": "Empirical check of homogeneity correlating with performance.",
+        "evaluation_status": "supported",
+        "evaluation_details": "Low-magnification STEM shows no significant heterogeneity; EDS maps show uniform Ba/Ti/La/Si; EELS indicates shared occupancy patterns."
+      },
+      {
+        "hypothesis_text": "The in-plane polarization orientation is driven by Ti displacement and oxygen octahedral tilting, leading to IP-PNR formation.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Structural distortions (Ti displacement, octahedral tilting) provide the mechanism for in-plane polarization.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "Ti displacement",
+          "oxygen octahedral tilting",
+          "in-plane polarization orientation",
+          "IP-PNR"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "Ti displacement and octahedral tilting promote in-plane polarization and IP-PNR formation",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.85,
+        "notes": "Direct structural origin of IP-PNR is supported by XAS, STEM, and DFT results.",
+        "evaluation_status": "supported",
+        "evaluation_details": "STEM shows in-plane Ti displacements; XAS indicates octahedral distortion; DFT supports tilting and in-plane polarization alignment."
+      },
+      {
+        "hypothesis_text": "Phase-field simulations show that undoped BaTiO3 (BTLS0) exhibits nanoscale domains and reduced P–E loop rectangularity, while La/Si-doped BaTiO3 develops in-plane polar T-domains with a minor fraction of nanoscale R-domains and out-of-plane T-domains, producing P–E loops with maintained Pr but enhanced Pm.",
+        "epistemic_type": "causal",
+        "epistemic_justification": "Simulation results are used to explain the experimentally observed domain configurations and P–E loop changes with LS doping.",
+        "structural_type": "complex",
+        "variables_identified": [
+          "BTLS0 (undoped)",
+          "BTLS2 (LS-doped)",
+          "domain types (in-plane T-domains, R-domains, out-of-plane T-domains)",
+          "Pm",
+          "Pr"
+        ],
+        "predictive_type": "directional",
+        "predicted_direction": "LS doping shifts domain structure to in-plane T-domains with higher Pm and preserved Pr",
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "implementation",
+        "specific_type_details": null,
+        "confidence_score": 0.8,
+        "notes": "Phase-field predictions align with experimental P–E loop and domain observations.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS0 shows nanoscale PNR; BTLS2 shows predominant in-plane T-domains with preserved Pr and higher Pm."
+      },
+      {
+        "hypothesis_text": "Second-harmonic generation (SHG) mappings show enhanced in-plane polarization strength in BTLS2 (IP-PNR) compared with BTLS0 (PNR), supporting the IP-PNR domain picture.",
+        "epistemic_type": "associative",
+        "epistemic_justification": "SHG intensity is proportional to in-plane polarization (Pin-plane^2), so stronger SHG supports stronger in-plane polarization.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "SHG intensity",
+          "in-plane polarization strength",
+          "BTLS2 (IP-PNR)",
+          "BTLS0 (PNR)"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": null,
+        "confidence_score": 0.78,
+        "notes": "SHG mapping used as a proxy for in-plane polarization strength.",
+        "evaluation_status": "supported",
+        "evaluation_details": "BTLS2 shows enhanced SHG intensity, consistent with stronger in-plane polarization."
+      },
+      {
+        "hypothesis_text": "The measured thermal stability of Wr and η from 25 to 220 °C shows that BTLS2 maintains performance with only about 5% change, indicating good thermal robustness of the IP-PNR design.",
+        "epistemic_type": "descriptive",
+        "epistemic_justification": "Thermal stability tests quantify robustness of energy storage performance under temperature variations.",
+        "structural_type": "simple",
+        "variables_identified": [
+          "temperature",
+          "Wr",
+          "η"
+        ],
+        "predictive_type": "non_directional",
+        "predicted_direction": null,
+        "functional_type": "scientific",
+        "temporal_type": "confirmatory",
+        "specific_type": "other",
+        "specific_type_details": null,
+        "confidence_score": 0.8,
+        "notes": "BTLS2 shows only ~5% Wr change from 25–220 °C, indicating thermal stability.",
+        "evaluation_status": "supported",
+        "evaluation_details": "Figure 2f and S20-S21 summarize Wr/η changes across the temperature range."
+      }
+    ],
+    "source_mode": "pdf",
+    "processing_notes": "The set above aggregates explicit and implicit hypotheses stated or strongly implied in the paper, with justification drawn directly from the authors' design claims, results, and mechanistic explanations. Each hypothesis is unique and non-duplicative across sections."
+  }
+]

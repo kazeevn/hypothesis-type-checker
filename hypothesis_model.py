@@ -43,6 +43,14 @@ class SpecificHypothesisType(str, Enum):
     OTHER = "other"
 
 
+class EvaluationStatus(str, Enum):
+    """Status of the hypothesis evaluation"""
+    NOT_EVALUATED = "not_evaluated"
+    SUPPORTED = "supported"
+    REFUTED = "refuted"
+    INCONCLUSIVE = "inconclusive"
+
+
 class HypothesisClassification(BaseModel):
     """
     A comprehensive classification of a research hypothesis along multiple axes based on
@@ -156,21 +164,17 @@ class HypothesisClassification(BaseModel):
         description="Any additional notes or observations about the hypothesis"
     )
 
-    was_the_hypothesis_tested: bool = Field(
-        ...,
-        description="Indicates if the hypothesis was empirically tested in the study"
+    evaluation_status: EvaluationStatus = Field(
+        default=EvaluationStatus.NOT_EVALUATED,
+        description="Status of the hypothesis experimental evaluation in the paper"
     )
 
-    was_the_hypothesis_supported: bool = Field(
-        ...,
-        description="Indicates if the hypothesis was supported (as opposed to refuted) by the study results. If not tested, this should be False."
+    evaluation_details: Optional[str] = Field(
+        None,
+        description="How exactly was the evaluation done and what were the results"
     )
 
-    hypothesis_evaluation_details: str = Field(
-        ...,
-        description="Details on how the hypothesis was evaluated and the evidence for whether it was supported or refuted"
-    )
-    
+
     class Config:
         use_enum_values = True
 
