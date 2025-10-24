@@ -1,109 +1,183 @@
 
 ============================================================
-Combined Hypotheses DataFrame
-============================================================
-          mode    paper_id  ... temporal_type            specific_type
-0     abstract  2aKHuXdr7Q  ...  confirmatory  comparative_performance
-1     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
-2     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
-3     abstract  2aKHuXdr7Q  ...  confirmatory           implementation
-4     abstract  2aKHuXdr7Q  ...  confirmatory                    other
-...        ...         ...  ...           ...                      ...
-1794       pdf  bUGdGaNFhi  ...  confirmatory  comparative_performance
-1795       pdf  bUGdGaNFhi  ...  confirmatory          transferability
-1796       pdf  bUGdGaNFhi  ...  confirmatory  comparative_performance
-1797       pdf  bUGdGaNFhi  ...  confirmatory           implementation
-1798       pdf  bUGdGaNFhi  ...  confirmatory           implementation
-
-[1799 rows x 10 columns]
+Per-Mode Analyses
 
 ============================================================
-Analysis for ABSTRACT mode
+ICML 2025 (abstract)
 ============================================================
 Total papers: 100
-Total hypotheses found: 633
-Average hypotheses per paper: 6.33
+Total hypotheses found: 627
+Average hypotheses per paper: 6.27
 Papers with hypotheses: 100
 Papers without hypotheses: 0
+Evaluation status distribution:
+  not_evaluated: 464
+  supported: 157
+  inconclusive: 6
 
 ============================================================
-Analysis for PDF mode
+ICML 2025 (pdf)
 ============================================================
 Total papers: 100
-Total hypotheses found: 1166
-Average hypotheses per paper: 11.66
+Total hypotheses found: 1158
+Average hypotheses per paper: 11.58
 Papers with hypotheses: 100
 Papers without hypotheses: 0
+Evaluation status distribution:
+  supported: 604
+  not_evaluated: 538
+  inconclusive: 14
+  refuted: 2
+
+============================================================
+arXiv cond-mat (abstract)
+============================================================
+Total papers: 100
+Total hypotheses found: 649
+Average hypotheses per paper: 6.49
+Papers with hypotheses: 100
+Papers without hypotheses: 0
+Evaluation status distribution:
+  not_evaluated: 557
+  supported: 88
+  inconclusive: 3
+  refuted: 1
+
+============================================================
+arXiv cond-mat (pdf)
+============================================================
+Total papers: 100
+Total hypotheses found: 1116
+Average hypotheses per paper: 11.16
+Papers with hypotheses: 98
+Papers without hypotheses: 2
+Evaluation status distribution:
+  not_evaluated: 804
+  supported: 301
+  inconclusive: 11
+
+============================================================
+Dataset-Level Analyses
+
+============================================================
+ICML 2025 (combined)
+============================================================
+Total papers: 200
+Total hypotheses found: 1785
+Average hypotheses per paper: 8.93
+Papers with hypotheses: 200
+Papers without hypotheses: 0
+Evaluation status distribution:
+  not_evaluated: 1002
+  supported: 761
+  inconclusive: 20
+  refuted: 2
+
+============================================================
+arXiv cond-mat (combined)
+============================================================
+Total papers: 200
+Total hypotheses found: 1765
+Average hypotheses per paper: 8.82
+Papers with hypotheses: 198
+Papers without hypotheses: 2
+Evaluation status distribution:
+  not_evaluated: 1361
+  supported: 389
+  inconclusive: 14
+  refuted: 1
 
 ============================================================
 Comparative Type Distributions (counts by mode)
 ============================================================
 
 Epistemic Type:
-mode            abstract  pdf
-epistemic_type               
-associative          145  352
-causal               333  441
-descriptive          155  373
+mode_label      ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+epistemic_type                        ...                      
+associative                      123  ...                   204
+causal                           299  ...                   410
+descriptive                      205  ...                   502
+
+[3 rows x 4 columns]
 
 Structural Type:
-mode             abstract  pdf
-structural_type               
-complex               207  354
-simple                426  812
+mode_label       ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+structural_type                        ...                      
+complex                           224  ...                   326
+simple                            403  ...                   790
+
+[2 rows x 4 columns]
 
 Predictive Type:
-mode             abstract  pdf
-predictive_type               
-directional           442  776
-non_directional       191  390
+mode_label       ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+predictive_type                        ...                      
+directional                       430  ...                   619
+non_directional                   197  ...                   497
+
+[2 rows x 4 columns]
 
 Functional Type:
-mode             abstract   pdf
-functional_type                
-scientific            574  1086
-statistical            49    71
-working                10     9
+mode_label       ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+functional_type                        ...                      
+scientific                        604  ...                  1109
+statistical                        10  ...                     5
+working                            13  ...                     2
+
+[3 rows x 4 columns]
 
 Temporal Type:
-mode           abstract   pdf
-temporal_type                
-confirmatory        554  1061
-exploratory          79   105
+mode_label     ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+temporal_type                        ...                      
+confirmatory                    536  ...                  1002
+exploratory                      91  ...                   114
+
+[2 rows x 4 columns]
 
 Specific Type:
-mode                     abstract  pdf
-specific_type                         
-comparative_performance       137  263
-implementation                135  181
-other                         290  585
-transferability                71  137
+mode_label               ICML 2025 | abstract  ...  arXiv cond-mat | pdf
+specific_type                                  ...                      
+comparative_performance                   117  ...                    69
+implementation                            139  ...                   119
+other                                     292  ...                   867
+transferability                            79  ...                    61
+
+[4 rows x 4 columns]
 
 ============================================================
-Per-Paper Matching Fractions
-============================================================
+Per-Paper Matching Fractions – ICML 2025
       paper_id  ... matching_fraction
-0   038rEwbChh  ...          0.333333
-1   0REM9ydeLZ  ...          0.142857
-2   0VSDl40xMv  ...          0.250000
-3   0ysC6VS0y3  ...          0.333333
-4   1WfWvpiEPE  ...          0.333333
+0   038rEwbChh  ...          0.250000
+1   0REM9ydeLZ  ...          0.000000
+2   0VSDl40xMv  ...          0.333333
+3   0ysC6VS0y3  ...          0.400000
+4   1WfWvpiEPE  ...          0.166667
 ..         ...  ...               ...
 95  xkV3uCQtJm  ...          0.333333
-96  yTAR011mOF  ...          0.000000
-97  yTWqL3XHCC  ...          0.250000
-98  ybno0ZP44z  ...          0.250000
-99  zUk00sasl6  ...          0.200000
+96  yTAR011mOF  ...          0.166667
+97  yTWqL3XHCC  ...          0.200000
+98  ybno0ZP44z  ...          0.000000
+99  zUk00sasl6  ...          0.000000
 
 [100 rows x 6 columns]
 
 ============================================================
-COMPARISON: Abstract vs PDF
-============================================================
+Per-Paper Matching Fractions – arXiv cond-mat
+        paper_id  ... matching_fraction
+0   2510.09807v1  ...          0.333333
+1   2510.09832v1  ...          0.500000
+2   2510.09861v1  ...          0.142857
+3   2510.09890v1  ...          0.333333
+4   2510.09900v1  ...          0.400000
+..           ...  ...               ...
+95  2510.12696v1  ...          0.000000
+96  2510.12731v1  ...          0.000000
+97  2510.12737v1  ...          0.333333
+98  2510.12746v1  ...          0.666667
+99  2510.12790v1  ...          0.500000
 
-Summary:
-Total additional hypotheses found in PDF mode: 533
-Average additional hypotheses per paper (PDF vs Abstract): 5.33
-Average matching fraction across papers: 0.33
+[100 rows x 6 columns]
 
 ✓ Saved comparison to data/comparison_summary.json
+✓ Saved comparative type distribution plot to data/comparative_type_distributions.webp
+✓ Saved dataset counts plot to data/dataset_type_distributions_counts.webp
+✓ Saved dataset shares plot to data/dataset_type_distributions_shares.webp
