@@ -1,0 +1,145 @@
+[
+  {
+    "paper_id": "2aKHuXdr7Q",
+    "paper_title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+    "hypotheses": {
+      "subsidiary_hypotheses": [
+        {
+          "subsidiary_hypotheses": null,
+          "is_main": false,
+          "hypothesis_text": "\"Our analysis identifies two key factors that affect the utility of privacy-preserving graph learning: feature dimension and neighborhood size.\"",
+          "epistemic_type": "associative",
+          "epistemic_justification": "States that specific variables (feature dimension, neighborhood size) are associated with variations in utility; no explicit causal mechanism or direction specified in the abstract.",
+          "structural_type": "complex",
+          "variables_identified": [
+            "feature dimension",
+            "neighborhood size",
+            "utility of privacy-preserving graph learning (e.g., node classification accuracy)"
+          ],
+          "predictive_type": "non_directional",
+          "predicted_direction": null,
+          "functional_type": "scientific",
+          "temporal_type": "exploratory",
+          "specific_type": "other",
+          "specific_type_details": null,
+          "confidence_score": 0.78,
+          "notes": "Presented as a finding from the authors' analysis; directionality (e.g., higher feature dimension decreases utility) is not stated in the abstract.",
+          "evaluation_status": "supported",
+          "evaluation_details": "Claimed as identified by analysis; likely corroborated by empirical sensitivity studies in the paper (not detailed in the abstract)."
+        },
+        {
+          "subsidiary_hypotheses": null,
+          "is_main": false,
+          "hypothesis_text": "\"UPGNET enhances utility by introducing two core layers: High-Order Aggregator (HOA) layer and the Node Feature Regularization (NFR) layer.\"",
+          "epistemic_type": "causal",
+          "epistemic_justification": "Predicts that adding specific architectural components causes higher utility under LDP.",
+          "structural_type": "complex",
+          "variables_identified": [
+            "presence of HOA layer",
+            "presence of NFR layer",
+            "learning utility under LDP (e.g., node classification accuracy)"
+          ],
+          "predictive_type": "directional",
+          "predicted_direction": "Adding HOA and NFR increases utility under LDP noise.",
+          "functional_type": "scientific",
+          "temporal_type": "exploratory",
+          "specific_type": "other",
+          "specific_type_details": null,
+          "confidence_score": 0.62,
+          "notes": "Mechanistic design hypothesis; typically validated via ablation, which the abstract does not explicitly mention.",
+          "evaluation_status": "inconclusive",
+          "evaluation_details": "Overall UPGNET outperforms baselines, but the abstract does not report component-wise ablations isolating HOA and NFR effects."
+        },
+        {
+          "subsidiary_hypotheses": null,
+          "is_main": false,
+          "hypothesis_text": "\"UPGNET, an LDP-based privacy-preserving graph learning framework, protects user data privacy.\"",
+          "epistemic_type": "causal",
+          "epistemic_justification": "Asserts that employing UPGNET (with LDP mechanisms) causes privacy protection to hold (e.g., satisfies ε-LDP).",
+          "structural_type": "simple",
+          "variables_identified": [
+            "use of UPGNET (LDP mechanisms applied to node features)",
+            "user data privacy protection (e.g., ε-LDP guarantee)"
+          ],
+          "predictive_type": "directional",
+          "predicted_direction": "Using UPGNET achieves formal local differential privacy protection.",
+          "functional_type": "scientific",
+          "temporal_type": "confirmatory",
+          "specific_type": "implementation",
+          "specific_type_details": "Verifies that the designed protocol satisfies formal LDP guarantees while being deployable.",
+          "confidence_score": 0.7,
+          "notes": "Commonly established via privacy proofs; abstract implies but does not detail proofs/parameters.",
+          "evaluation_status": "supported",
+          "evaluation_details": "Claimed as an LDP-based framework that protects privacy; the paper likely includes formal privacy analysis."
+        },
+        {
+          "subsidiary_hypotheses": null,
+          "is_main": false,
+          "hypothesis_text": "\"We propose a three-stage pipeline that generalizes the LDP protocols for node features, targeting privacy-sensitive scenarios.\"",
+          "epistemic_type": "causal",
+          "epistemic_justification": "Claims that the proposed pipeline can be effectively applied across privacy-sensitive scenarios (transfer/generalization of protocols).",
+          "structural_type": "simple",
+          "variables_identified": [
+            "three-stage pipeline applying generalized LDP protocols to node features",
+            "effectiveness/utility across privacy-sensitive scenarios and datasets"
+          ],
+          "predictive_type": "directional",
+          "predicted_direction": "The generalized pipeline will be effective across different privacy-sensitive graph learning settings.",
+          "functional_type": "scientific",
+          "temporal_type": "confirmatory",
+          "specific_type": "transferability",
+          "specific_type_details": "Tests whether generalized LDP protocols for node features work across datasets/contexts.",
+          "confidence_score": 0.68,
+          "notes": "Implicitly assessed via experiments on multiple real-world datasets.",
+          "evaluation_status": "supported",
+          "evaluation_details": "Abstract notes extensive experiments on real datasets; effectiveness across contexts is implied by multi-dataset evaluation."
+        },
+        {
+          "subsidiary_hypotheses": null,
+          "is_main": false,
+          "hypothesis_text": "\"Recent studies have explored local differential privacy (LDP) to address these concerns, [but] they often introduce significant distortions to graph data, severely degrading private learning utility.\"",
+          "epistemic_type": "causal",
+          "epistemic_justification": "Asserts that applying (typical) LDP mechanisms to graph data causes distortions which, in turn, reduce utility.",
+          "structural_type": "complex",
+          "variables_identified": [
+            "application of existing LDP mechanisms to graph data",
+            "degree of distortion in graph/node features",
+            "learning utility (e.g., accuracy)"
+          ],
+          "predictive_type": "directional",
+          "predicted_direction": "Applying typical LDP mechanisms increases distortion and decreases utility.",
+          "functional_type": "scientific",
+          "temporal_type": "exploratory",
+          "specific_type": "other",
+          "specific_type_details": null,
+          "confidence_score": 0.55,
+          "notes": "Background motivation supported by prior literature; may be indirectly reflected by weak baseline performance in experiments.",
+          "evaluation_status": "not_evaluated",
+          "evaluation_details": "Presented as context; not explicitly tested within this paper per the abstract."
+        }
+      ],
+      "is_main": true,
+      "hypothesis_text": "\"Extensive experiments on real-world datasets indicate that UPGNET significantly outperforms existing methods in terms of both privacy protection and learning utility.\"",
+      "epistemic_type": "causal",
+      "epistemic_justification": "Predicts that choosing UPGNET (vs. alternatives) causes better outcomes on two metrics: privacy and utility.",
+      "structural_type": "complex",
+      "variables_identified": [
+        "method choice (UPGNET vs. existing LDP GNN methods)",
+        "privacy protection performance (e.g., ε-LDP adherence, attack success rates)",
+        "learning utility (e.g., node classification accuracy)"
+      ],
+      "predictive_type": "directional",
+      "predicted_direction": "UPGNET yields higher utility and stronger/equivalent privacy protection than existing methods.",
+      "functional_type": "scientific",
+      "temporal_type": "confirmatory",
+      "specific_type": "comparative_performance",
+      "specific_type_details": "Directly compares UPGNET to prior LDP-based GNN methods on standard benchmarks.",
+      "confidence_score": 0.87,
+      "notes": "Primary claim in the abstract; amenable to empirical benchmarking with statistical tests.",
+      "evaluation_status": "supported",
+      "evaluation_details": "Abstract states extensive experiments show significant outperformance on real datasets; details (datasets, metrics, effect sizes, tests) not provided here."
+    },
+    "source_mode": "abstract",
+    "processing_notes": "Hypotheses extracted from the title and abstract only. The full paper may contain additional or more granular hypotheses (e.g., ablations isolating HOA vs. NFR), statistical nulls, or formal privacy theorems. Where the abstract did not specify directionality or evaluation details, classifications reflect conservative inferences and confidence is reduced."
+  }
+]

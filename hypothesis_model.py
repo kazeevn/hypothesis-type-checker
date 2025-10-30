@@ -60,14 +60,6 @@ class HypothesisClassification(BaseModel):
     This model is designed for use with OpenAI structured outputs to automatically
     classify hypotheses from research papers.
     """
-
-    subsidiary_hypotheses: 'Optional[List[HypothesisClassification]' = Field(
-        ...,
-        description=(
-            "A list of hypotheses that are used to support this main hypothesis."
-        )
-    )
-
     is_main: bool = Field(
         ...,
         description=(
@@ -198,6 +190,7 @@ class HypothesisClassification(BaseModel):
 EXAMPLE_CLASSIFICATIONS = [
     HypothesisClassification(
         hypothesis_text="Students who eat breakfast will perform better on a math exam",
+        is_main=True,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Implies eating breakfast causes better performance",
         structural_type=StructuralType.SIMPLE,
@@ -213,6 +206,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="42% of Europeans never exercise",
+        is_main=False,
         epistemic_type=EpistemicType.DESCRIPTIVE,
         epistemic_justification="Describes the frequency of a phenomenon (exercise behavior) in a population",
         structural_type=StructuralType.SIMPLE,
@@ -228,6 +222,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="Smoking is a prominent cause of lung cancer",
+        is_main=True,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Explicitly states a causal relationship between smoking and lung cancer",
         structural_type=StructuralType.SIMPLE,
@@ -243,6 +238,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="High-sugar diet and sedentary activity levels are more likely to develop depression",
+        is_main=True,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Proposes that diet and activity cause depression",
         structural_type=StructuralType.COMPLEX,
@@ -258,6 +254,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="There is a difference in job satisfaction between those who receive regular feedback and those who do not",
+        is_main=False,
         epistemic_type=EpistemicType.ASSOCIATIVE,
         epistemic_justification="States a relationship exists but does not claim causation",
         structural_type=StructuralType.SIMPLE,
@@ -273,6 +270,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="Method X is better than method Y for problem Z",
+        is_main=True,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Implies using Method X causes better outcomes than Method Y",
         structural_type=StructuralType.SIMPLE,
@@ -288,6 +286,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="Method X can be transferred from problem Y to problem Z",
+        is_main=False,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Proposes that applying Method X will produce results on the new problem Z",
         structural_type=StructuralType.SIMPLE,
@@ -303,6 +302,7 @@ EXAMPLE_CLASSIFICATIONS = [
     ),
     HypothesisClassification(
         hypothesis_text="A device built to these specs will achieve 45% thermal efficiency",
+        is_main=True,
         epistemic_type=EpistemicType.CAUSAL,
         epistemic_justification="Claims that building according to specifications causes specific efficiency outcome",
         structural_type=StructuralType.SIMPLE,
