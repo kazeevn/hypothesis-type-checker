@@ -202,7 +202,7 @@ def classify_paper(
         return {
             "paper_id": paper_id,
             "paper_title": title,
-            "hypotheses": parsed.main_hypothesis.model_dump(),
+            "hypotheses": [h.model_dump() for h in parsed.hypotheses],
             "source_mode": mode,
             "processing_notes": parsed.processing_notes
         }
