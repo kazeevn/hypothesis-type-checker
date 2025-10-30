@@ -1,0 +1,4 @@
+1. Ask the LLM to mark the main hypothesis - compare between abstract and full text
+2. Manually check the results for 10 papers
+3. CONSIDER build a hierarchy on hypotheses detalization
+4. CONSIDER build a directed graph of hypothesis dependencies

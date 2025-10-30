@@ -60,7 +60,23 @@ class HypothesisClassification(BaseModel):
     This model is designed for use with OpenAI structured outputs to automatically
     classify hypotheses from research papers.
     """
-    
+
+    subsidiary_hypotheses: 'Optional[List[HypothesisClassification]' = Field(
+        ...,
+        description=(
+            "A list of hypotheses that are used to support this main hypothesis."
+        )
+    )
+
+    is_main: bool = Field(
+        ...,
+        description=(
+            "Indicates if this hypothesis is the main hypothesis of the study. "
+            "Most studies have one main hypothesis and several subsidiary ones. "
+            "The main hypothesis is always mentioned in the abstract."
+        )
+    )
+
     # The original hypothesis text
     hypothesis_text: str = Field(
         ...,

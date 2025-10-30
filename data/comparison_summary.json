@@ -278,31 +278,73 @@
     "ICML 2025": {
       "per_paper_comparison": [
         {
-          "paper_id": "9JQXuyzdGL",
-          "title": "Flow-based Domain Randomization for Learning and Sequencing Robotic Skills",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 7,
-          "difference": 4
+          "paper_id": "Um7XmQEWu5",
+          "title": "Towards Robust Influence Functions with Flat Validation Minima",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
         },
         {
-          "paper_id": "6srcNB5kCC",
-          "title": "Flex3D: Feed-Forward 3D Generation with Flexible Reconstruction Model and Input View Curation",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 14,
+          "paper_id": "F08lzoBgad",
+          "title": "In-Context Denoising with One-Layer Transformers: Connections between Attention and Associative Memory Retrieval",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 12,
           "difference": 5
         },
         {
-          "paper_id": "2FDsh5D2Th",
-          "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
-          "abstract_hypotheses_count": 6,
+          "paper_id": "0REM9ydeLZ",
+          "title": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
+          "abstract_hypotheses_count": 5,
           "pdf_hypotheses_count": 9,
+          "difference": 4
+        },
+        {
+          "paper_id": "Jwe5FJ8QGx",
+          "title": "Preference Optimization for Combinatorial Optimization Problems",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 11,
+          "difference": 5
+        },
+        {
+          "paper_id": "ULZHqJU4ZC",
+          "title": "Privacy-Preserving Federated Convex Optimization: Balancing Partial-Participation and Efficiency via Noise Cancellation",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 9,
+          "difference": 4
+        },
+        {
+          "paper_id": "lWcM04ExOD",
+          "title": "Learning to Match Unpaired Data with Minimum Entropy Coupling",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 14,
+          "difference": 6
+        },
+        {
+          "paper_id": "KhCKypSaqx",
+          "title": "Learning Time-Aware Causal Representation for Model Generalization in Evolving Domains",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 10,
           "difference": 3
         },
         {
-          "paper_id": "U08mUogGDM",
-          "title": "Learning to Route LLMs with Confidence Tokens",
+          "paper_id": "IfWKVF6LfY",
+          "title": "DPO Meets PPO: Reinforced Token Optimization for RLHF",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
+        },
+        {
+          "paper_id": "aoLFIUlyPE",
+          "title": "BCE vs. CE in Deep Feature Learning",
           "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
+          "pdf_hypotheses_count": 13,
+          "difference": 8
+        },
+        {
+          "paper_id": "mruyFvKDKq",
+          "title": "Invariant Deep Uplift Modeling for Incentive Assignment in Online Marketing via Probability of Necessity and Sufficiency",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 14,
           "difference": 6
         },
         {
@@ -313,122 +355,10 @@
           "difference": 9
         },
         {
-          "paper_id": "JRg8P2bX8P",
-          "title": "Step-DAD: Semi-Amortized Policy-Based Bayesian Experimental Design",
-          "abstract_hypotheses_count": 2,
-          "pdf_hypotheses_count": 10,
-          "difference": 8
-        },
-        {
-          "paper_id": "8V6MEtSnlR",
-          "title": "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 13,
-          "difference": 8
-        },
-        {
-          "paper_id": "CS4RyQuTig",
-          "title": "CaDA: Cross-Problem Routing Solver with Constraint-Aware Dual-Attention",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
-        },
-        {
-          "paper_id": "owEhpoKBKC",
-          "title": "Reward-free World Models for Online Imitation Learning",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 16,
-          "difference": 8
-        },
-        {
-          "paper_id": "l7ZmdeFyM1",
-          "title": "Training High Performance Spiking Neural Network  by Temporal Model Calibration",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "kqj2Cn3Sxr",
-          "title": "Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 8,
-          "difference": 2
-        },
-        {
-          "paper_id": "22kNOkkokU",
-          "title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 12,
-          "difference": 6
-        },
-        {
-          "paper_id": "BUhYurycps",
-          "title": "Topological Signatures of Adversaries in Multimodal Alignments",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 11,
-          "difference": 3
-        },
-        {
-          "paper_id": "2gpjvMEAMm",
-          "title": "Skip the Equations: Learning Behavior of Personalized Dynamical Systems Directly From Data",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 7,
-          "difference": 0
-        },
-        {
-          "paper_id": "Y8lfuSoqQz",
-          "title": "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 18,
-          "difference": 10
-        },
-        {
-          "paper_id": "hYxZJycvrz",
-          "title": "Integration-free Kernels for Equivariant Gaussian Process Modelling",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
-          "difference": 5
-        },
-        {
           "paper_id": "BnPaSXSmz1",
           "title": "An Online Statistical Framework for Out-of-Distribution Detection",
           "abstract_hypotheses_count": 4,
           "pdf_hypotheses_count": 9,
-          "difference": 5
-        },
-        {
-          "paper_id": "vHr9cdeFfu",
-          "title": "S2-Track: A Simple yet Strong Approach for End-to-End 3D Multi-Object Tracking",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 12,
-          "difference": 5
-        },
-        {
-          "paper_id": "rxKC8v2uHc",
-          "title": "GRAM: A Generative Foundation Reward Model for Reward Generalization",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 10,
-          "difference": 3
-        },
-        {
-          "paper_id": "zUk00sasl6",
-          "title": "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 7,
-          "difference": -3
-        },
-        {
-          "paper_id": "IVUjRWnU6c",
-          "title": "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 13,
-          "difference": 10
-        },
-        {
-          "paper_id": "ybno0ZP44z",
-          "title": "Improved Regret Analysis in Gaussian Process Bandits: Optimality for Noiseless Reward, RKHS norm, and Non-Stationary Variance",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
           "difference": 5
         },
         {
@@ -439,45 +369,52 @@
           "difference": 5
         },
         {
-          "paper_id": "4d2dwJN4v1",
-          "title": "Random Registers for Cross-Domain Few-Shot Learning",
+          "paper_id": "CS4RyQuTig",
+          "title": "CaDA: Cross-Problem Routing Solver with Constraint-Aware Dual-Attention",
           "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 20,
-          "difference": 14
+          "pdf_hypotheses_count": 11,
+          "difference": 5
         },
         {
-          "paper_id": "jnhkY0yCIW",
-          "title": "SEMU: Singular Value Decomposition for Efficient Machine Unlearning",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 17,
-          "difference": 10
-        },
-        {
-          "paper_id": "EHqQaBYYlE",
-          "title": "Active Evaluation Acquisition for Efficient LLM Benchmarking",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 19,
-          "difference": 14
-        },
-        {
-          "paper_id": "S22CMkkQzY",
-          "title": "Selective Preference Aggregation",
+          "paper_id": "22kNOkkokU",
+          "title": "Zebra: In-Context Generative Pretraining for Solving Parametric PDEs",
           "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 12,
           "difference": 6
         },
         {
-          "paper_id": "CXN1Myzsp4",
-          "title": "LapSum - One Method to Differentiate Them All: Ranking, Sorting and Top-k Selection",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 14,
-          "difference": 8
+          "paper_id": "jMNQaNbjQl",
+          "title": "Leveraging Offline Data in Linear Latent Contextual Bandits",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 10,
+          "difference": 0
         },
         {
-          "paper_id": "W0GrWqqTJo",
-          "title": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 17,
+          "paper_id": "skoBTs4ke4",
+          "title": "Delay-DSGN: A Dynamic Spiking Graph Neural Network with Delay Mechanisms for Evolving Graph",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "BUhYurycps",
+          "title": "Topological Signatures of Adversaries in Multimodal Alignments",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 11,
+          "difference": 3
+        },
+        {
+          "paper_id": "992yMPvMqV",
+          "title": "BinauralFlow: A Causal and Streamable Approach for High-Quality Binaural Speech Synthesis with Flow Matching Models",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 12,
+          "difference": 6
+        },
+        {
+          "paper_id": "Y8lfuSoqQz",
+          "title": "OV-MER: Towards Open-Vocabulary Multimodal Emotion Recognition",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 18,
           "difference": 10
         },
         {
@@ -488,214 +425,18 @@
           "difference": 6
         },
         {
-          "paper_id": "teJdFzLnKh",
-          "title": "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 15,
-          "difference": 7
-        },
-        {
-          "paper_id": "xkV3uCQtJm",
-          "title": "Nonparametric Modern Hopfield Models",
+          "paper_id": "sElAqKsJrQ",
+          "title": "Provably Efficient RL for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
           "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 14,
-          "difference": 7
-        },
-        {
-          "paper_id": "w0xYx9CJhY",
-          "title": "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 12,
-          "difference": 4
-        },
-        {
-          "paper_id": "3lsEeqmvpz",
-          "title": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 13,
-          "difference": 8
-        },
-        {
-          "paper_id": "1WfWvpiEPE",
-          "title": "Optimal Auction Design in the Joint Advertising",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "ZawsPjlIGu",
-          "title": "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 13,
-          "difference": 6
-        },
-        {
-          "paper_id": "IfWKVF6LfY",
-          "title": "DPO Meets PPO: Reinforced Token Optimization for RLHF",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "yTAR011mOF",
-          "title": "How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 10,
+          "pdf_hypotheses_count": 8,
           "difference": 1
         },
         {
-          "paper_id": "0REM9ydeLZ",
-          "title": "Raising the Bar: Investigating the Values of Large Language Models via Generative Evolving Testing",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 9,
-          "difference": 4
-        },
-        {
-          "paper_id": "u8kFBce69J",
-          "title": "Neural Genetic Search in Discrete Spaces",
-          "abstract_hypotheses_count": 6,
+          "paper_id": "64mHSb9DlQ",
+          "title": "Parameter-Efficient Fine-Tuning of State Space Models",
+          "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 8,
-          "difference": 2
-        },
-        {
-          "paper_id": "tTVYR82Iz6",
-          "title": "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
-        },
-        {
-          "paper_id": "DRvtabzN0n",
-          "title": "Zero-Inflated Bandits",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 15,
-          "difference": 12
-        },
-        {
-          "paper_id": "ThK6o74QLc",
-          "title": "Adapting Precomputed Features for Efficient Graph Condensation",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 14,
-          "difference": 4
-        },
-        {
-          "paper_id": "VzFXb6Au58",
-          "title": "Contradiction Retrieval via Contrastive Learning with Sparsity",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 12,
-          "difference": 5
-        },
-        {
-          "paper_id": "uqpML2nbIz",
-          "title": "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "HXOicJsmMQ",
-          "title": "Activation Space Interventions Can Be Transferred Between Large Language Models",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 11,
-          "difference": 3
-        },
-        {
-          "paper_id": "RmZZ4AeNsl",
-          "title": "Almost Optimal Fully Dynamic $k$-Center Clustering with Recourse",
-          "abstract_hypotheses_count": 2,
-          "pdf_hypotheses_count": 10,
-          "difference": 8
-        },
-        {
-          "paper_id": "hC7zCFk5Dp",
-          "title": "NTK-DFL: Enhancing Decentralized Federated Learning in Heterogeneous Settings via Neural Tangent Kernel",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 15,
-          "difference": 10
-        },
-        {
-          "paper_id": "yTWqL3XHCC",
-          "title": "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "jMNQaNbjQl",
-          "title": "Leveraging Offline Data in Linear Latent Contextual Bandits",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 10,
-          "difference": 0
-        },
-        {
-          "paper_id": "c16m2kUTLZ",
-          "title": "No Soundness in the Real World: On the Challenges of the Verification of Deployed Neural Networks",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 9,
-          "difference": 4
-        },
-        {
-          "paper_id": "038rEwbChh",
-          "title": "Semi-Supervised Blind Quality Assessment with Confidence-quantifiable Pseudo-label Learning for Authentic Images",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 16,
-          "difference": 6
-        },
-        {
-          "paper_id": "992yMPvMqV",
-          "title": "BinauralFlow: A Causal and Streamable Approach for High-Quality Binaural Speech Synthesis with Flow Matching Models",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 12,
-          "difference": 6
-        },
-        {
-          "paper_id": "LD0qNRusFo",
-          "title": "Accelerating Quantum Reinforcement Learning with a Quantum Natural Policy Gradient Based Approach",
-          "abstract_hypotheses_count": 4,
-          "pdf_hypotheses_count": 7,
-          "difference": 3
-        },
-        {
-          "paper_id": "DDIGCk25BO",
-          "title": "Robust Automatic Modulation Classification with Fuzzy Regularization",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
-          "difference": 6
-        },
-        {
-          "paper_id": "Jwe5FJ8QGx",
-          "title": "Preference Optimization for Combinatorial Optimization Problems",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
-        },
-        {
-          "paper_id": "oRT6H6We48",
-          "title": "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 13,
-          "difference": 6
-        },
-        {
-          "paper_id": "Um7XmQEWu5",
-          "title": "Towards Robust Influence Functions with Flat Validation Minima",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "0ysC6VS0y3",
-          "title": "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
-          "difference": 5
-        },
-        {
-          "paper_id": "kcE0TdWKji",
-          "title": "A Unified Framework for Generalization Error Analysis of Learning with Arbitrary Discrete Weak Features",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 9,
-          "difference": 4
+          "difference": 1
         },
         {
           "paper_id": "goVzfYtj58",
@@ -705,31 +446,80 @@
           "difference": 11
         },
         {
-          "paper_id": "bPJVWvyII5",
-          "title": "In-Context Deep Learning via Transformer Models",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
-        },
-        {
-          "paper_id": "mruyFvKDKq",
-          "title": "Invariant Deep Uplift Modeling for Incentive Assignment in Online Marketing via Probability of Necessity and Sufficiency",
+          "paper_id": "BkdAnSKNoX",
+          "title": "TLLC: Transfer Learning-based Label Completion for Crowdsourcing",
           "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 14,
-          "difference": 6
+          "pdf_hypotheses_count": 12,
+          "difference": 4
         },
         {
-          "paper_id": "sElAqKsJrQ",
-          "title": "Provably Efficient RL for Linear MDPs under Instantaneous Safety Constraints in Non-Convex Feature Spaces",
+          "paper_id": "l7ZmdeFyM1",
+          "title": "Training High Performance Spiking Neural Network  by Temporal Model Calibration",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
+        },
+        {
+          "paper_id": "xkV3uCQtJm",
+          "title": "Nonparametric Modern Hopfield Models",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 14,
+          "difference": 7
+        },
+        {
+          "paper_id": "bUGdGaNFhi",
+          "title": "TimePoint: Accelerated Time Series Alignment via Self-Supervised Keypoint and Descriptor Learning",
           "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 8,
           "difference": 1
         },
         {
-          "paper_id": "6ojzpDczIY",
-          "title": "Global Optimization with a Power-Transformed Objective and Gaussian Smoothing",
-          "abstract_hypotheses_count": 6,
+          "paper_id": "0VSDl40xMv",
+          "title": "DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 11,
+          "difference": 3
+        },
+        {
+          "paper_id": "oRT6H6We48",
+          "title": "Data-driven Design of Randomized Control Trials with Guaranteed Treatment Effects",
+          "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 13,
+          "difference": 6
+        },
+        {
+          "paper_id": "038rEwbChh",
+          "title": "Semi-Supervised Blind Quality Assessment with Confidence-quantifiable Pseudo-label Learning for Authentic Images",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 16,
+          "difference": 6
+        },
+        {
+          "paper_id": "DDIGCk25BO",
+          "title": "Robust Automatic Modulation Classification with Fuzzy Regularization",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "IVUjRWnU6c",
+          "title": "LLMs on the Line: Data Determines Loss-to-Loss Scaling Laws",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 13,
+          "difference": 10
+        },
+        {
+          "paper_id": "u8kFBce69J",
+          "title": "Neural Genetic Search in Discrete Spaces",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 8,
+          "difference": 2
+        },
+        {
+          "paper_id": "teJdFzLnKh",
+          "title": "SEFE: Superficial and Essential Forgetting Eliminator for Multimodal Continual Instruction Tuning",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 15,
           "difference": 7
         },
         {
@@ -740,74 +530,11 @@
           "difference": 3
         },
         {
-          "paper_id": "Y7GpMDrWG4",
-          "title": "Maintaining Proportional Committees with Dynamic Candidate Sets",
+          "paper_id": "8V6MEtSnlR",
+          "title": "Beyond Zero Initialization: Investigating the Impact of Non-Zero Initialization on LoRA Fine-Tuning Dynamics",
           "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 12,
-          "difference": 7
-        },
-        {
-          "paper_id": "JFafMSAjUm",
-          "title": "FireFlow: Fast Inversion of Rectified Flow for Image Semantic Editing",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 16,
-          "difference": 11
-        },
-        {
-          "paper_id": "kxFu9rQ0Mu",
-          "title": "Aligning Spoken Dialogue Models from User Interactions",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 10,
-          "difference": 3
-        },
-        {
-          "paper_id": "AhebPqDOMI",
-          "title": "Teaching Transformers Causal Reasoning through Axiomatic Training",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 10,
-          "difference": 2
-        },
-        {
-          "paper_id": "n3IkEjDq4V",
-          "title": "EasyInv: Toward Fast and Better DDIM Inversion",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 7,
-          "difference": 1
-        },
-        {
-          "paper_id": "ITMu1pZTFo",
-          "title": "Attention-Only Transformers via Unrolled Subspace Denoising",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 9,
-          "difference": 1
-        },
-        {
-          "paper_id": "73EwiOrN8W",
-          "title": "Graph-Assisted Stitching for Offline Hierarchical Reinforcement Learning",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 12,
-          "difference": 6
-        },
-        {
-          "paper_id": "C9tD7ZLew4",
-          "title": "Best Subset Selection: Optimal Pursuit for Feature Selection and Elimination",
-          "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 13,
-          "difference": 7
-        },
-        {
-          "paper_id": "9Klg7ce8D7",
-          "title": "Compressing tree ensembles through Level-wise Optimization and Pruning",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "H0ySAzwu8k",
-          "title": "GLGENN: A Novel Parameter-Light Equivariant Neural Networks Architecture Based on Clifford Geometric Algebras",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
-          "difference": 6
+          "difference": 8
         },
         {
           "paper_id": "Gt138OTYzY",
@@ -817,25 +544,18 @@
           "difference": 9
         },
         {
-          "paper_id": "vOxaD3hhPt",
-          "title": "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 12,
-          "difference": 5
+          "paper_id": "tTVYR82Iz6",
+          "title": "Predictive Data Selection: The Data That Predicts Is the Data That Teaches",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
         },
         {
-          "paper_id": "pUCYJ9JJuZ",
-          "title": "Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 14,
-          "difference": 7
-        },
-        {
-          "paper_id": "lWcM04ExOD",
-          "title": "Learning to Match Unpaired Data with Minimum Entropy Coupling",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 14,
-          "difference": 6
+          "paper_id": "LO7ciRpjI5",
+          "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 16,
+          "difference": 10
         },
         {
           "paper_id": "mzle2Jnt72",
@@ -852,38 +572,318 @@
           "difference": 4
         },
         {
-          "paper_id": "buwLCdOHxO",
-          "title": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
-          "abstract_hypotheses_count": 4,
-          "pdf_hypotheses_count": 13,
-          "difference": 9
+          "paper_id": "c16m2kUTLZ",
+          "title": "No Soundness in the Real World: On the Challenges of the Verification of Deployed Neural Networks",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 9,
+          "difference": 4
         },
         {
-          "paper_id": "F08lzoBgad",
-          "title": "In-Context Denoising with One-Layer Transformers: Connections between Attention and Associative Memory Retrieval",
+          "paper_id": "kxFu9rQ0Mu",
+          "title": "Aligning Spoken Dialogue Models from User Interactions",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 10,
+          "difference": 3
+        },
+        {
+          "paper_id": "kcE0TdWKji",
+          "title": "A Unified Framework for Generalization Error Analysis of Learning with Arbitrary Discrete Weak Features",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 9,
+          "difference": 4
+        },
+        {
+          "paper_id": "vHr9cdeFfu",
+          "title": "S2-Track: A Simple yet Strong Approach for End-to-End 3D Multi-Object Tracking",
           "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 12,
           "difference": 5
         },
         {
-          "paper_id": "LO7ciRpjI5",
-          "title": "Sundial: A Family of Highly Capable Time Series Foundation Models",
+          "paper_id": "ITMu1pZTFo",
+          "title": "Attention-Only Transformers via Unrolled Subspace Denoising",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 9,
+          "difference": 1
+        },
+        {
+          "paper_id": "DRvtabzN0n",
+          "title": "Zero-Inflated Bandits",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 15,
+          "difference": 12
+        },
+        {
+          "paper_id": "JRg8P2bX8P",
+          "title": "Step-DAD: Semi-Amortized Policy-Based Bayesian Experimental Design",
+          "abstract_hypotheses_count": 2,
+          "pdf_hypotheses_count": 10,
+          "difference": 8
+        },
+        {
+          "paper_id": "yTAR011mOF",
+          "title": "How Transformers Learn Regular Language Recognition: A Theoretical Study on Training Dynamics and Implicit Bias",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 10,
+          "difference": 1
+        },
+        {
+          "paper_id": "S22CMkkQzY",
+          "title": "Selective Preference Aggregation",
           "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 16,
+          "pdf_hypotheses_count": 12,
+          "difference": 6
+        },
+        {
+          "paper_id": "U08mUogGDM",
+          "title": "Learning to Route LLMs with Confidence Tokens",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "W0GrWqqTJo",
+          "title": "Extractive Structures Learned in Pretraining Enable Generalization on Finetuned Facts",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 17,
           "difference": 10
         },
         {
-          "paper_id": "GazlTYxZss",
-          "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
+          "paper_id": "CY9MlORQs5",
+          "title": "Rethinking Aleatoric and Epistemic Uncertainty",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 14,
+          "difference": 9
+        },
+        {
+          "paper_id": "C9tD7ZLew4",
+          "title": "Best Subset Selection: Optimal Pursuit for Feature Selection and Elimination",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 13,
+          "difference": 7
+        },
+        {
+          "paper_id": "ybno0ZP44z",
+          "title": "Improved Regret Analysis in Gaussian Process Bandits: Optimality for Noiseless Reward, RKHS norm, and Non-Stationary Variance",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "bPJVWvyII5",
+          "title": "In-Context Deep Learning via Transformer Models",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 11,
+          "difference": 5
+        },
+        {
+          "paper_id": "w0xYx9CJhY",
+          "title": "Mitigating Object Hallucination in Large Vision-Language Models via Image-Grounded Guidance",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 12,
+          "difference": 4
+        },
+        {
+          "paper_id": "owEhpoKBKC",
+          "title": "Reward-free World Models for Online Imitation Learning",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 16,
+          "difference": 8
+        },
+        {
+          "paper_id": "HXOicJsmMQ",
+          "title": "Activation Space Interventions Can Be Transferred Between Large Language Models",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 11,
+          "difference": 3
+        },
+        {
+          "paper_id": "rxKC8v2uHc",
+          "title": "GRAM: A Generative Foundation Reward Model for Reward Generalization",
           "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 10,
           "difference": 3
+        },
+        {
+          "paper_id": "1WfWvpiEPE",
+          "title": "Optimal Auction Design in the Joint Advertising",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "Lm9DXFrcHD",
+          "title": "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "jnhkY0yCIW",
+          "title": "SEMU: Singular Value Decomposition for Efficient Machine Unlearning",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 17,
+          "difference": 10
+        },
+        {
+          "paper_id": "ZawsPjlIGu",
+          "title": "GuidedQuant: Large Language Model Quantization via Exploiting End Loss Guidance",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 13,
+          "difference": 6
+        },
+        {
+          "paper_id": "H0ySAzwu8k",
+          "title": "GLGENN: A Novel Parameter-Light Equivariant Neural Networks Architecture Based on Clifford Geometric Algebras",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "JFafMSAjUm",
+          "title": "FireFlow: Fast Inversion of Rectified Flow for Image Semantic Editing",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 16,
+          "difference": 11
+        },
+        {
+          "paper_id": "ThK6o74QLc",
+          "title": "Adapting Precomputed Features for Efficient Graph Condensation",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 14,
+          "difference": 4
+        },
+        {
+          "paper_id": "AhebPqDOMI",
+          "title": "Teaching Transformers Causal Reasoning through Axiomatic Training",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 10,
+          "difference": 2
+        },
+        {
+          "paper_id": "hYxZJycvrz",
+          "title": "Integration-free Kernels for Equivariant Gaussian Process Modelling",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "zUk00sasl6",
+          "title": "QuRe: Query-Relevant Retrieval through Hard Negative Sampling in Composed Image Retrieval",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 7,
+          "difference": -3
+        },
+        {
+          "paper_id": "pUCYJ9JJuZ",
+          "title": "Behavior-Regularized Diffusion Policy Optimization for Offline Reinforcement Learning",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 14,
+          "difference": 7
         },
         {
           "paper_id": "VNLmfMJi3w",
           "title": "Stay-Positive: A Case for Ignoring Real Image Features in Fake Image Detection",
           "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 13,
+          "difference": 7
+        },
+        {
+          "paper_id": "QWpuqidr53",
+          "title": "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 10,
+          "difference": 3
+        },
+        {
+          "paper_id": "LD0qNRusFo",
+          "title": "Accelerating Quantum Reinforcement Learning with a Quantum Natural Policy Gradient Based Approach",
+          "abstract_hypotheses_count": 4,
+          "pdf_hypotheses_count": 7,
+          "difference": 3
+        },
+        {
+          "paper_id": "3lsEeqmvpz",
+          "title": "HaploVL: A Single-Transformer Baseline for Multi-Modal Understanding",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 13,
+          "difference": 8
+        },
+        {
+          "paper_id": "VzFXb6Au58",
+          "title": "Contradiction Retrieval via Contrastive Learning with Sparsity",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 12,
+          "difference": 5
+        },
+        {
+          "paper_id": "6srcNB5kCC",
+          "title": "Flex3D: Feed-Forward 3D Generation with Flexible Reconstruction Model and Input View Curation",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 14,
+          "difference": 5
+        },
+        {
+          "paper_id": "2aKHuXdr7Q",
+          "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 11,
+          "difference": 5
+        },
+        {
+          "paper_id": "yTWqL3XHCC",
+          "title": "Promoting Ensemble Diversity with Interactive Bayesian Distributional Robustness for Fine-tuning Foundation Models",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "kqj2Cn3Sxr",
+          "title": "Putnam-AXIOM: A Functional & Static Benchmark for Measuring Higher Level Mathematical Reasoning in LLMs",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 8,
+          "difference": 2
+        },
+        {
+          "paper_id": "0ysC6VS0y3",
+          "title": "Emergence and Effectiveness of Task Vectors in In-Context Learning: An Encoder Decoder Perspective",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "73EwiOrN8W",
+          "title": "Graph-Assisted Stitching for Offline Hierarchical Reinforcement Learning",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 12,
+          "difference": 6
+        },
+        {
+          "paper_id": "4d2dwJN4v1",
+          "title": "Random Registers for Cross-Domain Few-Shot Learning",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 20,
+          "difference": 14
+        },
+        {
+          "paper_id": "EHqQaBYYlE",
+          "title": "Active Evaluation Acquisition for Efficient LLM Benchmarking",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 19,
+          "difference": 14
+        },
+        {
+          "paper_id": "6ojzpDczIY",
+          "title": "Global Optimization with a Power-Transformed Objective and Gaussian Smoothing",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 13,
+          "difference": 7
+        },
+        {
+          "paper_id": "Y7GpMDrWG4",
+          "title": "Maintaining Proportional Committees with Dynamic Candidate Sets",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 12,
           "difference": 7
         },
         {
@@ -894,88 +894,88 @@
           "difference": -1
         },
         {
-          "paper_id": "2aKHuXdr7Q",
-          "title": "Going Deeper into Locally Differentially Private Graph Neural Networks",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
+          "paper_id": "RmZZ4AeNsl",
+          "title": "Almost Optimal Fully Dynamic $k$-Center Clustering with Recourse",
+          "abstract_hypotheses_count": 2,
+          "pdf_hypotheses_count": 10,
+          "difference": 8
         },
         {
-          "paper_id": "ULZHqJU4ZC",
-          "title": "Privacy-Preserving Federated Convex Optimization: Balancing Partial-Participation and Efficiency via Noise Cancellation",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 9,
-          "difference": 4
-        },
-        {
-          "paper_id": "0VSDl40xMv",
-          "title": "DOLPHIN: A Programmable Framework for Scalable Neurosymbolic Learning",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 11,
-          "difference": 3
-        },
-        {
-          "paper_id": "64mHSb9DlQ",
-          "title": "Parameter-Efficient Fine-Tuning of State Space Models",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 8,
-          "difference": 1
-        },
-        {
-          "paper_id": "bUGdGaNFhi",
-          "title": "TimePoint: Accelerated Time Series Alignment via Self-Supervised Keypoint and Descriptor Learning",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 8,
-          "difference": 1
-        },
-        {
-          "paper_id": "KhCKypSaqx",
-          "title": "Learning Time-Aware Causal Representation for Model Generalization in Evolving Domains",
+          "paper_id": "GazlTYxZss",
+          "title": "Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems",
           "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 10,
           "difference": 3
         },
         {
-          "paper_id": "Lm9DXFrcHD",
-          "title": "Hyperband-based Bayesian Optimization for Black-box Prompt Selection",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
-          "difference": 6
-        },
-        {
-          "paper_id": "BkdAnSKNoX",
-          "title": "TLLC: Transfer Learning-based Label Completion for Crowdsourcing",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 12,
+          "paper_id": "9JQXuyzdGL",
+          "title": "Flow-based Domain Randomization for Learning and Sequencing Robotic Skills",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 7,
           "difference": 4
         },
         {
-          "paper_id": "skoBTs4ke4",
-          "title": "Delay-DSGN: A Dynamic Spiking Graph Neural Network with Delay Mechanisms for Evolving Graph",
+          "paper_id": "9Klg7ce8D7",
+          "title": "Compressing tree ensembles through Level-wise Optimization and Pruning",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "n3IkEjDq4V",
+          "title": "EasyInv: Toward Fast and Better DDIM Inversion",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 7,
+          "difference": 1
+        },
+        {
+          "paper_id": "2gpjvMEAMm",
+          "title": "Skip the Equations: Learning Behavior of Personalized Dynamical Systems Directly From Data",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 7,
+          "difference": 0
+        },
+        {
+          "paper_id": "uqpML2nbIz",
+          "title": "RULEBREAKERS: Challenging LLMs at the Crossroads between Formal Logic and Human-like Reasoning",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "2FDsh5D2Th",
+          "title": "Pre-training Auto-regressive Robotic Models with 4D Representations",
           "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 9,
           "difference": 3
         },
         {
-          "paper_id": "CY9MlORQs5",
-          "title": "Rethinking Aleatoric and Epistemic Uncertainty",
+          "paper_id": "hC7zCFk5Dp",
+          "title": "NTK-DFL: Enhancing Decentralized Federated Learning in Heterogeneous Settings via Neural Tangent Kernel",
           "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 14,
+          "pdf_hypotheses_count": 15,
+          "difference": 10
+        },
+        {
+          "paper_id": "buwLCdOHxO",
+          "title": "Collapse or Thrive: Perils and Promises of Synthetic Data in a Self-Generating World",
+          "abstract_hypotheses_count": 4,
+          "pdf_hypotheses_count": 13,
           "difference": 9
         },
         {
-          "paper_id": "QWpuqidr53",
-          "title": "REINFORCE Adversarial Attacks on Large Language Models: An Adaptive, Distributional, and Semantic Objective",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 10,
-          "difference": 3
+          "paper_id": "CXN1Myzsp4",
+          "title": "LapSum - One Method to Differentiate Them All: Ranking, Sorting and Top-k Selection",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 14,
+          "difference": 8
         },
         {
-          "paper_id": "aoLFIUlyPE",
-          "title": "BCE vs. CE in Deep Feature Learning",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 13,
-          "difference": 8
+          "paper_id": "vOxaD3hhPt",
+          "title": "MetaAgent: Automatically Constructing Multi-Agent Systems Based on Finite State Machines",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 12,
+          "difference": 5
         }
       ],
       "matching_fractions": [
@@ -1789,39 +1789,67 @@
     "arXiv cond-mat": {
       "per_paper_comparison": [
         {
-          "paper_id": "2510.12696v1",
-          "title": "Temperature and conditions for thermalization after canonical quenches",
+          "paper_id": "2510.10897v1",
+          "title": "Hydrodynamics of degenerate Fermi gases on spherical Fermi surfaces",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 8,
+          "difference": 1
+        },
+        {
+          "paper_id": "2510.11342v1",
+          "title": "One-dimensional topological superconductors with nonsymmorphic symmetries",
           "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 16,
-          "difference": 10
+          "pdf_hypotheses_count": 14,
+          "difference": 8
         },
         {
-          "paper_id": "2510.10610v1",
-          "title": "Topology and Martensitic Phase Transformations",
+          "paper_id": "2510.10463v1",
+          "title": "The significance of two-way coupling in two-dimensional, dusty turbulence",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.10435v1",
+          "title": "Proof of the exact diffusion constant via first passage time in quasi-periodic potentials",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 12,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.12655v1",
+          "title": "AI-Assisted Physics-Informed Predictions of Degradation Behavior of Polymeric Anion Exchange Membranes",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 11,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.10309v1",
+          "title": "Roles of Electrically Excited Magnons in Unidirectional Magnetoresistance of Metallic Magnetic Bilayers",
           "abstract_hypotheses_count": 4,
-          "pdf_hypotheses_count": 0,
-          "difference": -4
+          "pdf_hypotheses_count": 13,
+          "difference": 9
         },
         {
-          "paper_id": "2510.11864v1",
-          "title": "Dipole-quadrupole model and multipole analysis of resonant membrane metasurfaces",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 15,
+          "paper_id": "2510.10983v1",
+          "title": "Loss investigations of high frequency lithium niobate Lamb wave resonators at ultralow temperatures",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.11580v1",
+          "title": "Disorder to Order Transition in 1D Nonreciprocal Cahn-Hilliard Model",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 14,
           "difference": 6
         },
         {
-          "paper_id": "2510.12690v1",
-          "title": "Formation of C-centers in Si-based systems by light ion irradiation",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 18,
-          "difference": 13
-        },
-        {
-          "paper_id": "2510.10555v1",
-          "title": "Breaking the Sabatier Principle by Dynamic Adsorption-Desorption Decoupling in Electrocatalytic Hydrogen Evolution",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 20,
-          "difference": 13
+          "paper_id": "2510.10693v1",
+          "title": "High-Dimensional Learning Dynamics of Quantized Models with Straight-Through Estimator",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 11,
+          "difference": 5
         },
         {
           "paper_id": "2510.10547v1",
@@ -1831,95 +1859,11 @@
           "difference": 0
         },
         {
-          "paper_id": "2510.10525v1",
-          "title": "Time domain braiding of anyons revealed through a nonequilibrium fluctuation dissipation theorem",
+          "paper_id": "2510.11126v1",
+          "title": "In-plane polar domains enhanced energy storage",
           "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 14,
-          "difference": 7
-        },
-        {
-          "paper_id": "2510.09961v1",
-          "title": "Real-time dynamics with bead-Fourier path integrals. II. Bead-Fourier RPMD",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.11920v1",
-          "title": "Low-field all-optical detection of superconductivity using NV nanodiamonds",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 14,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.09900v1",
-          "title": "Hydration Free Energies of Linear Alkanes: Evaluating and Correcting Classical Force Field Predictions with Different Water Models",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 14,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.12055v1",
-          "title": "Quantification of Electrolyte Degradation in Lithium-ion Batteries with Neutron Imaging Techniques",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 14,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.11355v1",
-          "title": "Nonequilibrium spin-splitter effect in altermagnet superconductor hybrids",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 15,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.12593v1",
-          "title": "Escape-Induced Temporally Correlated Noise Driven Universality Crossover",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 0,
-          "difference": -7
-        },
-        {
-          "paper_id": "2510.11607v1",
-          "title": "Flux confinement-deconfinement transition of dimer-loop models on three-dimensional bipartite lattices",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 12,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.10643v1",
-          "title": "Non-unitary Time Evolution via the Chebyshev Expansion Method",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.10911v1",
-          "title": "Delayed 1T to 2H Phase Transition Upon Electrochemical Delithiation of LiMoS2",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 8,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.10297v1",
-          "title": "A continued fraction approximation for the effective elasticity tensor of two-dimensional polycrystals as a function of the crystal elasticity tensor",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 10,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.10479v1",
-          "title": "Growth control of highly textured Bi2Te3 thin films by pulsed laser deposition",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 10,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.12790v1",
-          "title": "Thermodynamics of quantum processes: An operational framework for free energy and reversible athermality",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
+          "pdf_hypotheses_count": 17,
+          "difference": 10
         },
         {
           "paper_id": "2510.12557v1",
@@ -1929,15 +1873,92 @@
           "difference": 6
         },
         {
-          "paper_id": "2510.11450v1",
-          "title": "Nonanaliticities and ergodicity breaking in noninteracting many-body dynamics via stochastic resetting and global measurements",
+          "paper_id": "2510.12602v1",
+          "title": "The spin Hall conductivity in the hole-doped bilayer Haldane-Hubbard model with odd-parity ALM",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 10,
+          "difference": 1
+        },
+        {
+          "paper_id": "2510.11159v1",
+          "title": "Tunable multi-photon correlations from a coherently driven quantum dot",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 10,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.12055v1",
+          "title": "Quantification of Electrolyte Degradation in Lithium-ion Batteries with Neutron Imaging Techniques",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 14,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.10589v1",
+          "title": "RKKY interaction in Weyl semimetal nanowires",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 12,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.12737v1",
+          "title": "Time-dependent Variational Principles for Hybrid Non-Unitary Dynamics: Application to Driven-Dissipative Superconductors",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 13,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.10908v1",
+          "title": "Two-dimensional flat-bands in Moire-diamonds",
           "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
+          "pdf_hypotheses_count": 12,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.11355v1",
+          "title": "Nonequilibrium spin-splitter effect in altermagnet superconductor hybrids",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 15,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.12359v1",
+          "title": "Interlayer coupling enhanced superconductivity near 100 K in La$_{3-x}$Nd$_x$Ni$_2$O$_7$",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 12,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.11088v1",
+          "title": "Local-Antisymmetric Flat Band and Coexisting Correlated stripe charge orders in WSe2-Modulated Twisted Bilayer Graphene",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 8,
           "difference": 3
         },
         {
-          "paper_id": "2510.11820v1",
-          "title": "Universal scaling of shear thickening suspensions under acoustic perturbation",
+          "paper_id": "2510.11607v1",
+          "title": "Flux confinement-deconfinement transition of dimer-loop models on three-dimensional bipartite lattices",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 12,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.11029v1",
+          "title": "Frenkel anomaly on co-ordination numbers in liquid CO2 at 100 and 1000 bar studied by Monte Carlo simulation using Kihara potential model",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.11678v1",
+          "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in Herbertsmithite",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 12,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.11906v1",
+          "title": "Modelling of magnetic vortex microdisc dynamics under varying magnetic field in biological viscoelastic environments",
           "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 15,
           "difference": 9
@@ -1950,11 +1971,11 @@
           "difference": 4
         },
         {
-          "paper_id": "2510.11860v1",
-          "title": "Topological Robustness of Anyon Tunneling at $\u03bd= 1/3$",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
+          "paper_id": "2510.12473v1",
+          "title": "Two-Dimensional Na2LiAlP2 crystal for high-performance field-effect transistors",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
         },
         {
           "paper_id": "2510.09933v1",
@@ -1962,6 +1983,300 @@
           "abstract_hypotheses_count": 11,
           "pdf_hypotheses_count": 6,
           "difference": -5
+        },
+        {
+          "paper_id": "2510.09861v1",
+          "title": "Predicting Crystal Structures and Ionic Conductivity in Li$_{3}$YCl$_{6-x}$Br$_{x}$ Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.11134v1",
+          "title": "Spinon band flattening by its emergent gauge field in quantum kagome ice",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.09900v1",
+          "title": "Hydration Free Energies of Linear Alkanes: Evaluating and Correcting Classical Force Field Predictions with Different Water Models",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 14,
+          "difference": 8
+        },
+        {
+          "paper_id": "2510.10911v1",
+          "title": "Delayed 1T to 2H Phase Transition Upon Electrochemical Delithiation of LiMoS2",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 8,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.09921v1",
+          "title": "Two-dimensional superconducting diode effect in topological insulator/superconductor heterostructure",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 15,
+          "difference": 10
+        },
+        {
+          "paper_id": "2510.12696v1",
+          "title": "Temperature and conditions for thermalization after canonical quenches",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 16,
+          "difference": 10
+        },
+        {
+          "paper_id": "2510.11450v1",
+          "title": "Nonanaliticities and ergodicity breaking in noninteracting many-body dynamics via stochastic resetting and global measurements",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.10479v1",
+          "title": "Growth control of highly textured Bi2Te3 thin films by pulsed laser deposition",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 10,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.10919v1",
+          "title": "Generalized quantum limits of electrical contact resistance and thermal boundary resistance",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 9,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.11601v1",
+          "title": "Quantum Synchronization of Perturbed Oscillating Coherences",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 13,
+          "difference": 8
+        },
+        {
+          "paper_id": "2510.12746v1",
+          "title": "Oxygen-vacancy-induced Raman softening in the catalyst Fe$_2$(MoO$_4$)$_3$",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.12443v1",
+          "title": "Self-attention enabled quantum path analysis of high-harmonic generation in solids",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.09961v1",
+          "title": "Real-time dynamics with bead-Fourier path integrals. II. Bead-Fourier RPMD",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.12405v1",
+          "title": "Continuous Uniqueness and Novelty Metrics for Generative Modeling of Inorganic Crystals",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 11,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.10643v1",
+          "title": "Non-unitary Time Evolution via the Chebyshev Expansion Method",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.11350v1",
+          "title": "Electron-phonon coupling in magnetic materials using the local spin density approximation",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 9,
+          "difference": -1
+        },
+        {
+          "paper_id": "2510.12790v1",
+          "title": "Thermodynamics of quantum processes: An operational framework for free energy and reversible athermality",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.11945v1",
+          "title": "Orbitally-Resolved Mechanical Properties of Solids from Maximally Localized Wannier Functions",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 12,
+          "difference": 9
+        },
+        {
+          "paper_id": "2510.10094v1",
+          "title": "The effect of magnetic fields on vertex reconstructed muon-spin spectroscopy",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 12,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.10525v1",
+          "title": "Time domain braiding of anyons revealed through a nonequilibrium fluctuation dissipation theorem",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 14,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.10064v1",
+          "title": "Broad nonlocal spectrum in the Pb-InSb hybrid three terminals for potential realization of Kitaev chains",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 13,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.09999v1",
+          "title": "Random State Approach to Quantum Computation of Electronic-Structure Properties",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 15,
+          "difference": 8
+        },
+        {
+          "paper_id": "2510.10831v1",
+          "title": "Emerging Ferroelectric Domains: Stacking and Rotational Landscape of MoS2 Moire Bilayers",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 9,
+          "difference": 1
+        },
+        {
+          "paper_id": "2510.10255v1",
+          "title": "Localization Transition on Random Graphs with Chiral and Bogoliubov-de Gennes Symmetry Classes",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 7,
+          "difference": 0
+        },
+        {
+          "paper_id": "2510.12344v1",
+          "title": "Two-Dimensional Altermagnetism in Epitaxial CrSb Ultrathin Films",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 14,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.11337v1",
+          "title": "Behavior of passive polymeric tracers of different topologies in a dilute bath of active Brownian particles",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 16,
+          "difference": 11
+        },
+        {
+          "paper_id": "2510.11860v1",
+          "title": "Topological Robustness of Anyon Tunneling at $\u03bd= 1/3$",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 10,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.10297v1",
+          "title": "A continued fraction approximation for the effective elasticity tensor of two-dimensional polycrystals as a function of the crystal elasticity tensor",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 10,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.10521v1",
+          "title": "A ferroelectric junction transistor memory made from switchable van der Waals p-n heterojunctions",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 14,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.11459v1",
+          "title": "Efficient and accurate tensor network algorithm for Anderson impurity problems",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 12,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.12580v1",
+          "title": "Anonymous leadership and stochastic resonance in collectives of self-propelled robots",
+          "abstract_hypotheses_count": 4,
+          "pdf_hypotheses_count": 9,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.09998v1",
+          "title": "Ambient-Stable Transfer-Free Graphdiyne Wafers with Superhigh Hole Mobility at Room Temperature",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 13,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.12492v1",
+          "title": "Hydrodynamic Ratchet for Tracer Transport in a Soft Microchannel: A Detailed Analysis",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 12,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.10405v1",
+          "title": "Electric Polarization-Driven Modulation of Fe Adatoms on Ferroelectric $\u03b1$-In$_2$Se$_3$",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.11820v1",
+          "title": "Universal scaling of shear thickening suspensions under acoustic perturbation",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 15,
+          "difference": 9
+        },
+        {
+          "paper_id": "2510.12530v1",
+          "title": "Origin of Enhanced Thermal Resistance Near Nanoscale Hotspots: Insights from Full-Dispersion-Resolved Phonon Transport in Silicon",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 11,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.10230v1",
+          "title": "Scaling of Magnetic Domain Walls in Perpendicular Magnetic Anisotropy Systems",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 9,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.10566v1",
+          "title": "Uniformity Bias in Ground-State Sampling Induced by Replica Alignment in Quantum Monte Carlo for Quantum Annealing",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.11920v1",
+          "title": "Low-field all-optical detection of superconductivity using NV nanodiamonds",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 14,
+          "difference": 8
+        },
+        {
+          "paper_id": "2510.10743v1",
+          "title": "Unveiling the growth mode diagram of GaSe on sapphire",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 15,
+          "difference": 8
+        },
+        {
+          "paper_id": "2510.12613v1",
+          "title": "Quantum Spin Singlet and Classical N\u00e9el-Ordered Ground States in MoX3 (X = I, Br) Spin-3/2 Dimerized Antiferromagnetic Chain Crystals",
+          "abstract_hypotheses_count": 10,
+          "pdf_hypotheses_count": 10,
+          "difference": 0
+        },
+        {
+          "paper_id": "2510.12614v1",
+          "title": "Modeling Epidemics on Multiplex Networks: Epidemic Threshold and Basic Reproduction Number",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
         },
         {
           "paper_id": "2510.12678v1",
@@ -1978,74 +2293,11 @@
           "difference": 7
         },
         {
-          "paper_id": "2510.10094v1",
-          "title": "The effect of magnetic fields on vertex reconstructed muon-spin spectroscopy",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 12,
-          "difference": 7
-        },
-        {
-          "paper_id": "2510.12530v1",
-          "title": "Origin of Enhanced Thermal Resistance Near Nanoscale Hotspots: Insights from Full-Dispersion-Resolved Phonon Transport in Silicon",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.10463v1",
-          "title": "The significance of two-way coupling in two-dimensional, dusty turbulence",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.12359v1",
-          "title": "Interlayer coupling enhanced superconductivity near 100 K in La$_{3-x}$Nd$_x$Ni$_2$O$_7$",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 12,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.12473v1",
-          "title": "Two-Dimensional Na2LiAlP2 crystal for high-performance field-effect transistors",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.10693v1",
-          "title": "High-Dimensional Learning Dynamics of Quantized Models with Straight-Through Estimator",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.12737v1",
-          "title": "Time-dependent Variational Principles for Hybrid Non-Unitary Dynamics: Application to Driven-Dissipative Superconductors",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 13,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.11945v1",
-          "title": "Orbitally-Resolved Mechanical Properties of Solids from Maximally Localized Wannier Functions",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 12,
-          "difference": 9
-        },
-        {
-          "paper_id": "2510.11134v1",
-          "title": "Spinon band flattening by its emergent gauge field in quantum kagome ice",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.10405v1",
-          "title": "Electric Polarization-Driven Modulation of Fe Adatoms on Ferroelectric $\u03b1$-In$_2$Se$_3$",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
+          "paper_id": "2510.11603v1",
+          "title": "Ab-initio calculation of magnetic exchange interactions using the spin-spiral method in VASP: Self-consistent versus magnetic force theorem approaches",
+          "abstract_hypotheses_count": 8,
+          "pdf_hypotheses_count": 8,
+          "difference": 0
         },
         {
           "paper_id": "2510.09890v1",
@@ -2055,361 +2307,11 @@
           "difference": 3
         },
         {
-          "paper_id": "2510.12613v1",
-          "title": "Quantum Spin Singlet and Classical N\u00e9el-Ordered Ground States in MoX3 (X = I, Br) Spin-3/2 Dimerized Antiferromagnetic Chain Crystals",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 10,
-          "difference": 0
-        },
-        {
-          "paper_id": "2510.10298v1",
-          "title": "Defect-driven incoherent skin localization",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 10,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.10928v1",
-          "title": "Impact of elastic inhomogeneity on collective dynamical properties investigated by field theoretical description in real space",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 7,
-          "difference": 1
-        },
-        {
-          "paper_id": "2510.11459v1",
-          "title": "Efficient and accurate tensor network algorithm for Anderson impurity problems",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 12,
-          "difference": 7
-        },
-        {
-          "paper_id": "2510.12344v1",
-          "title": "Two-Dimensional Altermagnetism in Epitaxial CrSb Ultrathin Films",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 14,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.12614v1",
-          "title": "Modeling Epidemics on Multiplex Networks: Epidemic Threshold and Basic Reproduction Number",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.11126v1",
-          "title": "In-plane polar domains enhanced energy storage",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 17,
-          "difference": 10
-        },
-        {
-          "paper_id": "2510.10589v1",
-          "title": "RKKY interaction in Weyl semimetal nanowires",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 12,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.09999v1",
-          "title": "Random State Approach to Quantum Computation of Electronic-Structure Properties",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 15,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.10064v1",
-          "title": "Broad nonlocal spectrum in the Pb-InSb hybrid three terminals for potential realization of Kitaev chains",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 13,
-          "difference": 7
-        },
-        {
-          "paper_id": "2510.11580v1",
-          "title": "Disorder to Order Transition in 1D Nonreciprocal Cahn-Hilliard Model",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 14,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.10230v1",
-          "title": "Scaling of Magnetic Domain Walls in Perpendicular Magnetic Anisotropy Systems",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 9,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.12492v1",
-          "title": "Hydrodynamic Ratchet for Tracer Transport in a Soft Microchannel: A Detailed Analysis",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 12,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.11350v1",
-          "title": "Electron-phonon coupling in magnetic materials using the local spin density approximation",
-          "abstract_hypotheses_count": 10,
-          "pdf_hypotheses_count": 9,
-          "difference": -1
-        },
-        {
-          "paper_id": "2510.11029v1",
-          "title": "Frenkel anomaly on co-ordination numbers in liquid CO2 at 100 and 1000 bar studied by Monte Carlo simulation using Kihara potential model",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.10919v1",
-          "title": "Generalized quantum limits of electrical contact resistance and thermal boundary resistance",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 9,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.10835v1",
-          "title": "Error thresholds of toric codes with transversal logical gates",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 7,
-          "difference": 1
-        },
-        {
-          "paper_id": "2510.10309v1",
-          "title": "Roles of Electrically Excited Magnons in Unidirectional Magnetoresistance of Metallic Magnetic Bilayers",
-          "abstract_hypotheses_count": 4,
-          "pdf_hypotheses_count": 13,
-          "difference": 9
-        },
-        {
-          "paper_id": "2510.10255v1",
-          "title": "Localization Transition on Random Graphs with Chiral and Bogoliubov-de Gennes Symmetry Classes",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 7,
-          "difference": 0
-        },
-        {
-          "paper_id": "2510.11337v1",
-          "title": "Behavior of passive polymeric tracers of different topologies in a dilute bath of active Brownian particles",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 16,
-          "difference": 11
-        },
-        {
-          "paper_id": "2510.11906v1",
-          "title": "Modelling of magnetic vortex microdisc dynamics under varying magnetic field in biological viscoelastic environments",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 15,
-          "difference": 9
-        },
-        {
-          "paper_id": "2510.10595v1",
-          "title": "Weak-anti-localization-to-spin-dependent scattering at a proximity-magnetized heavy metal interface",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.11678v1",
-          "title": "Spinon Mediation of Witness-Spin Dynamics and Ground State in Herbertsmithite",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 12,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.10743v1",
-          "title": "Unveiling the growth mode diagram of GaSe on sapphire",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 15,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.11159v1",
-          "title": "Tunable multi-photon correlations from a coherently driven quantum dot",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 10,
-          "difference": 7
-        },
-        {
-          "paper_id": "2510.10050v1",
-          "title": "Quantum many-body analysis of a spin-2 bosons with two-body inelastic decay",
-          "abstract_hypotheses_count": 3,
-          "pdf_hypotheses_count": 9,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.10908v1",
-          "title": "Two-dimensional flat-bands in Moire-diamonds",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 12,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.11601v1",
-          "title": "Quantum Synchronization of Perturbed Oscillating Coherences",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 13,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.09921v1",
-          "title": "Two-dimensional superconducting diode effect in topological insulator/superconductor heterostructure",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 15,
-          "difference": 10
-        },
-        {
-          "paper_id": "2510.12655v1",
-          "title": "AI-Assisted Physics-Informed Predictions of Degradation Behavior of Polymeric Anion Exchange Membranes",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 11,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.09998v1",
-          "title": "Ambient-Stable Transfer-Free Graphdiyne Wafers with Superhigh Hole Mobility at Room Temperature",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 13,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.10566v1",
-          "title": "Uniformity Bias in Ground-State Sampling Induced by Replica Alignment in Quantum Monte Carlo for Quantum Annealing",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.10745v1",
-          "title": "Fluidity and morphological stability of an amorphous thin film with radiation-induced defect kinetics",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 13,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.12286v1",
-          "title": "Train Stochastic Non Linear Coupled ODEs to Classify and Generate",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 14,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.11342v1",
-          "title": "One-dimensional topological superconductors with nonsymmorphic symmetries",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 14,
-          "difference": 8
-        },
-        {
-          "paper_id": "2510.11285v1",
-          "title": "Bright Single-Photon Emission from Individual Tin-Vacancy Centers in Multi-Cone Diamond Waveguides",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 12,
-          "difference": 7
-        },
-        {
           "paper_id": "2510.12250v1",
           "title": "Superconductivity in monolayer-trilayer phase of La$_3$Ni$_2$O$_7$ under high pressure",
           "abstract_hypotheses_count": 6,
           "pdf_hypotheses_count": 7,
           "difference": 1
-        },
-        {
-          "paper_id": "2510.11995v1",
-          "title": "The Comparison of Colloidal PbS QD Photoconductors and Hybrid Phototransistors",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 6,
-          "difference": 0
-        },
-        {
-          "paper_id": "2510.10435v1",
-          "title": "Proof of the exact diffusion constant via first passage time in quasi-periodic potentials",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 12,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.10831v1",
-          "title": "Emerging Ferroelectric Domains: Stacking and Rotational Landscape of MoS2 Moire Bilayers",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 9,
-          "difference": 1
-        },
-        {
-          "paper_id": "2510.10817v1",
-          "title": "On the discovery of meteoritic mineral Zolenskyite; The artificial origin should not be overlooked",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 8,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.10266v1",
-          "title": "Harvesting chemical power from cyclic environments",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.11088v1",
-          "title": "Local-Antisymmetric Flat Band and Coexisting Correlated stripe charge orders in WSe2-Modulated Twisted Bilayer Graphene",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 8,
-          "difference": 3
-        },
-        {
-          "paper_id": "2510.10723v1",
-          "title": "Approach to zigzag and checkerboard patterns in spatially extended systems",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 21,
-          "difference": 15
-        },
-        {
-          "paper_id": "2510.12746v1",
-          "title": "Oxygen-vacancy-induced Raman softening in the catalyst Fe$_2$(MoO$_4$)$_3$",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 11,
-          "difference": 6
-        },
-        {
-          "paper_id": "2510.11679v1",
-          "title": "Observation of ballistic plasma and memory in high-energy gauge theory dynamics",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 13,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.11981v1",
-          "title": "Open Quantum Dynamics Theory for Coulomb Potentials: Hierarchical Equations of Motion for Atomic Orbitals (AO-HEOM)",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 11,
-          "difference": 5
-        },
-        {
-          "paper_id": "2510.09832v1",
-          "title": "Stable High-Order Vortices in Spin-Orbit-Coupled Spin-1 Bose-Einstein Condensates",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 14,
-          "difference": 9
-        },
-        {
-          "paper_id": "2510.09861v1",
-          "title": "Predicting Crystal Structures and Ionic Conductivity in Li$_{3}$YCl$_{6-x}$Br$_{x}$ Halide Solid Electrolytes Using a Fine-Tuned Machine Learning Interatomic Potential",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 9,
-          "difference": 2
-        },
-        {
-          "paper_id": "2510.11603v1",
-          "title": "Ab-initio calculation of magnetic exchange interactions using the spin-spiral method in VASP: Self-consistent versus magnetic force theorem approaches",
-          "abstract_hypotheses_count": 8,
-          "pdf_hypotheses_count": 8,
-          "difference": 0
-        },
-        {
-          "paper_id": "2510.12443v1",
-          "title": "Self-attention enabled quantum path analysis of high-harmonic generation in solids",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 9,
-          "difference": 3
         },
         {
           "paper_id": "2510.09807v1",
@@ -2419,11 +2321,25 @@
           "difference": 3
         },
         {
+          "paper_id": "2510.10928v1",
+          "title": "Impact of elastic inhomogeneity on collective dynamical properties investigated by field theoretical description in real space",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 7,
+          "difference": 1
+        },
+        {
           "paper_id": "2510.12731v1",
           "title": "plasmonX: an Open-Source Code for Nanoplasmonics",
           "abstract_hypotheses_count": 5,
           "pdf_hypotheses_count": 9,
           "difference": 4
+        },
+        {
+          "paper_id": "2510.10050v1",
+          "title": "Quantum many-body analysis of a spin-2 bosons with two-body inelastic decay",
+          "abstract_hypotheses_count": 3,
+          "pdf_hypotheses_count": 9,
+          "difference": 6
         },
         {
           "paper_id": "2510.11929v1",
@@ -2433,53 +2349,39 @@
           "difference": 1
         },
         {
-          "paper_id": "2510.12006v1",
-          "title": "Evidence for easy-plane XY ferromagnetism in heavy-fermion quantum-critical CeRh6Ge4",
-          "abstract_hypotheses_count": 5,
-          "pdf_hypotheses_count": 16,
-          "difference": 11
-        },
-        {
-          "paper_id": "2510.10983v1",
-          "title": "Loss investigations of high frequency lithium niobate Lamb wave resonators at ultralow temperatures",
-          "abstract_hypotheses_count": 6,
-          "pdf_hypotheses_count": 10,
-          "difference": 4
-        },
-        {
-          "paper_id": "2510.12602v1",
-          "title": "The spin Hall conductivity in the hole-doped bilayer Haldane-Hubbard model with odd-parity ALM",
-          "abstract_hypotheses_count": 9,
-          "pdf_hypotheses_count": 10,
-          "difference": 1
-        },
-        {
-          "paper_id": "2510.12405v1",
-          "title": "Continuous Uniqueness and Novelty Metrics for Generative Modeling of Inorganic Crystals",
+          "paper_id": "2510.12593v1",
+          "title": "Escape-Induced Temporally Correlated Noise Driven Universality Crossover",
           "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 11,
-          "difference": 4
+          "pdf_hypotheses_count": 0,
+          "difference": -7
         },
         {
-          "paper_id": "2510.10897v1",
-          "title": "Hydrodynamics of degenerate Fermi gases on spherical Fermi surfaces",
-          "abstract_hypotheses_count": 7,
-          "pdf_hypotheses_count": 8,
-          "difference": 1
-        },
-        {
-          "paper_id": "2510.10521v1",
-          "title": "A ferroelectric junction transistor memory made from switchable van der Waals p-n heterojunctions",
+          "paper_id": "2510.12286v1",
+          "title": "Train Stochastic Non Linear Coupled ODEs to Classify and Generate",
           "abstract_hypotheses_count": 8,
           "pdf_hypotheses_count": 14,
           "difference": 6
         },
         {
-          "paper_id": "2510.12580v1",
-          "title": "Anonymous leadership and stochastic resonance in collectives of self-propelled robots",
-          "abstract_hypotheses_count": 4,
-          "pdf_hypotheses_count": 9,
+          "paper_id": "2510.11981v1",
+          "title": "Open Quantum Dynamics Theory for Coulomb Potentials: Hierarchical Equations of Motion for Atomic Orbitals (AO-HEOM)",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 11,
           "difference": 5
+        },
+        {
+          "paper_id": "2510.11995v1",
+          "title": "The Comparison of Colloidal PbS QD Photoconductors and Hybrid Phototransistors",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 6,
+          "difference": 0
+        },
+        {
+          "paper_id": "2510.10610v1",
+          "title": "Topology and Martensitic Phase Transformations",
+          "abstract_hypotheses_count": 4,
+          "pdf_hypotheses_count": 0,
+          "difference": -4
         },
         {
           "paper_id": "2510.12074v1",
@@ -2487,6 +2389,104 @@
           "abstract_hypotheses_count": 7,
           "pdf_hypotheses_count": 11,
           "difference": 4
+        },
+        {
+          "paper_id": "2510.11679v1",
+          "title": "Observation of ballistic plasma and memory in high-energy gauge theory dynamics",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 13,
+          "difference": 4
+        },
+        {
+          "paper_id": "2510.12690v1",
+          "title": "Formation of C-centers in Si-based systems by light ion irradiation",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 18,
+          "difference": 13
+        },
+        {
+          "paper_id": "2510.10817v1",
+          "title": "On the discovery of meteoritic mineral Zolenskyite; The artificial origin should not be overlooked",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 8,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.09832v1",
+          "title": "Stable High-Order Vortices in Spin-Orbit-Coupled Spin-1 Bose-Einstein Condensates",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 14,
+          "difference": 9
+        },
+        {
+          "paper_id": "2510.10723v1",
+          "title": "Approach to zigzag and checkerboard patterns in spatially extended systems",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 21,
+          "difference": 15
+        },
+        {
+          "paper_id": "2510.11285v1",
+          "title": "Bright Single-Photon Emission from Individual Tin-Vacancy Centers in Multi-Cone Diamond Waveguides",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 12,
+          "difference": 7
+        },
+        {
+          "paper_id": "2510.10266v1",
+          "title": "Harvesting chemical power from cyclic environments",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 9,
+          "difference": 2
+        },
+        {
+          "paper_id": "2510.10595v1",
+          "title": "Weak-anti-localization-to-spin-dependent scattering at a proximity-magnetized heavy metal interface",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 9,
+          "difference": 3
+        },
+        {
+          "paper_id": "2510.10555v1",
+          "title": "Breaking the Sabatier Principle by Dynamic Adsorption-Desorption Decoupling in Electrocatalytic Hydrogen Evolution",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 20,
+          "difference": 13
+        },
+        {
+          "paper_id": "2510.10745v1",
+          "title": "Fluidity and morphological stability of an amorphous thin film with radiation-induced defect kinetics",
+          "abstract_hypotheses_count": 7,
+          "pdf_hypotheses_count": 13,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.12006v1",
+          "title": "Evidence for easy-plane XY ferromagnetism in heavy-fermion quantum-critical CeRh6Ge4",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 16,
+          "difference": 11
+        },
+        {
+          "paper_id": "2510.11864v1",
+          "title": "Dipole-quadrupole model and multipole analysis of resonant membrane metasurfaces",
+          "abstract_hypotheses_count": 9,
+          "pdf_hypotheses_count": 15,
+          "difference": 6
+        },
+        {
+          "paper_id": "2510.10298v1",
+          "title": "Defect-driven incoherent skin localization",
+          "abstract_hypotheses_count": 5,
+          "pdf_hypotheses_count": 10,
+          "difference": 5
+        },
+        {
+          "paper_id": "2510.10835v1",
+          "title": "Error thresholds of toric codes with transversal logical gates",
+          "abstract_hypotheses_count": 6,
+          "pdf_hypotheses_count": 7,
+          "difference": 1
         }
       ],
       "matching_fractions": [
